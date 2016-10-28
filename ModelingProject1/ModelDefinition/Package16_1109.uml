@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="837fa3c0-4ee2-46e7-ac3d-8624854e55ea"
+  name="Fakeables"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0bc45e76-cec2-4887-bb3d-5efe4a1e930f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DNLog.Internal.Fakeables"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="26bf26d9-4f0f-415d-a512-f6c3c4b7bfb0"
+        name="IAppDomain"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a9833e94-7b9f-44a3-abde-a44bb3aa177f"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FNLog.4.3.7%2Flib%2Fnet45%2FNLog.dll&quot; Namespace%3DNLog.Internal.Fakeables Type%3DIAppDomain"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="967fb215-cf3e-4087-97d5-263fc2312f5a"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a60e7c21-d74d-4616-a859-8b4a8b987015">
+                <propertyInstance
+                  Id="be6c0300-7173-4e46-a9dc-203dd007a389"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e60c9d2-40cb-46fe-8ca7-326a3ca3c73e">
+                <propertyInstance
+                  Id="fc37696d-ccf3-4d54-ae3b-897d5752ad68"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e33e83ef-ed28-4d05-8890-83ee1eb1858a">
+                <propertyInstance
+                  Id="31d15e8f-9354-4dc5-83d6-cca33259bc32"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="556bad43-8a67-45d4-bbd0-ae1639df6902">
+                <propertyInstance
+                  Id="6a6fc1de-32a7-4a56-bb1d-c40949cee007"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,7 @@
+2016-08-20 13:58:10.0107 NLog.Logging Client disconnected - 127.0.0.1:8080
+2016-08-20 14:13:36.4289 NLog.Logging Sample debug message
+2016-08-20 14:13:36.4445 NLog.Logging Sample informational message
+2016-08-20 14:13:36.4602 NLog.Logging Sample warning message
+2016-08-20 14:13:36.4758 NLog.Logging Sample error message
+2016-08-20 14:13:36.4914 NLog.Logging Sample fatal error message
+2016-08-20 14:13:36.5070 NLog.Logging Sample informational message

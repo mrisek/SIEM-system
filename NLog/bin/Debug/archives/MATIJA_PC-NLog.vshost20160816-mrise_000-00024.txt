@@ -1,0 +1,6 @@
+2016-08-16 21:48:42.8367 NLogPOC.Program Client connected - 127.0.0.1:14715
+2016-08-16 21:48:42.8367 NLogPOC.Program Connected  - 127.0.0.1:8080
+2016-08-16 21:48:42.8523 NLogPOC.Program Server message sent to - 127.0.0.1:14715
+2016-08-16 21:48:42.8679 NLogPOC.Program Response was sent by client - 127.0.0.1:8080
+2016-08-16 21:48:42.8836 NLogPOC.Program Collection was sent by client - 127.0.0.1:8080
+2016-08-16 21:48:47.9151 NLogPOC.Program Client disconnected - 127.0.0.1:8080

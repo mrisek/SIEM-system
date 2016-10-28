@@ -1,0 +1,7 @@
+2016-09-16 23:26:02.2047 NLog.Logging Server is running
+2016-10-15 14:15:59.4463 NLog.Logging Server is running
+2016-10-15 14:42:45.4481 NLog.Logging Server is running
+2016-10-19 11:11:29.3002 NLog.Logging Server is running
+2016-10-19 11:11:47.9215 NLog.Logging Server is already running
+2016-10-19 11:11:47.9528 NLog.Logging Client connected - 127.0.0.1:5756
+2016-10-19 11:11:47.9528 NLog.Logging Connected  - 127.0.0.1:8080

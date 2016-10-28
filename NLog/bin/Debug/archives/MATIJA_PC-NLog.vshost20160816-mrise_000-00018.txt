@@ -1,0 +1,6 @@
+2016-08-16 21:24:26.9088 NLogPOC.Program Server is running
+2016-08-16 21:26:45.0926 NLogPOC.Program Server is already running
+2016-08-16 21:26:45.1239 NLogPOC.Program Connected  - 127.0.0.1:8080
+2016-08-16 21:26:45.1239 NLogPOC.Program Client connected - 127.0.0.1:14682
+2016-08-16 21:26:45.1708 NLogPOC.Program Response was sent by client - 127.0.0.1:8080
+2016-08-16 21:26:45.1864 NLogPOC.Program Collection was sent by client - 127.0.0.1:8080

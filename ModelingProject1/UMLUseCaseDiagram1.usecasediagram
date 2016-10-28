@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="05c40c28-1f3c-481e-b6a0-07db3727976a" name="UMLUseCaseDiagram1" linkedPackageId="a7287966-80c5-4d10-83d0-e0ab2418b42d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="559f064c-1425-4cfb-821a-2221123a927c" name="Korisnik 1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c22ec648-0aa2-4a1a-bf10-50b8f99a550a" />
+        <targetEnds>
+          <association Id="ef54b26f-24ed-42da-b9b3-ae5173074198" isDerived="false" sourceEndRoleName="Korisnik 1" targetEndRoleName="Slanje poruka" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c609088-6fdf-44de-8bfb-5b1d095336d3" LastKnownName="Slanje poruka" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62a13218-2591-40ad-b18d-8b648b6afa69" name="Korisnik 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c85a61a-72e1-4527-b121-cc3f27808cb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42fdbb46-210f-4dff-a72c-4856ff799318" name="Slanje poruka" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="468222f0-6885-4c8d-8f79-f02bf28f19ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a9172f0-9137-442c-8562-cea446355a12" />
+          </association>
+          <association Id="7c2508a2-fcca-496e-89d9-3ff2ce9495e7" isDerived="false" sourceEndRoleName="Korisnik 1" targetEndRoleName="Slanje kolekcija podataka" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c8ce71bb-6539-4fc4-88fd-e688fe772ff6" LastKnownName="Slanje kolekcija podataka" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d354354b-90f2-4832-9741-3b9b5b6505e5" name="Korisnik 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bfa19246-49ab-4c0a-99ab-fc298d597a6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ef91cae-4d1b-49ce-9d37-9efc1a7847ad" name="Slanje kolekcija podataka" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bae83e69-8e65-4ba1-97cd-678eed28faf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b28d612-4e43-409a-ac81-b3a65a2cbe71" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9c609088-6fdf-44de-8bfb-5b1d095336d3" name="Slanje poruka" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e0ef8b9-e6ca-49ad-a011-a0317f4aae29" />
+        <additions>
+          <include Id="7fa37b85-420b-480a-9c6e-908fe7927c6e">
+            <useCaseMoniker Id="a3e17caf-4d9d-42b7-953a-e9d3fd404a71" LastKnownName="Komunikacija" />
+            <elementDefinition Id="15006c19-a35e-48e0-ab02-0203abf976a5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3ad1d779-416b-4a46-ac0c-6172e6155a75" name="Korisnik 2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec19b1dc-01f7-460a-8044-651fcf1dabaa" />
+        <targetEnds>
+          <association Id="e71f791c-dd3e-4fa3-ac0a-b9a6c03c03d0" isDerived="false" sourceEndRoleName="Korisnik 2" targetEndRoleName="Slanje poruka" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="854fd974-017d-45f1-bbba-2b75951c58a6" LastKnownName="Slanje poruka" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1061bff7-5e07-4407-aa4e-a81bf2109d36" name="Korisnik 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64cb37ab-2027-4c19-8d43-9da2f85fe9c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33ff7989-98f9-40f8-a818-a2a706c24357" name="Slanje poruka" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d47e7fe8-937c-428d-ba1c-a163e9781590" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a4818c33-d26e-4c7a-a15f-2cadff29ba47" />
+          </association>
+          <association Id="e5102498-fdc7-439b-8fea-728c2ad7b557" isDerived="false" sourceEndRoleName="Korisnik 2" targetEndRoleName="Slanje kolekcija podataka" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b4721895-4bdf-413c-8a74-e2d5b7767254" LastKnownName="Slanje kolekcija podataka" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81c590b2-e1e0-4fda-b0ba-3691403bd62b" name="Korisnik 2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="558f1b2c-7a38-40e5-8b55-ffdb6c7d5726" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fdcd460-5ea3-478f-b1e4-9ba81a10d5e6" name="Slanje kolekcija podataka" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c467033e-c2ad-416c-b77a-2aa12d2aaad8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d4eaf0d-0a22-411e-ab59-1a15a8cc02dc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c8ce71bb-6539-4fc4-88fd-e688fe772ff6" name="Slanje kolekcija podataka" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e909be8-d98d-4a0d-9281-e7ed75ca1446" />
+        <additions>
+          <include Id="1e348ab5-f78c-4de7-8876-1dbd33c083e6">
+            <useCaseMoniker Id="a3e17caf-4d9d-42b7-953a-e9d3fd404a71" LastKnownName="Komunikacija" />
+            <elementDefinition Id="192b0a30-9f9f-46a4-a4de-9e096d20df6d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b4721895-4bdf-413c-8a74-e2d5b7767254" name="Slanje kolekcija podataka" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d487d36d-25d2-4fd5-b1c8-4e005b925b20" />
+        <additions>
+          <include Id="ee117724-65a3-4aa9-a3be-e5ec91a1c03e">
+            <useCaseMoniker Id="a3e17caf-4d9d-42b7-953a-e9d3fd404a71" LastKnownName="Komunikacija" />
+            <elementDefinition Id="853db1de-2da8-4364-b1bd-a2f53fde7bac" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="854fd974-017d-45f1-bbba-2b75951c58a6" name="Slanje poruka" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b650b983-622e-49f2-b253-a073cdccfc8c" />
+        <additions>
+          <include Id="58c131f0-cb3c-4d42-971d-5221b07852e9">
+            <useCaseMoniker Id="a3e17caf-4d9d-42b7-953a-e9d3fd404a71" LastKnownName="Komunikacija" />
+            <elementDefinition Id="90f674c5-1356-4564-ab95-df6abe89c7d6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6d93b716-8e14-4d74-8dfc-5c88e4540adb" name="Logging.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="25816a4c-81d0-421f-a9a8-a8d1e0232e86" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0f1e9681-b6ba-47a7-91a9-3133ce009fc2" name="Networking.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca" />
+        <targetEnds>
+          <association Id="1a2f1cf4-a29a-4739-bc16-db974f1a9d9c" isDerived="false" sourceEndRoleName="Networking" targetEndRoleName="Logging" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="6d93b716-8e14-4d74-8dfc-5c88e4540adb" LastKnownName="Logging.cs" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88eed5c0-c15d-447c-8c26-1e6ee3c55546" name="Networking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06e24ec4-8151-49c1-bed9-e083a43957f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="925d9747-9d18-4a52-98ab-688d840aef50" name="Logging" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f3b0b47-aca1-4f48-aa69-6298a7e51c24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1abe056a-148f-46dc-bb4a-e33d8ef8ac90" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9dab517e-807a-4280-9aeb-bab387b96316" name="Serialization.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e3b6859-50bf-4a6a-a875-70000c0e8557" />
+        <targetEnds>
+          <association Id="f1c4f21f-621d-48fd-bed0-d667d05d8cf8" isDerived="false" sourceEndRoleName="Serialization" targetEndRoleName="Networking" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="0f1e9681-b6ba-47a7-91a9-3133ce009fc2" LastKnownName="Networking.cs" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15997df4-2022-4a55-8ffd-1da8d56a8e2b" name="Serialization" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="333c7291-e69b-4f7e-9713-af08f056f9ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="167bbf10-5a82-44b6-a78e-1af00ba58125" name="Networking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c7ae4c57-6c28-42db-8a1f-411031bd7cb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b056c369-9ab2-4beb-9b26-c5cac45d0d32" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a3e17caf-4d9d-42b7-953a-e9d3fd404a71" name="Komunikacija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3c72ec5-5f6b-4749-8656-481d34be0dca" />
+        <subjects>
+          <subsystemMoniker Id="0f1e9681-b6ba-47a7-91a9-3133ce009fc2" LastKnownName="Networking.cs" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="23aac3a9-3d84-4ea3-bbbb-bfbc6835fd7e" name="Serijalizacija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6d5ed56-7961-49cd-9e14-40f172abdef6" />
+        <subjects>
+          <subsystemMoniker Id="9dab517e-807a-4280-9aeb-bab387b96316" LastKnownName="Serialization.cs" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c18caca7-4910-49ce-b736-6fb84c43970b" name="Deserijalizacija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b56052a-74aa-4278-93c8-92ecc0843825" />
+        <subjects>
+          <subsystemMoniker Id="9dab517e-807a-4280-9aeb-bab387b96316" LastKnownName="Serialization.cs" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="e0c5c19b-76c6-4073-984a-46f614c34a67" name="Event Viewer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="324fc233-7524-4e1a-8ad2-eb6a9b3b50f3" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="78b4b101-0ecf-446b-8862-ec658daa2b4a" name="Konzola" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="598a84e1-5342-4017-90e1-233ebdf8e946" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="64594d2d-5ce2-454d-beda-4a3e9cab8e69" name="Sentinel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="904c70d1-19fb-4904-8bbd-9ef9a874bd59" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="64e2a7c7-b399-4b6d-93af-8e979959dd9a" name="BareTail" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1c96075-ad86-421f-b041-840a44aecba9" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="ece1c473-e5d8-4613-a4fd-d0f26f821273" name="Analiza logova" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1577c6fd-12cf-468f-8986-4aab6cd91acc" />
+        <suppliersInternal>
+          <dependency Id="fb65276c-e477-4a6d-b001-7bae6bfbf2a3">
+            <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+            <elementDefinition Id="d24943bc-19f0-4cf4-b040-41f076dcda3f" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="50abad2e-c7d9-45ab-b2bd-7f3e6582c4aa" name="Prikupljanje logova" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14d37c07-3133-401c-9eaa-01e2b70d1833" />
+        <generalsInternal>
+          <generalization Id="f10cd4f5-a3be-40c9-a756-8db92876b1b2" isSubstitutable="false">
+            <useCaseMoniker Id="0e22ef97-7e61-4fc4-a475-05fca13f6f09" LastKnownName="Upravljanje logovima" />
+            <elementDefinition Id="5bf18133-1b04-496a-973e-6466f41a0294" />
+          </generalization>
+          <generalization Id="c7a06e88-9177-47ae-a905-4cb7486d9ff5" isSubstitutable="false">
+            <useCaseMoniker Id="ece1c473-e5d8-4613-a4fd-d0f26f821273" LastKnownName="Analiza logova" />
+            <elementDefinition Id="3eef9be1-ae2b-41c5-9402-cca1335f9716" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="6d93b716-8e14-4d74-8dfc-5c88e4540adb" LastKnownName="Logging.cs" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0e22ef97-7e61-4fc4-a475-05fca13f6f09" name="Upravljanje logovima" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="933a7884-3c69-4779-a93e-155c23abfdf9" />
+        <suppliersInternal>
+          <dependency Id="c5ba3c02-403d-451c-9e54-f9ecda5f2261">
+            <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+            <elementDefinition Id="7917a4d5-1a0c-4662-9e68-b428e18f3e6a" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="80926d1e-7710-4817-be9b-a24cb154458e" name="Raščlanjivanje zapisa" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04d65981-6d82-4f43-a5c1-285c05159841" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="288e516b-8d98-4f49-83ec-aaa2c8a1e970" name="Filtriranje događaja" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f721c1e2-2366-42db-8388-028b4c941f24" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d6285d8-5b33-48a0-9325-033cf185a83f" name="Spajanje događaja" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9a9b8412-7c1d-44ba-81c8-fa62bfed3b92" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3a182cbe-ca39-4b4f-a61a-e90be64d0d01" name="Rotacija logova" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="012cd297-e40b-475f-a685-434c162f3fe0" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="187417dc-e96e-42b9-b410-685c9f7bc51a" name="Arhiviranje logova" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71a23d20-e5bd-4f79-9f46-3a79e5692740" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a35ae175-7861-44bc-a8d8-a7852bc7daad" name="Prioritizacija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0579e5fd-76b9-408e-ac0c-de9bb7354f39" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15baaacf-5d45-4303-ab65-ce32bc15e309" name="Klasifikacija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0622867-f6c6-4faa-82d5-506cf5e81f00" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="abf1a1ef-5b88-47a3-b7f7-41b31d4f349b" name="Označavanje" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef990107-5036-4390-9c6d-7aab49865607" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5e7dcf75-a5cf-4a3b-a3aa-4dd2c594bb3e" name="Korelacijska analiza" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80c8f69d-789a-426f-82f1-704947fbff70" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="485cee45-cec2-4571-8158-f065e431d283" name="Analiza u stvarnom vremenu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04018358-116d-41ed-8149-28041f3e27cc" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="617050b8-9cc7-43e3-aeb6-6ad8e618cf46" name="Umjetno neznanje" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b5049c40-f48b-4ff5-a84b-977fc041077d" />
+        <subjects>
+          <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5fbd4de8-74d1-40a3-ae3c-2b31d711d1cd" name="Splunk Light" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80471517-a188-4bdd-a62d-6a2809c89ac2" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f41dfd4f-296c-43b3-a3e8-8c61a4437577" name="Event Viewer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea0dea66-8094-455b-ab5a-b7f9738ef957" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3455450f-a116-45b8-853e-c243de60cc8c" name="Task Scheduler" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bcc095fc-0f8d-4a06-a28d-280d5842e5fd" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" name="Log Management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e" />
+        <targetEnds>
+          <association Id="e1f6cec2-c65a-49af-90ed-6721ba1065b5" isDerived="false" sourceEndRoleName="Log Management" targetEndRoleName="Windows Firewall" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="7b74a4bb-b372-4ad0-87eb-a124f1df432c" LastKnownName="Windows Firewall" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4feda102-c932-4465-aab4-74a45ede9073" name="Log Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4bfde120-0062-46de-a26b-5767177efde7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1c27dbd-1cc6-486a-815a-c549d52d5427" name="Windows Firewall" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70f51818-db05-4bcd-9273-9aa16f2530ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e0196b0a-8192-4218-8dcf-ce8d52832bc4" />
+          </association>
+          <association Id="b22a8c69-1e8c-496c-9bf3-ae876cd0ceed" isDerived="false" sourceEndRoleName="Log Management" targetEndRoleName="Event Viewer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="e0c5c19b-76c6-4073-984a-46f614c34a67" LastKnownName="Event Viewer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5089e22-ccf6-4792-a332-96237e5c00b4" name="Log Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="614e0f23-50a9-4f2d-8d2f-dd42aee14c1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93eb9c02-6c6f-436b-a275-f8444cdaf7ce" name="Event Viewer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="190d2648-3b13-4f1e-94a3-20202100874b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="96e86ba3-d65d-4156-afed-b1a22f268529" />
+          </association>
+          <association Id="b7690d06-9a16-4785-80bd-13961779dcb8" isDerived="false" sourceEndRoleName="Log Management" targetEndRoleName="Konzola" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="78b4b101-0ecf-446b-8862-ec658daa2b4a" LastKnownName="Konzola" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2ff8150-bcaa-49e2-9523-2003f0b287f2" name="Log Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="faf15352-74aa-4c0e-94cd-57c7ced197e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90bdf4c5-ade3-46ac-bff9-f0aa869478e6" name="Konzola" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5998d2a4-1c2e-4ab4-91a7-0aef2d200a1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d3c74eb3-848f-4df7-a4a4-0bda1edb8658" />
+          </association>
+          <association Id="2aa66191-083f-4f77-adef-f013792b5c72" isDerived="false" sourceEndRoleName="Log Management" targetEndRoleName="BareTail" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="64e2a7c7-b399-4b6d-93af-8e979959dd9a" LastKnownName="BareTail" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfd8bfd9-4f80-47c3-b1a5-998fe087ef78" name="Log Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4166aba6-13cc-45ac-88c6-ea5c5414ee54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="af47838e-5a63-4ed5-9428-02ae55c7f43c" name="BareTail" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92601221-e9c2-41b8-93e7-90b9b5a35858" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e9830ccd-249b-4323-981b-3e78da12920c" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="54b03d0b-c656-49d9-b2d9-98fb4f0635a3" name="Kompresija" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec89e5c3-815b-4d48-a7ff-18ea74edf1cb" />
+        <subjects>
+          <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" name="Log Analisis" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c04f1179-77d0-46c1-8b48-96ba7e39e305" />
+        <targetEnds>
+          <association Id="9f6d52b6-f966-43d4-940f-7c93d3beb809" isDerived="false" sourceEndRoleName="Log Analisis" targetEndRoleName="Sentinel" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="64594d2d-5ce2-454d-beda-4a3e9cab8e69" LastKnownName="Sentinel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fb2605d-1773-42c6-a849-26043ccd74b9" name="Log Analisis" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2ce128db-a833-4193-b808-d2dc7dd78246" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f08b6fbf-50c6-43ed-9f56-dc1eb292d550" name="Sentinel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b279ac2-8225-468f-9dbf-edbd9f10ea86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d210ca1d-408f-48c2-9937-0c08996bf898" />
+          </association>
+          <association Id="6988b2c0-f4f4-4f84-9329-cd8ac6ad6d04" isDerived="false" sourceEndRoleName="Log Analisis" targetEndRoleName="Splunk Light" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="5fbd4de8-74d1-40a3-ae3c-2b31d711d1cd" LastKnownName="Splunk Light" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d95b1dd-0b17-4c3e-afeb-dc3f526db784" name="Log Analisis" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="746abc6b-93a1-4440-b71e-3b07658de928" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="136373ee-4f38-4298-8b7b-4b3b424efad5" name="Splunk Light" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9dfba6fb-1e88-4bd1-8e97-2a11f0942dc6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31192c3c-4804-49e9-bd59-575ebd0fef6f" />
+          </association>
+          <association Id="fb76e6d9-b5e9-4bb1-bf7c-a0ea352ae90c" isDerived="false" sourceEndRoleName="Log Analisis" targetEndRoleName="Task Scheduler" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="3455450f-a116-45b8-853e-c243de60cc8c" LastKnownName="Task Scheduler" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2fb1c2f-554d-4f44-8ce0-1c61e834046c" name="Log Analisis" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="83ba5419-8bf2-4801-9696-09823e124567" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0916d3dd-5696-4dac-9e4b-8220076e10ab" name="Task Scheduler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="886ccf04-ce81-4beb-af18-703f1072b6b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9fbd68ca-d07c-4e49-80c3-a516df16db9d" />
+          </association>
+          <association Id="21b98091-cd33-425c-8607-1d681ff53063" isDerived="false" sourceEndRoleName="Log Analisis" targetEndRoleName="Event Viewer" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="f41dfd4f-296c-43b3-a3e8-8c61a4437577" LastKnownName="Event Viewer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="820cfdd7-d6c4-4c11-b7d2-f949e63d0879" name="Log Analisis" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a0bd3bb8-29e3-43ac-a3eb-50994945d1b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67388087-c041-4e7f-a650-c418cd4d56ac" name="Event Viewer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a32c4760-3275-4e3c-9d2a-5ba65316370b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c30b0b11-6009-483a-b986-e5224e1719ae" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7b74a4bb-b372-4ad0-87eb-a124f1df432c" name="Windows Firewall" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bee361f9-a1af-4e7c-aaf3-64bdf2eb3300" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a7287966-80c5-4d10-83d0-e0ab2418b42d" name="ModelingProject1">
+    <elementDefinition Id="9faa763b-28a3-45f4-8c2a-8f8bba8f1f39" />
+    <profileInstances>
+      <packageHasProfileInstances Id="91849ac2-4dae-45ed-a45d-239a3725ac91">
+        <profileInstance Id="3ce7cfef-08f3-4766-9836-29aab7fc26d0" name="TextTemplateBindings">
+          <elementDefinition Id="f4abe6dc-fb9c-4b52-88e1-2ecaeace2e14" />
+        </profileInstance>
+        <elementDefinition Id="06a34901-9d89-47bc-9e81-629358d1d1f4" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="54b5e8eb-fd18-46d1-b94b-4fe44006039c">
+        <profileInstance Id="6cd5710d-f516-414c-962f-dba1d17207e3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e382007c-6662-414d-a3e3-6f86b41d0ffa">
+        <profileInstance Id="9026104f-254e-4e4f-ac87-8fea600f7394" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ea1e8b73-d89d-4086-9e83-986c797ec4f5">
+        <profileInstance Id="0428ed6d-e266-4318-a99b-2eb854ee3714" name="CSharpProfile">
+          <elementDefinition Id="bc5b64be-277b-41ad-ae47-4dfbc988439a" />
+        </profileInstance>
+        <elementDefinition Id="b4eebbf9-24ac-4b12-ad7d-522938d3557d" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

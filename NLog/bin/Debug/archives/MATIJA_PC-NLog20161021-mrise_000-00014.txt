@@ -1,0 +1,5 @@
+2016-10-21 10:27:47.7774 NLog.Logging IOException:  - System.IO.IOException: The operation is not allowed on non-connected sockets.
+   at System.Net.Sockets.NetworkStream.InitNetworkStream(Socket socket, FileAccess Access)
+   at System.Net.Sockets.NetworkStream..ctor(Socket socket)
+   at NLog.Networking.createNetworkStream(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 171
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 109

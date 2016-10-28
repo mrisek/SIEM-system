@@ -1,0 +1,7 @@
+2016-08-20 13:57:27.7117 NLog.Logging Sample debug message
+2016-08-20 13:57:27.7586 NLog.Logging Sample informational message
+2016-08-20 13:57:27.7743 NLog.Logging Sample warning message
+2016-08-20 13:57:27.8211 NLog.Logging Sample error message
+2016-08-20 13:57:27.8368 NLog.Logging Sample fatal error message
+2016-08-20 13:57:27.8368 NLog.Logging Sample informational message
+2016-08-20 13:57:27.8524 NLog.Logging Sample debug message, a=23, b=54

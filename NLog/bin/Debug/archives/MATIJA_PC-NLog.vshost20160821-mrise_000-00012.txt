@@ -1,0 +1,7 @@
+2016-08-21 21:26:59.1604 NLog.Logging Server is running
+2016-08-21 21:27:12.9896 NLog.Logging Server is running
+2016-08-21 21:27:24.8414 NLog.Logging Server is already running
+2016-08-21 21:27:24.9175 NLog.Logging Connected  - 127.0.0.1:8080
+2016-08-21 21:27:24.9165 NLog.Logging Client connected - 127.0.0.1:37395
+2016-08-21 21:27:25.0325 NLog.Logging Response was sent by client - 127.0.0.1:8080
+2016-08-21 21:27:25.0756 NLog.Logging Collection was sent by client - 127.0.0.1:8080

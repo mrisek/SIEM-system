@@ -1,0 +1,2 @@
+2016-10-19 13:18:18.2064 NLog.Logging Collection was sent by client - 127.0.0.1:8080
+2016-10-19 13:18:23.2587 NLog.Logging Client disconnected - 127.0.0.1:8080

@@ -1,0 +1,4 @@
+2016-08-20 13:58:09.9951 NLog.Logging Unable to handle delay and disconnect - System.InvalidOperationException: The operation is not allowed on non-connected sockets.
+   at System.Net.Sockets.TcpClient.GetStream()
+   at NLog.Networking.StartClient() in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 451
+2016-08-20 13:58:09.9951 NLog.Logging Client disconnected - 127.0.0.1:8080

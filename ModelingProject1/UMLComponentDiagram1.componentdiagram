@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7b340f6c-e78d-4ad1-982d-797f45868efe" name="UMLComponentDiagram1" linkedPackageId="20ef0861-69eb-4d22-a537-6087f4d9bcdc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="69ae5942-4f25-4173-a650-5a3a89ad8b1b">
+      <elementDefinition Id="6139ad61-64fd-4650-aade-314a96a3157a" />
+      <body>Programski jezik:
+C#
+
+Razvojna okolina:
+Microsoft Visual Studio Ultimate 2013
+
+Frameworks:
+.NET 4.5, LINQ, SOAP, NLog 4.3.7
+
+Cilj projekta je napraviti prototip SIEM sustava korištenjem NLog 4.3.7 frameworka za logiranje unutar postojeće "Skype for bussines" aplikacije. Osnovna funkcionalnost sustava za upravljanje informacijama i događajima je prikaz, pohrana i dinamički ispis log poruka. Upotrebom klase Socket i TCP protokola razvijeni su server i klijent koji simuliraju sustav za asinkronu i višedretvenu komunikaciju. Sustav za logiranje mora biti u stanju pratiti sve važne događaje i slati feedback u više sourceva. Najpopularnije značajke sustava za komunikaciju su razmjena poruka i kolekcija podataka, a osim toga, logging sustav mora ispravno raditi i prilikom delay-ja, connect-a, disconnect-a i lock-a. Kolekcije koje se šalju putem Socket-a potrebno je serijalizirati na jednoj i deserijalizirati na drugoj strani prilikom čega je korišten SOAP protokol, te klase MemoryStream i XElement za izradu XML stabala. Sustav za logging podržava značajke poput automatskog generiranja naziva datoteke i automatskog zapisa u drugu datoteku ukoliko on premaši određenu vrijednost, dok se kompletna konfiguracija loggera vrši putem datoteke NLog.config.</body>
+    </comment>
+    <comment Id="464fe264-46e7-4626-b20c-5c7fa9fe4910">
+      <elementDefinition Id="001aedb4-38ff-4abe-b284-e1539be20955" />
+      <body>Networking namespaces:
+
+- System
+- System.Collections.Generic
+- System.IO
+- System.Linq
+- System.Net
+- System.Net.Sockets
+- System.Text
+- System.Threading
+- System.Xml.Linq
+- System.Xml.Serialization</body>
+    </comment>
+    <comment Id="38cd573d-333c-4511-8381-c2b5d84e7e96">
+      <elementDefinition Id="50ce9dbd-51d8-4fe2-9d54-f86f21714c4b" />
+      <body>Serialization namespaces:
+
+System
+System.Collections.Generic
+System.IO
+System.Runtime.Serialization.Formatters.Soap
+using System.Xml.Serialization</body>
+    </comment>
+    <comment Id="544c4a52-8b73-49b0-9856-342fdb58beea">
+      <elementDefinition Id="571c8a1b-0eda-4e2c-a9ac-e8c8449fb6bc" />
+      <body>Logging namespaces:
+
+- NLog
+
+
+Other:
+
+- System.Threading
+- System.Threading.Tasks
+- System.Configuration</body>
+    </comment>
+    <comment Id="743fee18-d84d-46e6-9ec2-0f30ea8bca3b">
+      <elementDefinition Id="9bbf7946-093d-44a8-a8ee-c521bb389821" />
+      <body>Ispis u više sourceva:
+
+Log datoteka (*.log )
+Event Viewer
+Naredbeni redak (konzola)
+Sentinel 0.12.4.0
+BareTail 3.50a</body>
+    </comment>
+    <comment Id="25e870d8-612b-4b5d-ab58-c9e438e6fe68">
+      <elementDefinition Id="1a6fda13-0277-4c1b-8d56-703b9e2e2514" />
+      <body>Značaj log monitoringa:
+
+Logging je neophodan za rješavanje bugova aplikacije.
+
+Programer će najprije zatražiti log file od klijenta kako bi otkrio točno vrijeme i mjesto nastanka greške, te pokušao reproducirati bug.</body>
+    </comment>
+    <comment Id="bd99dc08-beff-45d7-ad40-f4215100b076">
+      <elementDefinition Id="41611677-0fdf-4a9a-8925-52081479a227" />
+      <body>Tema projekta:
+
+Prototip SIEM sustava
+
+(Security Information and Event Management System Prototype)</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="6afd777f-5806-4b0a-926a-d201fd1abfcc" name="Serialization.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="27a1c3b9-6b04-44a9-87cb-c8d4aa94b055" />
+        <generalsInternal>
+          <generalization Id="1572fa13-d680-44b2-ae71-c36a38efcef3" isSubstitutable="false">
+            <componentMoniker Id="0c6e186b-ebf4-4b46-be1f-9793915585d0" LastKnownName="Networking.cs" />
+            <elementDefinition Id="b0523ee5-95d4-4e4c-ad3d-005a5941ea19" />
+          </generalization>
+        </generalsInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0c6e186b-ebf4-4b46-be1f-9793915585d0" name="Networking.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ec0c1866-1cf3-4b30-90ea-e1e0f9175770" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="93907806-1dd8-4ce0-ba04-9912b57d640f" name="Logging.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ea95a30-8bfe-495d-b673-9108b7ed8869" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="20ef0861-69eb-4d22-a537-6087f4d9bcdc" name="ModelingProject1">
+    <elementDefinition Id="9faa763b-28a3-45f4-8c2a-8f8bba8f1f39" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d55aa9d3-6277-47c4-8778-5894e2577ae7">
+        <profileInstance Id="71d5cb84-5eb8-4975-b57a-7aef8c8fedb6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="42c053d1-f48d-4a57-9616-409b61978a2d">
+        <profileInstance Id="f9206168-bfed-42b8-9252-499b468b12f9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cec78ce2-8e22-4740-8972-65580ecb3e77">
+        <profileInstance Id="e9d60d2f-cb84-4eaa-b183-25b55b91777f" name="CSharpProfile">
+          <elementDefinition Id="bc5b64be-277b-41ad-ae47-4dfbc988439a" />
+        </profileInstance>
+        <elementDefinition Id="b4eebbf9-24ac-4b12-ad7d-522938d3557d" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="63888521-e669-4caf-b060-608b4adee55b">
+        <profileInstance Id="259b6ee0-3c8b-448a-be6f-16be65964f0e" name="TextTemplateBindings">
+          <elementDefinition Id="f4abe6dc-fb9c-4b52-88e1-2ecaeace2e14" />
+        </profileInstance>
+        <elementDefinition Id="06a34901-9d89-47bc-9e81-629358d1d1f4" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

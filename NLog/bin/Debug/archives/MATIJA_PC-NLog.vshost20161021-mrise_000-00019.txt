@@ -1,0 +1,6 @@
+2016-10-21 10:53:45.1036 NLog.Logging Collection was sent by client - 127.0.0.1:8080
+2016-10-21 10:53:45.9752 NLog.Logging Server is already running
+2016-10-21 10:53:46.0052 NLog.Logging Connected  - 127.0.0.1:8080
+2016-10-21 10:53:46.0032 NLog.Logging Client connected - 127.0.0.1:16847
+2016-10-21 10:53:46.0492 NLog.Logging Response was sent by client - 127.0.0.1:8080
+2016-10-21 10:53:46.0692 NLog.Logging Collection was sent by client - 127.0.0.1:8080

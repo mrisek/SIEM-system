@@ -1,0 +1,836 @@
+2016-08-08 18:33:34.3835 INFO Sample informational message
+2016-08-08 18:33:34.3835 INFO Sample informational message
+2016-08-08 18:33:34.8338 WARN Sample warning message
+2016-08-08 18:33:34.8338 WARN Sample warning message
+2016-08-08 18:33:34.8338 ERROR Sample error message
+2016-08-08 18:33:34.8338 ERROR Sample error message
+2016-08-08 18:33:34.8488 FATAL Sample fatal errror message
+2016-08-08 18:33:34.8488 FATAL Sample fatal errror message
+2016-08-08 18:33:34.8488 INFO Sample informational message
+2016-08-08 18:33:34.8488 INFO Sample informational message
+2016-08-08 18:33:34.8678 INFO Sample informational message, a=23, b=54
+2016-08-08 18:33:34.8678 INFO Sample informational message, a=23, b=54
+2016-08-08 18:33:34.8678 INFO Sample informational message, a=23, b=54
+2016-08-08 18:33:34.8678 INFO Sample informational message, a=23, b=54
+2016-08-08 18:42:39.9587 INFO Sample informational message
+2016-08-08 18:42:39.9587 INFO Sample informational message
+2016-08-08 18:42:39.9743 WARN Sample warning message
+2016-08-08 18:42:39.9743 WARN Sample warning message
+2016-08-08 18:42:39.9899 ERROR Sample error message
+2016-08-08 18:42:39.9899 ERROR Sample error message
+2016-08-08 18:42:39.9899 FATAL Sample fatal errror message
+2016-08-08 18:42:39.9899 FATAL Sample fatal errror message
+2016-08-08 18:42:40.0056 INFO Sample informational message
+2016-08-08 18:42:40.0056 INFO Sample informational message
+2016-08-08 18:42:40.0212 INFO Sample informational message, a=23, b=54
+2016-08-08 18:42:40.0212 INFO Sample informational message, a=23, b=54
+2016-08-08 18:42:40.0212 INFO Sample informational message, a=23, b=54
+2016-08-08 18:42:40.0212 INFO Sample informational message, a=23, b=54
+2016-08-08 19:18:26.2745 INFO Sample informational message
+2016-08-08 19:18:26.2745 INFO Sample informational message
+2016-08-08 19:18:26.3214 WARN Sample warning message
+2016-08-08 19:18:26.3214 WARN Sample warning message
+2016-08-08 19:18:26.3214 ERROR Sample error message
+2016-08-08 19:18:26.3214 ERROR Sample error message
+2016-08-08 19:18:26.3370 FATAL Sample fatal errror message
+2016-08-08 19:18:26.3370 FATAL Sample fatal errror message
+2016-08-08 19:18:26.3526 INFO Sample informational message
+2016-08-08 19:18:26.3526 INFO Sample informational message
+2016-08-08 19:18:26.3526 INFO Sample informational message, a=23, b=54
+2016-08-08 19:18:26.3526 INFO Sample informational message, a=23, b=54
+2016-08-08 19:18:26.3682 INFO Sample informational message, a=23, b=54
+2016-08-08 19:18:26.3682 INFO Sample informational message, a=23, b=54
+2016-08-08 19:21:31.2186 INFO Sample informational message
+2016-08-08 19:21:31.2186 INFO Sample informational message
+2016-08-08 19:21:31.2655 WARN Sample warning message
+2016-08-08 19:21:31.2655 WARN Sample warning message
+2016-08-08 19:21:31.2655 ERROR Sample error message
+2016-08-08 19:21:31.2655 ERROR Sample error message
+2016-08-08 19:21:31.2811 FATAL Sample fatal errror message
+2016-08-08 19:21:31.2811 FATAL Sample fatal errror message
+2016-08-08 19:21:31.2811 INFO Sample informational message
+2016-08-08 19:21:31.2811 INFO Sample informational message
+2016-08-08 19:21:31.2967 INFO Sample informational message, a=23, b=54
+2016-08-08 19:21:31.2967 INFO Sample informational message, a=23, b=54
+2016-08-08 19:21:31.2967 INFO Sample informational message, a=23, b=54
+2016-08-08 19:21:31.2967 INFO Sample informational message, a=23, b=54
+2016-08-08 19:22:37.6670 INFO Sample informational message
+2016-08-08 19:22:37.6670 INFO Sample informational message
+2016-08-08 19:22:37.6826 WARN Sample warning message
+2016-08-08 19:22:37.6826 WARN Sample warning message
+2016-08-08 19:22:37.6983 ERROR Sample error message
+2016-08-08 19:22:37.6983 ERROR Sample error message
+2016-08-08 19:22:37.6983 FATAL Sample fatal errror message
+2016-08-08 19:22:37.6983 FATAL Sample fatal errror message
+2016-08-08 19:22:37.7139 INFO Sample informational message
+2016-08-08 19:22:37.7139 INFO Sample informational message
+2016-08-08 19:22:37.7295 INFO Sample informational message, a=23, b=54
+2016-08-08 19:22:37.7295 INFO Sample informational message, a=23, b=54
+2016-08-08 19:22:37.7295 INFO Sample informational message, a=23, b=54
+2016-08-08 19:22:37.7295 INFO Sample informational message, a=23, b=54
+2016-08-08 19:22:37.7608 FATAL fatalna greska
+2016-08-08 19:22:37.7608 FATAL fatalna greska
+2016-08-08 19:23:01.4127 INFO Sample informational message
+2016-08-08 19:23:01.4127 INFO Sample informational message
+2016-08-08 19:23:01.4284 WARN Sample warning message
+2016-08-08 19:23:01.4284 WARN Sample warning message
+2016-08-08 19:23:01.4440 ERROR Sample error message
+2016-08-08 19:23:01.4440 ERROR Sample error message
+2016-08-08 19:23:01.4596 FATAL Sample fatal errror message
+2016-08-08 19:23:01.4596 FATAL Sample fatal errror message
+2016-08-08 19:23:01.4752 INFO Sample informational message
+2016-08-08 19:23:01.4752 INFO Sample informational message
+2016-08-08 19:23:01.4752 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:01.4752 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:01.4909 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:01.4909 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:01.5065 FATAL fatalna greska
+2016-08-08 19:23:01.5065 FATAL fatalna greska
+2016-08-08 19:23:04.3267 INFO Sample informational message
+2016-08-08 19:23:04.3267 INFO Sample informational message
+2016-08-08 19:23:04.3424 WARN Sample warning message
+2016-08-08 19:23:04.3424 WARN Sample warning message
+2016-08-08 19:23:04.3424 ERROR Sample error message
+2016-08-08 19:23:04.3424 ERROR Sample error message
+2016-08-08 19:23:04.3580 FATAL Sample fatal errror message
+2016-08-08 19:23:04.3580 FATAL Sample fatal errror message
+2016-08-08 19:23:04.3736 INFO Sample informational message
+2016-08-08 19:23:04.3736 INFO Sample informational message
+2016-08-08 19:23:04.3892 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:04.3892 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:04.3892 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:04.3892 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:04.4049 FATAL fatalna greska
+2016-08-08 19:23:04.4049 FATAL fatalna greska
+2016-08-08 19:23:06.0802 INFO Sample informational message
+2016-08-08 19:23:06.0802 INFO Sample informational message
+2016-08-08 19:23:06.0959 WARN Sample warning message
+2016-08-08 19:23:06.0959 WARN Sample warning message
+2016-08-08 19:23:06.1115 ERROR Sample error message
+2016-08-08 19:23:06.1115 ERROR Sample error message
+2016-08-08 19:23:06.1115 FATAL Sample fatal errror message
+2016-08-08 19:23:06.1115 FATAL Sample fatal errror message
+2016-08-08 19:23:06.1271 INFO Sample informational message
+2016-08-08 19:23:06.1271 INFO Sample informational message
+2016-08-08 19:23:06.1427 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:06.1427 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:06.1427 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:06.1427 INFO Sample informational message, a=23, b=54
+2016-08-08 19:23:06.1584 FATAL fatalna greska
+2016-08-08 19:23:06.1584 FATAL fatalna greska
+2016-08-08 19:28:02.5855 INFO Sample informational message
+2016-08-08 19:28:02.5855 INFO Sample informational message
+2016-08-08 19:28:02.6177 WARN Sample warning message
+2016-08-08 19:28:02.6177 WARN Sample warning message
+2016-08-08 19:28:02.6177 ERROR Sample error message
+2016-08-08 19:28:02.6177 ERROR Sample error message
+2016-08-08 19:28:02.6333 FATAL Sample fatal errror message
+2016-08-08 19:28:02.6333 FATAL Sample fatal errror message
+2016-08-08 19:28:02.6333 INFO Sample informational message
+2016-08-08 19:28:02.6333 INFO Sample informational message
+2016-08-08 19:28:02.6490 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:02.6490 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:02.6646 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:02.6646 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:28.8295 INFO Sample informational message
+2016-08-08 19:28:28.8295 INFO Sample informational message
+2016-08-08 19:28:28.8451 WARN Sample warning message
+2016-08-08 19:28:28.8451 WARN Sample warning message
+2016-08-08 19:28:28.8451 ERROR Sample error message
+2016-08-08 19:28:28.8451 ERROR Sample error message
+2016-08-08 19:28:28.8607 FATAL Sample fatal errror message
+2016-08-08 19:28:28.8607 FATAL Sample fatal errror message
+2016-08-08 19:28:28.8763 INFO Sample informational message
+2016-08-08 19:28:28.8763 INFO Sample informational message
+2016-08-08 19:28:28.8763 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:28.8763 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:28.8920 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:28.8920 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:28.9076 FATAL fatalna greska
+2016-08-08 19:28:28.9076 FATAL fatalna greska
+2016-08-08 19:28:28.9388 INFO neki info message - intern name
+2016-08-08 19:28:28.9388 INFO neki info message - intern name
+2016-08-08 19:28:40.6822 INFO Sample informational message
+2016-08-08 19:28:40.6822 INFO Sample informational message
+2016-08-08 19:28:40.6979 WARN Sample warning message
+2016-08-08 19:28:40.6979 WARN Sample warning message
+2016-08-08 19:28:40.7135 ERROR Sample error message
+2016-08-08 19:28:40.7135 ERROR Sample error message
+2016-08-08 19:28:40.7291 FATAL Sample fatal errror message
+2016-08-08 19:28:40.7291 FATAL Sample fatal errror message
+2016-08-08 19:28:40.7447 INFO Sample informational message
+2016-08-08 19:28:40.7447 INFO Sample informational message
+2016-08-08 19:28:40.7447 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:40.7447 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:40.7604 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:40.7604 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:40.7760 FATAL fatalna greska
+2016-08-08 19:28:40.7760 FATAL fatalna greska
+2016-08-08 19:28:40.7916 INFO neki info message - intern name
+2016-08-08 19:28:40.7916 INFO neki info message - intern name
+2016-08-08 19:28:42.7436 INFO Sample informational message
+2016-08-08 19:28:42.7436 INFO Sample informational message
+2016-08-08 19:28:42.7592 WARN Sample warning message
+2016-08-08 19:28:42.7592 WARN Sample warning message
+2016-08-08 19:28:42.7749 ERROR Sample error message
+2016-08-08 19:28:42.7749 ERROR Sample error message
+2016-08-08 19:28:42.7749 FATAL Sample fatal errror message
+2016-08-08 19:28:42.7749 FATAL Sample fatal errror message
+2016-08-08 19:28:42.7905 INFO Sample informational message
+2016-08-08 19:28:42.7905 INFO Sample informational message
+2016-08-08 19:28:42.8061 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:42.8061 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:42.8217 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:42.8217 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:42.8374 FATAL fatalna greska
+2016-08-08 19:28:42.8374 FATAL fatalna greska
+2016-08-08 19:28:42.8530 INFO neki info message - intern name
+2016-08-08 19:28:42.8530 INFO neki info message - intern name
+2016-08-08 19:28:48.5866 INFO Sample informational message
+2016-08-08 19:28:48.5866 INFO Sample informational message
+2016-08-08 19:28:48.6022 WARN Sample warning message
+2016-08-08 19:28:48.6022 WARN Sample warning message
+2016-08-08 19:28:48.6310 ERROR Sample error message
+2016-08-08 19:28:48.6310 ERROR Sample error message
+2016-08-08 19:28:48.6310 FATAL Sample fatal errror message
+2016-08-08 19:28:48.6310 FATAL Sample fatal errror message
+2016-08-08 19:28:48.6572 INFO Sample informational message
+2016-08-08 19:28:48.6572 INFO Sample informational message
+2016-08-08 19:28:48.6719 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:48.6719 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:48.6869 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:48.6869 INFO Sample informational message, a=23, b=54
+2016-08-08 19:28:48.7014 FATAL fatalna greska
+2016-08-08 19:28:48.7014 FATAL fatalna greska
+2016-08-08 19:28:48.7135 INFO neki info message - intern name
+2016-08-08 19:28:48.7135 INFO neki info message - intern name
+2016-08-08 19:34:50.5883 INFO Sample informational message
+2016-08-08 19:34:50.5883 INFO Sample informational message
+2016-08-08 19:34:50.6083 WARN Sample warning message
+2016-08-08 19:34:50.6083 WARN Sample warning message
+2016-08-08 19:34:50.6173 ERROR Sample error message
+2016-08-08 19:34:50.6173 ERROR Sample error message
+2016-08-08 19:34:50.6173 FATAL Sample fatal errror message
+2016-08-08 19:34:50.6173 FATAL Sample fatal errror message
+2016-08-08 19:34:50.6383 INFO Sample informational message
+2016-08-08 19:34:50.6383 INFO Sample informational message
+2016-08-08 19:34:50.6483 INFO Sample informational message, a=23, b=54
+2016-08-08 19:34:50.6483 INFO Sample informational message, a=23, b=54
+2016-08-08 19:34:50.6483 INFO Sample informational message, a=23, b=54
+2016-08-08 19:34:50.6483 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:01.2780 INFO Sample informational message
+2016-08-08 19:35:01.2780 INFO Sample informational message
+2016-08-08 19:35:01.2937 WARN Sample warning message
+2016-08-08 19:35:01.2937 WARN Sample warning message
+2016-08-08 19:35:01.2937 ERROR Sample error message
+2016-08-08 19:35:01.2937 ERROR Sample error message
+2016-08-08 19:35:01.3093 FATAL Sample fatal errror message
+2016-08-08 19:35:01.3093 FATAL Sample fatal errror message
+2016-08-08 19:35:01.3093 INFO Sample informational message
+2016-08-08 19:35:01.3093 INFO Sample informational message
+2016-08-08 19:35:01.3249 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:01.3249 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:01.3405 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:01.3405 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:06.3690 FATAL fatalna greska
+2016-08-08 19:35:06.3690 FATAL fatalna greska
+2016-08-08 19:35:06.4002 INFO neki info message - intern name
+2016-08-08 19:35:06.4002 INFO neki info message - intern name
+2016-08-08 19:35:41.7369 INFO Sample informational message
+2016-08-08 19:35:41.7369 INFO Sample informational message
+2016-08-08 19:35:41.7525 WARN Sample warning message
+2016-08-08 19:35:41.7525 WARN Sample warning message
+2016-08-08 19:35:41.7681 ERROR Sample error message
+2016-08-08 19:35:41.7681 ERROR Sample error message
+2016-08-08 19:35:41.7838 FATAL Sample fatal errror message
+2016-08-08 19:35:41.7838 FATAL Sample fatal errror message
+2016-08-08 19:35:41.7994 INFO Sample informational message
+2016-08-08 19:35:41.7994 INFO Sample informational message
+2016-08-08 19:35:41.8150 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:41.8150 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:41.8307 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:41.8307 INFO Sample informational message, a=23, b=54
+2016-08-08 19:35:46.8609 FATAL fatalna greska
+2016-08-08 19:35:46.8609 FATAL fatalna greska
+2016-08-08 19:35:46.8609 INFO neki info message - intern name
+2016-08-08 19:35:46.8609 INFO neki info message - intern name
+2016-08-08 19:41:26.4147 INFO Sample informational message
+2016-08-08 19:41:26.4147 INFO Sample informational message
+2016-08-08 19:41:26.4303 WARN Sample warning message
+2016-08-08 19:41:26.4303 WARN Sample warning message
+2016-08-08 19:41:26.4459 ERROR Sample error message
+2016-08-08 19:41:26.4459 ERROR Sample error message
+2016-08-08 19:41:26.4459 FATAL Sample fatal errror message
+2016-08-08 19:41:26.4459 FATAL Sample fatal errror message
+2016-08-08 19:41:26.4615 INFO Sample informational message
+2016-08-08 19:41:26.4615 INFO Sample informational message
+2016-08-08 19:41:26.4772 INFO Sample informational message, a=23, b=54
+2016-08-08 19:41:26.4772 INFO Sample informational message, a=23, b=54
+2016-08-08 19:41:26.4772 INFO Sample informational message, a=23, b=54
+2016-08-08 19:41:26.4772 INFO Sample informational message, a=23, b=54
+2016-08-08 19:42:39.1058 INFO Sample informational message
+2016-08-08 19:42:39.1058 INFO Sample informational message
+2016-08-08 19:42:39.1214 WARN Sample warning message
+2016-08-08 19:42:39.1214 WARN Sample warning message
+2016-08-08 19:42:39.1370 ERROR Sample error message
+2016-08-08 19:42:39.1370 ERROR Sample error message
+2016-08-08 19:42:39.1370 FATAL Sample fatal errror message
+2016-08-08 19:42:39.1370 FATAL Sample fatal errror message
+2016-08-08 19:42:39.1526 INFO Sample informational message
+2016-08-08 19:42:39.1526 INFO Sample informational message
+2016-08-08 19:42:39.1683 INFO Sample informational message, a=23, b=54
+2016-08-08 19:42:39.1683 INFO Sample informational message, a=23, b=54
+2016-08-08 19:42:39.1683 INFO Sample informational message, a=23, b=54
+2016-08-08 19:42:39.1683 INFO Sample informational message, a=23, b=54
+2016-08-08 19:42:44.1998 FATAL fatalna greska
+2016-08-08 19:42:44.1998 FATAL fatalna greska
+2016-08-08 19:42:44.1998 INFO neki info message - intern name
+2016-08-08 19:42:44.1998 INFO neki info message - intern name
+2016-08-08 19:43:00.9037 INFO Sample informational message
+2016-08-08 19:43:00.9037 INFO Sample informational message
+2016-08-08 19:43:00.9350 WARN Sample warning message
+2016-08-08 19:43:00.9350 WARN Sample warning message
+2016-08-08 19:43:00.9506 ERROR Sample error message
+2016-08-08 19:43:00.9506 ERROR Sample error message
+2016-08-08 19:43:00.9506 FATAL Sample fatal errror message
+2016-08-08 19:43:00.9506 FATAL Sample fatal errror message
+2016-08-08 19:43:00.9662 INFO Sample informational message
+2016-08-08 19:43:00.9662 INFO Sample informational message
+2016-08-08 19:43:00.9818 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:00.9818 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:01.0287 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:01.0287 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:02.7319 INFO Sample informational message
+2016-08-08 19:43:02.7319 INFO Sample informational message
+2016-08-08 19:43:02.7632 WARN Sample warning message
+2016-08-08 19:43:02.7632 WARN Sample warning message
+2016-08-08 19:43:02.7788 ERROR Sample error message
+2016-08-08 19:43:02.7788 ERROR Sample error message
+2016-08-08 19:43:02.7788 FATAL Sample fatal errror message
+2016-08-08 19:43:02.7788 FATAL Sample fatal errror message
+2016-08-08 19:43:02.7944 INFO Sample informational message
+2016-08-08 19:43:02.7944 INFO Sample informational message
+2016-08-08 19:43:02.8101 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:02.8101 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:02.8257 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:02.8257 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:06.0602 FATAL fatalna greska
+2016-08-08 19:43:06.0602 FATAL fatalna greska
+2016-08-08 19:43:06.0602 INFO neki info message - intern name
+2016-08-08 19:43:06.0602 INFO neki info message - intern name
+2016-08-08 19:43:07.8572 FATAL fatalna greska
+2016-08-08 19:43:07.8572 FATAL fatalna greska
+2016-08-08 19:43:07.8572 INFO neki info message - intern name
+2016-08-08 19:43:07.8572 INFO neki info message - intern name
+2016-08-08 19:43:28.9207 INFO Sample informational message
+2016-08-08 19:43:28.9207 INFO Sample informational message
+2016-08-08 19:43:28.9520 WARN Sample warning message
+2016-08-08 19:43:28.9520 WARN Sample warning message
+2016-08-08 19:43:28.9676 ERROR Sample error message
+2016-08-08 19:43:28.9676 ERROR Sample error message
+2016-08-08 19:43:28.9832 FATAL Sample fatal errror message
+2016-08-08 19:43:28.9832 FATAL Sample fatal errror message
+2016-08-08 19:43:28.9832 INFO Sample informational message
+2016-08-08 19:43:28.9832 INFO Sample informational message
+2016-08-08 19:43:28.9988 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:28.9988 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:29.0145 INFO Sample informational message, a=23, b=54
+2016-08-08 19:43:29.0145 INFO Sample informational message, a=23, b=54
+2016-08-08 19:49:48.9174 INFO Sample informational message
+2016-08-08 19:49:48.9174 INFO Sample informational message
+2016-08-08 19:49:48.9799 WARN Sample warning message
+2016-08-08 19:49:48.9799 WARN Sample warning message
+2016-08-08 19:49:49.0112 ERROR Sample error message
+2016-08-08 19:49:49.0112 ERROR Sample error message
+2016-08-08 19:49:49.0268 FATAL Sample fatal errror message
+2016-08-08 19:49:49.0268 FATAL Sample fatal errror message
+2016-08-08 19:49:49.0580 INFO Sample informational message
+2016-08-08 19:49:49.0580 INFO Sample informational message
+2016-08-08 19:49:49.0893 INFO Sample informational message, a=23, b=54
+2016-08-08 19:49:49.0893 INFO Sample informational message, a=23, b=54
+2016-08-08 19:49:49.1049 INFO Sample informational message, a=23, b=54
+2016-08-08 19:49:49.1049 INFO Sample informational message, a=23, b=54
+2016-08-08 19:50:01.5118 INFO Sample informational message
+2016-08-08 19:50:01.5118 INFO Sample informational message
+2016-08-08 19:50:01.5586 WARN Sample warning message
+2016-08-08 19:50:01.5586 WARN Sample warning message
+2016-08-08 19:50:01.5899 ERROR Sample error message
+2016-08-08 19:50:01.5899 ERROR Sample error message
+2016-08-08 19:50:01.6055 FATAL Sample fatal errror message
+2016-08-08 19:50:01.6055 FATAL Sample fatal errror message
+2016-08-08 19:50:01.6368 INFO Sample informational message
+2016-08-08 19:50:01.6368 INFO Sample informational message
+2016-08-08 19:50:01.6680 INFO Sample informational message, a=23, b=54
+2016-08-08 19:50:01.6680 INFO Sample informational message, a=23, b=54
+2016-08-08 19:50:01.6993 INFO Sample informational message, a=23, b=54
+2016-08-08 19:50:01.6993 INFO Sample informational message, a=23, b=54
+2016-08-08 19:50:06.7308 FATAL fatalna greska
+2016-08-08 19:50:06.7308 FATAL fatalna greska
+2016-08-08 19:50:06.7464 INFO neki info message - intern name
+2016-08-08 19:50:06.7464 INFO neki info message - intern name
+2016-08-08 19:51:46.1641 INFO Sample informational message
+2016-08-08 19:51:46.1641 INFO Sample informational message
+2016-08-08 19:51:46.2110 WARN Sample warning message
+2016-08-08 19:51:46.2110 WARN Sample warning message
+2016-08-08 19:51:46.2422 ERROR Sample error message
+2016-08-08 19:51:46.2422 ERROR Sample error message
+2016-08-08 19:51:46.2579 FATAL Sample fatal errror message
+2016-08-08 19:51:46.2579 FATAL Sample fatal errror message
+2016-08-08 19:51:46.2891 INFO Sample informational message
+2016-08-08 19:51:46.2891 INFO Sample informational message
+2016-08-08 19:51:46.3360 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:46.3360 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:46.3673 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:46.3673 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:51.6488 INFO Sample informational message
+2016-08-08 19:51:51.6488 INFO Sample informational message
+2016-08-08 19:51:51.6800 WARN Sample warning message
+2016-08-08 19:51:51.6800 WARN Sample warning message
+2016-08-08 19:51:51.7113 ERROR Sample error message
+2016-08-08 19:51:51.7113 ERROR Sample error message
+2016-08-08 19:51:51.7269 FATAL Sample fatal errror message
+2016-08-08 19:51:51.7269 FATAL Sample fatal errror message
+2016-08-08 19:51:51.7581 INFO Sample informational message
+2016-08-08 19:51:51.7581 INFO Sample informational message
+2016-08-08 19:51:51.7894 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:51.7894 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:51.8050 INFO Sample informational message, a=23, b=54
+2016-08-08 19:51:51.8050 INFO Sample informational message, a=23, b=54
+2016-08-08 19:53:49.2948 INFO Sample informational message
+2016-08-08 19:53:49.2948 INFO Sample informational message
+2016-08-08 19:53:49.3730 WARN Sample warning message
+2016-08-08 19:53:49.3730 WARN Sample warning message
+2016-08-08 19:53:49.4042 ERROR Sample error message
+2016-08-08 19:53:49.4042 ERROR Sample error message
+2016-08-08 19:53:49.4199 FATAL Sample fatal errror message
+2016-08-08 19:53:49.4199 FATAL Sample fatal errror message
+2016-08-08 19:53:49.4511 INFO Sample informational message
+2016-08-08 19:53:49.4511 INFO Sample informational message
+2016-08-08 19:53:49.4824 INFO Sample informational message, a=23, b=54
+2016-08-08 19:53:49.4824 INFO Sample informational message, a=23, b=54
+2016-08-08 19:53:49.4980 INFO Sample informational message, a=23, b=54
+2016-08-08 19:53:49.4980 INFO Sample informational message, a=23, b=54
+2016-08-08 19:54:01.5767 INFO Sample informational message
+2016-08-08 19:54:01.5767 INFO Sample informational message
+2016-08-08 19:54:01.6236 WARN Sample warning message
+2016-08-08 19:54:01.6236 WARN Sample warning message
+2016-08-08 19:54:01.6392 ERROR Sample error message
+2016-08-08 19:54:01.6392 ERROR Sample error message
+2016-08-08 19:54:01.6548 FATAL Sample fatal errror message
+2016-08-08 19:54:01.6548 FATAL Sample fatal errror message
+2016-08-08 19:54:01.6861 INFO Sample informational message
+2016-08-08 19:54:01.6861 INFO Sample informational message
+2016-08-08 19:54:01.7017 INFO Sample informational message, a=23, b=54
+2016-08-08 19:54:01.7017 INFO Sample informational message, a=23, b=54
+2016-08-08 19:54:01.7330 INFO Sample informational message, a=23, b=54
+2016-08-08 19:54:01.7330 INFO Sample informational message, a=23, b=54
+2016-08-08 19:54:06.7645 FATAL fatalna greska
+2016-08-08 19:54:06.7645 FATAL fatalna greska
+2016-08-08 19:54:06.8113 INFO neki info message - intern name
+2016-08-08 19:54:06.8113 INFO neki info message - intern name
+2016-08-08 19:55:17.8171 INFO Sample informational message
+2016-08-08 19:55:17.8171 INFO Sample informational message
+2016-08-08 19:55:17.8640 WARN Sample warning message
+2016-08-08 19:55:17.8640 WARN Sample warning message
+2016-08-08 19:55:17.8952 ERROR Sample error message
+2016-08-08 19:55:17.8952 ERROR Sample error message
+2016-08-08 19:55:17.9265 FATAL Sample fatal errror message
+2016-08-08 19:55:17.9265 FATAL Sample fatal errror message
+2016-08-08 19:55:17.9577 INFO Sample informational message
+2016-08-08 19:55:17.9577 INFO Sample informational message
+2016-08-08 19:55:17.9890 INFO Sample informational message, a=23, b=54
+2016-08-08 19:55:17.9890 INFO Sample informational message, a=23, b=54
+2016-08-08 19:55:18.0202 INFO Sample informational message, a=23, b=54
+2016-08-08 19:55:18.0202 INFO Sample informational message, a=23, b=54
+2016-08-08 19:55:23.0674 FATAL fatalna greska
+2016-08-08 19:55:23.0674 FATAL fatalna greska
+2016-08-08 19:55:23.0830 INFO neki info message - intern name
+2016-08-08 19:55:23.0830 INFO neki info message - intern name
+2016-08-08 20:11:31.6692 INFO Sample informational message
+2016-08-08 20:11:31.6692 INFO Sample informational message
+2016-08-08 20:11:31.7263 WARN Sample warning message
+2016-08-08 20:11:31.7263 WARN Sample warning message
+2016-08-08 20:11:31.7503 ERROR Sample error message
+2016-08-08 20:11:31.7503 ERROR Sample error message
+2016-08-08 20:11:31.7783 FATAL Sample fatal errror message
+2016-08-08 20:11:31.7783 FATAL Sample fatal errror message
+2016-08-08 20:11:31.8133 INFO Sample informational message
+2016-08-08 20:11:31.8133 INFO Sample informational message
+2016-08-08 20:11:31.8453 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:31.8453 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:31.8754 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:31.8754 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:53.7799 INFO Sample informational message
+2016-08-08 20:11:53.7799 INFO Sample informational message
+2016-08-08 20:11:53.8289 WARN Sample warning message
+2016-08-08 20:11:53.8289 WARN Sample warning message
+2016-08-08 20:11:53.8520 ERROR Sample error message
+2016-08-08 20:11:53.8520 ERROR Sample error message
+2016-08-08 20:11:53.8760 FATAL Sample fatal errror message
+2016-08-08 20:11:53.8760 FATAL Sample fatal errror message
+2016-08-08 20:11:53.9020 INFO Sample informational message
+2016-08-08 20:11:53.9020 INFO Sample informational message
+2016-08-08 20:11:53.9320 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:53.9320 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:53.9570 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:53.9570 INFO Sample informational message, a=23, b=54
+2016-08-08 20:11:58.9874 FATAL fatalna greska
+2016-08-08 20:11:58.9874 FATAL fatalna greska
+2016-08-08 20:11:59.0184 INFO neki info message - intern name
+2016-08-08 20:11:59.0184 INFO neki info message - intern name
+2016-08-08 20:13:37.9107 INFO Sample informational message
+2016-08-08 20:13:37.9107 INFO Sample informational message
+2016-08-08 20:13:37.9787 WARN Sample warning message
+2016-08-08 20:13:37.9787 WARN Sample warning message
+2016-08-08 20:13:38.0147 ERROR Sample error message
+2016-08-08 20:13:38.0147 ERROR Sample error message
+2016-08-08 20:13:38.0428 FATAL Sample fatal errror message
+2016-08-08 20:13:38.0428 FATAL Sample fatal errror message
+2016-08-08 20:13:38.0708 INFO Sample informational message
+2016-08-08 20:13:38.0708 INFO Sample informational message
+2016-08-08 20:13:38.1008 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:38.1008 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:38.1278 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:38.1278 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:41.2839 INFO Sample informational message
+2016-08-08 20:13:41.2839 INFO Sample informational message
+2016-08-08 20:13:41.3310 WARN Sample warning message
+2016-08-08 20:13:41.3310 WARN Sample warning message
+2016-08-08 20:13:41.3570 ERROR Sample error message
+2016-08-08 20:13:41.3570 ERROR Sample error message
+2016-08-08 20:13:41.3830 FATAL Sample fatal errror message
+2016-08-08 20:13:41.3830 FATAL Sample fatal errror message
+2016-08-08 20:13:41.4080 INFO Sample informational message
+2016-08-08 20:13:41.4080 INFO Sample informational message
+2016-08-08 20:13:41.4360 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:41.4360 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:41.4640 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:41.4640 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:46.4934 FATAL fatalna greska
+2016-08-08 20:13:46.4934 FATAL fatalna greska
+2016-08-08 20:13:46.5304 INFO neki info message - intern name
+2016-08-08 20:13:46.5304 INFO neki info message - intern name
+2016-08-08 20:13:54.0861 INFO Sample informational message
+2016-08-08 20:13:54.0861 INFO Sample informational message
+2016-08-08 20:13:54.1481 WARN Sample warning message
+2016-08-08 20:13:54.1481 WARN Sample warning message
+2016-08-08 20:13:54.1801 ERROR Sample error message
+2016-08-08 20:13:54.1801 ERROR Sample error message
+2016-08-08 20:13:54.2202 FATAL Sample fatal errror message
+2016-08-08 20:13:54.2202 FATAL Sample fatal errror message
+2016-08-08 20:13:54.2512 INFO Sample informational message
+2016-08-08 20:13:54.2512 INFO Sample informational message
+2016-08-08 20:13:54.2912 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:54.2912 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:54.3252 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:54.3252 INFO Sample informational message, a=23, b=54
+2016-08-08 20:13:59.3686 FATAL fatalna greska
+2016-08-08 20:13:59.3686 FATAL fatalna greska
+2016-08-08 20:13:59.3996 INFO neki info message - intern name
+2016-08-08 20:13:59.3996 INFO neki info message - intern name
+2016-08-08 20:14:02.4997 INFO Sample informational message
+2016-08-08 20:14:02.4997 INFO Sample informational message
+2016-08-08 20:14:02.5657 WARN Sample warning message
+2016-08-08 20:14:02.5657 WARN Sample warning message
+2016-08-08 20:14:02.6057 ERROR Sample error message
+2016-08-08 20:14:02.6057 ERROR Sample error message
+2016-08-08 20:14:02.6458 FATAL Sample fatal errror message
+2016-08-08 20:14:02.6458 FATAL Sample fatal errror message
+2016-08-08 20:14:02.6928 INFO Sample informational message
+2016-08-08 20:14:02.6928 INFO Sample informational message
+2016-08-08 20:14:02.7398 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:02.7398 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:02.7778 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:02.7778 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:03.4583 INFO Sample informational message
+2016-08-08 20:14:03.4583 INFO Sample informational message
+2016-08-08 20:14:03.5313 WARN Sample warning message
+2016-08-08 20:14:03.5313 WARN Sample warning message
+2016-08-08 20:14:03.5664 ERROR Sample error message
+2016-08-08 20:14:03.5664 ERROR Sample error message
+2016-08-08 20:14:03.5994 FATAL Sample fatal errror message
+2016-08-08 20:14:03.5994 FATAL Sample fatal errror message
+2016-08-08 20:14:03.6344 INFO Sample informational message
+2016-08-08 20:14:03.6344 INFO Sample informational message
+2016-08-08 20:14:03.6764 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:03.6764 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:03.7105 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:03.7105 INFO Sample informational message, a=23, b=54
+2016-08-08 20:14:07.8312 FATAL fatalna greska
+2016-08-08 20:14:07.8312 FATAL fatalna greska
+2016-08-08 20:14:07.8692 INFO neki info message - intern name
+2016-08-08 20:14:07.8692 INFO neki info message - intern name
+2016-08-08 20:14:08.7518 FATAL fatalna greska
+2016-08-08 20:14:08.7518 FATAL fatalna greska
+2016-08-08 20:14:08.7878 INFO neki info message - intern name
+2016-08-08 20:14:08.7878 INFO neki info message - intern name
+2016-08-08 20:18:51.4891 INFO Sample informational message
+2016-08-08 20:18:51.4891 INFO Sample informational message
+2016-08-08 20:18:51.5452 WARN Sample warning message
+2016-08-08 20:18:51.5452 WARN Sample warning message
+2016-08-08 20:18:51.5712 ERROR Sample error message
+2016-08-08 20:18:51.5712 ERROR Sample error message
+2016-08-08 20:18:51.5992 FATAL Sample fatal errror message
+2016-08-08 20:18:51.5992 FATAL Sample fatal errror message
+2016-08-08 20:18:51.6262 INFO Sample informational message
+2016-08-08 20:18:51.6262 INFO Sample informational message
+2016-08-08 20:18:51.6653 INFO Sample informational message, a=23, b=54
+2016-08-08 20:18:51.6653 INFO Sample informational message, a=23, b=54
+2016-08-08 20:18:51.6963 INFO Sample informational message, a=23, b=54
+2016-08-08 20:18:51.6963 INFO Sample informational message, a=23, b=54
+2016-08-08 20:27:24.3054 INFO Sample informational message
+2016-08-08 20:27:24.3054 INFO Sample informational message
+2016-08-08 20:27:24.3679 WARN Sample warning message
+2016-08-08 20:27:24.3679 WARN Sample warning message
+2016-08-08 20:27:24.3835 ERROR Sample error message
+2016-08-08 20:27:24.3835 ERROR Sample error message
+2016-08-08 20:27:24.4148 FATAL Sample fatal errror message
+2016-08-08 20:27:24.4148 FATAL Sample fatal errror message
+2016-08-08 20:27:24.4460 INFO Sample informational message
+2016-08-08 20:27:24.4460 INFO Sample informational message
+2016-08-08 20:27:24.4773 INFO Sample informational message, a=23, b=54
+2016-08-08 20:27:24.4773 INFO Sample informational message, a=23, b=54
+2016-08-08 20:27:24.5085 INFO Sample informational message, a=23, b=54
+2016-08-08 20:27:24.5085 INFO Sample informational message, a=23, b=54
+2016-08-08 20:27:29.5556 FATAL fatalna greska
+2016-08-08 20:27:29.5556 FATAL fatalna greska
+2016-08-08 20:27:29.5713 INFO neki info message - intern name
+2016-08-08 20:27:29.5713 INFO neki info message - intern name
+2016-08-08 20:28:09.1739 INFO Sample informational message
+2016-08-08 20:28:09.1739 INFO Sample informational message
+2016-08-08 20:28:09.2208 WARN Sample warning message
+2016-08-08 20:28:09.2208 WARN Sample warning message
+2016-08-08 20:28:09.2521 ERROR Sample error message
+2016-08-08 20:28:09.2521 ERROR Sample error message
+2016-08-08 20:28:09.2833 FATAL Sample fatal errror message
+2016-08-08 20:28:09.2833 FATAL Sample fatal errror message
+2016-08-08 20:28:09.3146 INFO Sample informational message
+2016-08-08 20:28:09.3146 INFO Sample informational message
+2016-08-08 20:28:09.3458 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:09.3458 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:09.3614 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:09.3614 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:22.1277 INFO Sample informational message
+2016-08-08 20:28:22.1277 INFO Sample informational message
+2016-08-08 20:28:22.1746 WARN Sample warning message
+2016-08-08 20:28:22.1746 WARN Sample warning message
+2016-08-08 20:28:22.1902 ERROR Sample error message
+2016-08-08 20:28:22.1902 ERROR Sample error message
+2016-08-08 20:28:22.2214 FATAL Sample fatal errror message
+2016-08-08 20:28:22.2214 FATAL Sample fatal errror message
+2016-08-08 20:28:22.2371 INFO Sample informational message
+2016-08-08 20:28:22.2371 INFO Sample informational message
+2016-08-08 20:28:22.2683 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:22.2683 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:22.2996 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:22.2996 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:27.3467 FATAL fatalna greska
+2016-08-08 20:28:27.3467 FATAL fatalna greska
+2016-08-08 20:28:27.3779 INFO neki info message - intern name
+2016-08-08 20:28:27.3779 INFO neki info message - intern name
+2016-08-08 20:28:47.5664 INFO Sample informational message
+2016-08-08 20:28:47.5664 INFO Sample informational message
+2016-08-08 20:28:47.6133 WARN Sample warning message
+2016-08-08 20:28:47.6133 WARN Sample warning message
+2016-08-08 20:28:47.6446 ERROR Sample error message
+2016-08-08 20:28:47.6446 ERROR Sample error message
+2016-08-08 20:28:47.6602 FATAL Sample fatal errror message
+2016-08-08 20:28:47.6602 FATAL Sample fatal errror message
+2016-08-08 20:28:47.6914 INFO Sample informational message
+2016-08-08 20:28:47.6914 INFO Sample informational message
+2016-08-08 20:28:47.7227 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:47.7227 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:47.7539 INFO Sample informational message, a=23, b=54
+2016-08-08 20:28:47.7539 INFO Sample informational message, a=23, b=54
+2016-08-08 20:32:42.3198 FATAL fatalna greska
+2016-08-08 20:32:42.3198 FATAL fatalna greska
+2016-08-08 20:32:42.3979 INFO neki info message - intern name
+2016-08-08 20:32:42.3979 INFO neki info message - intern name
+2016-08-08 20:36:39.9095 FATAL fatalna greska
+2016-08-08 20:36:39.9095 FATAL fatalna greska
+2016-08-08 20:36:40.0188 INFO neki info message - intern name
+2016-08-08 20:36:40.0188 INFO neki info message - intern name
+2016-08-08 20:36:57.7228 FATAL fatalna greska
+2016-08-08 20:36:57.7228 FATAL fatalna greska
+2016-08-08 20:36:57.8166 INFO neki info message - intern name
+2016-08-08 20:36:57.8166 INFO neki info message - intern name
+2016-08-08 20:37:04.2232 FATAL fatalna greska
+2016-08-08 20:37:04.2232 FATAL fatalna greska
+2016-08-08 20:37:04.3169 INFO neki info message - intern name
+2016-08-08 20:37:04.3169 INFO neki info message - intern name
+2016-08-08 20:54:56.2803 FATAL fatalna greska
+2016-08-08 20:54:56.2803 FATAL fatalna greska
+2016-08-08 20:54:56.3897 INFO neki info message - intern name
+2016-08-08 20:54:56.3897 INFO neki info message - intern name
+2016-08-08 20:59:18.1629 FATAL fatalna greska
+2016-08-08 20:59:18.1629 FATAL fatalna greska
+2016-08-08 20:59:18.2879 INFO neki info message - intern name
+2016-08-08 20:59:18.2879 INFO neki info message - intern name
+2016-08-08 20:59:46.0325 FATAL fatalna greska
+2016-08-08 20:59:46.0325 FATAL fatalna greska
+2016-08-08 20:59:46.1262 INFO neki info message - intern name
+2016-08-08 20:59:46.1262 INFO neki info message - intern name
+2016-08-08 21:00:03.1115 FATAL fatalna greska
+2016-08-08 21:00:03.1115 FATAL fatalna greska
+2016-08-08 21:00:03.2052 INFO neki info message - intern name
+2016-08-08 21:00:03.2052 INFO neki info message - intern name
+2016-08-08 21:11:42.6391 FATAL fatalna greska
+2016-08-08 21:11:42.6391 FATAL fatalna greska
+2016-08-08 21:11:42.7329 INFO neki info message - intern name
+2016-08-08 21:11:42.7329 INFO neki info message - intern name
+2016-08-08 21:15:12.8043 FATAL fatalna greska
+2016-08-08 21:15:12.8043 FATAL fatalna greska
+2016-08-08 21:15:12.8980 INFO neki info message - intern name
+2016-08-08 21:15:12.8980 INFO neki info message - intern name
+2016-08-08 21:15:25.2893 FATAL fatalna greska
+2016-08-08 21:15:25.2893 FATAL fatalna greska
+2016-08-08 21:15:25.3674 INFO neki info message - intern name
+2016-08-08 21:15:25.3674 INFO neki info message - intern name
+2016-08-08 21:15:25.4455 FATAL fatalna greska
+2016-08-08 21:15:25.4455 FATAL fatalna greska
+2016-08-08 21:15:25.5236 INFO neki info message - intern name
+2016-08-08 21:15:25.5236 INFO neki info message - intern name
+2016-08-08 21:15:57.1502 FATAL fatalna greska
+2016-08-08 21:15:57.1502 FATAL fatalna greska
+2016-08-08 21:15:57.2596 INFO neki info message - intern name
+2016-08-08 21:15:57.2596 INFO neki info message - intern name
+2016-08-08 21:16:48.2042 FATAL fatalna greska
+2016-08-08 21:16:48.2042 FATAL fatalna greska
+2016-08-08 21:16:48.3136 INFO neki info message - intern name
+2016-08-08 21:16:48.3136 INFO neki info message - intern name
+2016-08-08 21:17:01.4080 FATAL fatalna greska
+2016-08-08 21:17:01.4080 FATAL fatalna greska
+2016-08-08 21:17:01.5336 INFO neki info message - intern name
+2016-08-08 21:17:01.5336 INFO neki info message - intern name
+2016-08-08 21:17:01.5180 FATAL fatalna greska
+2016-08-08 21:17:01.5180 FATAL fatalna greska
+2016-08-08 21:17:01.6273 INFO neki info message - intern name
+2016-08-08 21:17:01.6273 INFO neki info message - intern name
+2016-08-08 21:17:32.9498 FATAL fatalna greska
+2016-08-08 21:17:32.9498 FATAL fatalna greska
+2016-08-08 21:17:33.0592 INFO neki info message - intern name
+2016-08-08 21:17:33.0592 INFO neki info message - intern name
+2016-08-08 21:18:17.9712 FATAL fatalna greska
+2016-08-08 21:18:17.9712 FATAL fatalna greska
+2016-08-08 21:18:18.0806 INFO neki info message - intern name
+2016-08-08 21:18:18.0806 INFO neki info message - intern name
+2016-08-08 21:21:03.0201 FATAL fatalna greska
+2016-08-08 21:21:03.0201 FATAL fatalna greska
+2016-08-08 21:21:03.1139 INFO neki info message - intern name
+2016-08-08 21:21:03.1139 INFO neki info message - intern name
+2016-08-08 21:33:48.2941 FATAL fatalna greska
+2016-08-08 21:33:48.2941 FATAL fatalna greska
+2016-08-08 21:33:48.4035 INFO neki info message - intern name
+2016-08-08 21:33:48.4035 INFO neki info message - intern name
+2016-08-08 21:33:55.3100 FATAL fatalna greska
+2016-08-08 21:33:55.3100 FATAL fatalna greska
+2016-08-08 21:33:55.4038 INFO neki info message - intern name
+2016-08-08 21:33:55.4038 INFO neki info message - intern name
+2016-08-08 21:34:11.0765 FATAL fatalna greska
+2016-08-08 21:34:11.0765 FATAL fatalna greska
+2016-08-08 21:34:11.1858 INFO neki info message - intern name
+2016-08-08 21:34:11.1858 INFO neki info message - intern name
+2016-08-08 21:34:16.7642 FATAL fatalna greska
+2016-08-08 21:34:16.7642 FATAL fatalna greska
+2016-08-08 21:34:16.8736 INFO neki info message - intern name
+2016-08-08 21:34:16.8736 INFO neki info message - intern name
+2016-08-08 21:34:29.4680 FATAL fatalna greska
+2016-08-08 21:34:29.4680 FATAL fatalna greska
+2016-08-08 21:34:29.5774 INFO neki info message - intern name
+2016-08-08 21:34:29.5774 INFO neki info message - intern name
+2016-08-08 21:34:34.5464 FATAL fatalna greska
+2016-08-08 21:34:34.5464 FATAL fatalna greska
+2016-08-08 21:34:34.6401 INFO neki info message - intern name
+2016-08-08 21:34:34.6401 INFO neki info message - intern name
+2016-08-08 21:35:37.9051 FATAL fatalna greska
+2016-08-08 21:35:37.9051 FATAL fatalna greska
+2016-08-08 21:35:37.9989 INFO neki info message - intern name
+2016-08-08 21:35:37.9989 INFO neki info message - intern name
+2016-08-08 21:35:45.4836 FATAL fatalna greska
+2016-08-08 21:35:45.4836 FATAL fatalna greska
+2016-08-08 21:35:45.5618 INFO neki info message - intern name
+2016-08-08 21:35:45.5618 INFO neki info message - intern name
+2016-08-08 21:35:50.2026 FATAL fatalna greska
+2016-08-08 21:35:50.2026 FATAL fatalna greska
+2016-08-08 21:35:50.2807 INFO neki info message - intern name
+2016-08-08 21:35:50.2807 INFO neki info message - intern name
+2016-08-08 21:35:57.8436 FATAL fatalna greska
+2016-08-08 21:35:57.8436 FATAL fatalna greska
+2016-08-08 21:35:57.9217 INFO neki info message - intern name
+2016-08-08 21:35:57.9217 INFO neki info message - intern name
+2016-08-08 21:41:04.1379 FATAL fatalna greska
+2016-08-08 21:41:04.1379 FATAL fatalna greska
+2016-08-08 21:41:04.2160 INFO neki info message - intern name
+2016-08-08 21:41:04.2160 INFO neki info message - intern name
+2016-08-08 21:41:04.2785 FATAL fatalna greska
+2016-08-08 21:41:04.2785 FATAL fatalna greska
+2016-08-08 21:41:04.3566 INFO neki info message - intern name
+2016-08-08 21:41:04.3566 INFO neki info message - intern name
+2016-08-08 21:43:26.9928 FATAL fatalna greska
+2016-08-08 21:43:26.9928 FATAL fatalna greska
+2016-08-08 21:43:27.0709 INFO neki info message - intern name
+2016-08-08 21:43:27.0709 INFO neki info message - intern name
+2016-08-08 21:44:08.5911 FATAL fatalna greska
+2016-08-08 21:44:08.5911 FATAL fatalna greska
+2016-08-08 21:44:08.6692 INFO neki info message - intern name
+2016-08-08 21:44:08.6692 INFO neki info message - intern name
+2016-08-08 21:44:35.2732 FATAL fatalna greska
+2016-08-08 21:44:35.2732 FATAL fatalna greska
+2016-08-08 21:44:35.3669 INFO neki info message - intern name
+2016-08-08 21:44:35.3669 INFO neki info message - intern name
+2016-08-08 21:45:14.5440 FATAL fatalna greska
+2016-08-08 21:45:14.5440 FATAL fatalna greska
+2016-08-08 21:45:14.6377 INFO neki info message - intern name
+2016-08-08 21:45:14.6377 INFO neki info message - intern name
+2016-08-08 21:51:47.4481 FATAL fatalna greska
+2016-08-08 21:51:47.4481 FATAL fatalna greska
+2016-08-08 21:51:47.5262 INFO neki info message - intern name
+2016-08-08 21:51:47.5262 INFO neki info message - intern name
+2016-08-08 21:52:01.0582 FATAL fatalna greska
+2016-08-08 21:52:01.0582 FATAL fatalna greska
+2016-08-08 21:52:01.1363 INFO neki info message - intern name
+2016-08-08 21:52:01.1363 INFO neki info message - intern name
+2016-08-08 21:52:05.7147 FATAL fatalna greska
+2016-08-08 21:52:05.7147 FATAL fatalna greska
+2016-08-08 21:52:05.7928 INFO neki info message - intern name
+2016-08-08 21:52:05.7928 INFO neki info message - intern name
+2016-08-08 21:52:48.8160 FATAL fatalna greska
+2016-08-08 21:52:48.8160 FATAL fatalna greska
+2016-08-08 21:52:48.8941 INFO neki info message - intern name
+2016-08-08 21:52:48.8941 INFO neki info message - intern name
+2016-08-08 22:07:16.0753 FATAL fatalna greska
+2016-08-08 22:07:16.0753 FATAL fatalna greska
+2016-08-08 22:07:16.1534 INFO neki info message - intern name
+2016-08-08 22:07:16.1534 INFO neki info message - intern name
+2016-08-08 22:07:58.2704 FATAL fatalna greska
+2016-08-08 22:07:58.2704 FATAL fatalna greska
+2016-08-08 22:07:58.3641 INFO neki info message - intern name
+2016-08-08 22:07:58.3641 INFO neki info message - intern name
+2016-08-08 22:08:59.3044 FATAL fatalna greska
+2016-08-08 22:08:59.3044 FATAL fatalna greska
+2016-08-08 22:08:59.3825 INFO neki info message - intern name
+2016-08-08 22:08:59.3825 INFO neki info message - intern name
+2016-08-08 22:09:35.7110 FATAL fatalna greska
+2016-08-08 22:09:35.7110 FATAL fatalna greska
+2016-08-08 22:09:35.7892 INFO neki info message - intern name
+2016-08-08 22:09:35.7892 INFO neki info message - intern name
+2016-08-08 22:09:41.8051 FATAL fatalna greska
+2016-08-08 22:09:41.8051 FATAL fatalna greska
+2016-08-08 22:09:41.8832 INFO neki info message - intern name
+2016-08-08 22:09:41.8832 INFO neki info message - intern name
+2016-08-08 22:09:55.3700 FATAL fatalna greska
+2016-08-08 22:09:55.3700 FATAL fatalna greska
+2016-08-08 22:09:55.4638 INFO neki info message - intern name
+2016-08-08 22:09:55.4638 INFO neki info message - intern name
+2016-08-08 22:10:03.0110 FATAL fatalna greska
+2016-08-08 22:10:03.0110 FATAL fatalna greska
+2016-08-08 22:10:03.1048 INFO neki info message - intern name
+2016-08-08 22:10:03.1048 INFO neki info message - intern name
+2016-08-08 22:10:07.2144 FATAL fatalna greska
+2016-08-08 22:10:07.2144 FATAL fatalna greska
+2016-08-08 22:10:07.2925 INFO neki info message - intern name
+2016-08-08 22:10:07.2925 INFO neki info message - intern name
+2016-08-08 22:10:10.0270 FATAL fatalna greska
+2016-08-08 22:10:10.0270 FATAL fatalna greska
+2016-08-08 22:10:10.1051 INFO neki info message - intern name
+2016-08-08 22:10:10.1051 INFO neki info message - intern name

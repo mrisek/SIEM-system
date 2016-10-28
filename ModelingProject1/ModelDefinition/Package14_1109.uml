@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="a61b0b04-afe1-42e6-aa4e-0d7ea787e108"
+  name="Config"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a46afea6-686d-4092-b5b7-8c95a97f055a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DNLog.Config"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e437033a-fde3-43a7-9a2a-2e8134725f8b"
+        name="LoggingConfiguration"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="90422f6c-9716-4c0d-89be-8e7f021ee86a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FNLog.4.3.7%2Flib%2Fnet45%2FNLog.dll&quot; Namespace%3DNLog.Config Type%3DLoggingConfiguration"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d1d9aceb-53b0-47fc-b432-c0a32e02906f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="601d592a-5ccd-43ac-b289-63d0a13af644">
+                <propertyInstance
+                  Id="6f7f40d7-a72c-4b68-b82a-84f99a3e6f13"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="142222b7-de97-4036-95b8-9b447c6a63e5">
+                <propertyInstance
+                  Id="595c13f6-50b3-488f-bcb1-397375b859a2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa9a174e-8285-4650-8f53-588605d6ff7d">
+                <propertyInstance
+                  Id="91847048-1084-474b-856e-fbe436c8f7be"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47d2a830-d940-4c90-8e20-576ad3c82857">
+                <propertyInstance
+                  Id="3d919f99-a444-4734-9fe0-94f8b6bd193a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6cf3d65d-883d-4170-85ed-548ed12d1740">
+                <propertyInstance
+                  Id="c0cf7be3-18a6-4b18-9dd0-9272ea77717a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bab6a1cf-e602-4673-87e2-067bf2bce2fa"
+        name="LoggingConfigurationChangedEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="106020f8-9271-49c5-b564-eb5156d08297"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FNLog.4.3.7%2Flib%2Fnet45%2FNLog.dll&quot; Namespace%3DNLog.Config Type%3DLoggingConfigurationChangedEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5d953677-b783-4f43-837b-48f635b14075"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8ecc71f-59ae-4940-8988-7f6951c5b188">
+                <propertyInstance
+                  Id="515adbba-7ea8-435d-96a6-0e3f99e4f356"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9debfc54-9fc8-42e3-8c0a-6cb9768096cd">
+                <propertyInstance
+                  Id="2550ce83-d139-42e4-961f-96fd10d0be17"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="289e9673-1587-4710-a7e7-741b1d1f6d6e">
+                <propertyInstance
+                  Id="0dfa9e19-ef8a-4154-818b-fd25430fdd65"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7f85821c-d070-4f21-90c9-d70036beb878">
+                <propertyInstance
+                  Id="325157c6-4c78-4a75-81fd-07fe2ecf82e5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fc2d494-8253-48b1-bff6-b3275fce713d">
+                <propertyInstance
+                  Id="471c312c-42e1-4dcc-b1eb-0e5ecea72693"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4505087c-4202-4f19-a21f-5c81b7c3fe3c"
+        name="LoggingConfigurationReloadedEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="08af70db-0146-4c26-a147-78bb717be095"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FNLog.4.3.7%2Flib%2Fnet45%2FNLog.dll&quot; Namespace%3DNLog.Config Type%3DLoggingConfigurationReloadedEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="997797eb-870a-4173-820b-adae295d8be5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2ec7320-73bc-4a4b-bf3b-b3572d50750a">
+                <propertyInstance
+                  Id="cef0f0aa-0c53-4bb9-976a-06da4e955bb0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="498b4923-2a48-4944-81f8-ce5e54a3b5b4">
+                <propertyInstance
+                  Id="6ae0c344-ac6b-4b1e-a412-5a59bcbb42f7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b28ba1e3-18b8-4a02-a502-031ac6b959c4">
+                <propertyInstance
+                  Id="aae0eef3-4a0e-42e2-bc02-6c99d01c9257"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49d6d04f-4285-4bb6-8401-01bc95487ef4">
+                <propertyInstance
+                  Id="51f7cd7b-0da4-4e45-bccd-38babcc0252d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0d6a0b1a-0a33-4a8d-acc6-f4526fa864c5">
+                <propertyInstance
+                  Id="375a5af1-306f-45c4-9891-0df2d6afc46e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

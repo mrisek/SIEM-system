@@ -1,0 +1,1761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9faa763b-28a3-45f4-8c2a-8f8bba8f1f39"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="6139ad61-64fd-4650-aade-314a96a3157a">
+      <body>Programski jezik:
+C#
+
+Razvojna okolina:
+Microsoft Visual Studio Ultimate 2013
+
+Frameworks:
+.NET 4.5, LINQ, SOAP, NLog 4.3.7
+
+Cilj projekta je napraviti prototip SIEM sustava korištenjem NLog 4.3.7 frameworka za logiranje unutar postojeće "Skype for bussines" aplikacije. Osnovna funkcionalnost sustava za upravljanje informacijama i događajima je prikaz, pohrana i dinamički ispis log poruka. Upotrebom klase Socket i TCP protokola razvijeni su server i klijent koji simuliraju sustav za asinkronu i višedretvenu komunikaciju. Sustav za logiranje mora biti u stanju pratiti sve važne događaje i slati feedback u više sourceva. Najpopularnije značajke sustava za komunikaciju su razmjena poruka i kolekcija podataka, a osim toga, logging sustav mora ispravno raditi i prilikom delay-ja, connect-a, disconnect-a i lock-a. Kolekcije koje se šalju putem Socket-a potrebno je serijalizirati na jednoj i deserijalizirati na drugoj strani prilikom čega je korišten SOAP protokol, te klase MemoryStream i XElement za izradu XML stabala. Sustav za logging podržava značajke poput automatskog generiranja naziva datoteke i automatskog zapisa u drugu datoteku ukoliko on premaši određenu vrijednost, dok se kompletna konfiguracija loggera vrši putem datoteke NLog.config.</body>
+    </comment>
+    <comment
+      Id="001aedb4-38ff-4abe-b284-e1539be20955">
+      <body>Networking namespaces:
+
+- System
+- System.Collections.Generic
+- System.IO
+- System.Linq
+- System.Net
+- System.Net.Sockets
+- System.Text
+- System.Threading
+- System.Xml.Linq
+- System.Xml.Serialization</body>
+    </comment>
+    <comment
+      Id="50ce9dbd-51d8-4fe2-9d54-f86f21714c4b">
+      <body>Serialization namespaces:
+
+System
+System.Collections.Generic
+System.IO
+System.Runtime.Serialization.Formatters.Soap
+using System.Xml.Serialization</body>
+    </comment>
+    <comment
+      Id="571c8a1b-0eda-4e2c-a9ac-e8c8449fb6bc">
+      <body>Logging namespaces:
+
+- NLog
+
+
+Other:
+
+- System.Threading
+- System.Threading.Tasks
+- System.Configuration</body>
+    </comment>
+    <comment
+      Id="9bbf7946-093d-44a8-a8ee-c521bb389821">
+      <body>Ispis u više sourceva:
+
+Log datoteka (*.log )
+Event Viewer
+Naredbeni redak (konzola)
+Sentinel 0.12.4.0
+BareTail 3.50a</body>
+    </comment>
+    <comment
+      Id="1a6fda13-0277-4c1b-8d56-703b9e2e2514">
+      <body>Značaj log monitoringa:
+
+Logging je neophodan za rješavanje bugova aplikacije.
+
+Programer će najprije zatražiti log file od klijenta kako bi otkrio točno vrijeme i mjesto nastanka greške, te pokušao reproducirati bug.</body>
+    </comment>
+    <comment
+      Id="41611677-0fdf-4a9a-8925-52081479a227">
+      <body>Tema projekta:
+
+Prototip SIEM sustava
+
+(Security Information and Event Management System Prototype)</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="b4eebbf9-24ac-4b12-ad7d-522938d3557d">
+      <profileInstance
+        Id="bc5b64be-277b-41ad-ae47-4dfbc988439a"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="06a34901-9d89-47bc-9e81-629358d1d1f4">
+      <profileInstance
+        Id="f4abe6dc-fb9c-4b52-88e1-2ecaeace2e14"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d22b4df6-d3eb-4811-b029-c97c38d6dbb5"
+        LastKnownName="NLog"
+        LastKnownLocation="Package_1109.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4adaccd3-801c-4e9e-b90d-65de7d582585"
+        LastKnownName="System"
+        LastKnownLocation="Package1_1109.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5cc182e2-f9c4-44cd-9e7f-2268dea543da"
+        LastKnownName="Package1"
+        LastKnownLocation="Package18_1109.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="27a1c3b9-6b04-44a9-87cb-c8d4aa94b055"
+        name="Serialization.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b0523ee5-95d4-4e4c-ad3d-005a5941ea19"
+            isSubstitutable="false">
+            <componentMoniker
+              Id="ec0c1866-1cf3-4b30-90ea-e1e0f9175770"
+              LastKnownName="Networking.cs"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ec0c1866-1cf3-4b30-90ea-e1e0f9175770"
+        name="Networking.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1ea95a30-8bfe-495d-b673-9108b7ed8869"
+        name="Logging.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c22ec648-0aa2-4a1a-bf10-50b8f99a550a"
+        name="Korisnik 1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9a9172f0-9137-442c-8562-cea446355a12"
+            isDerived="false"
+            sourceEndRoleName="Korisnik 1"
+            targetEndRoleName="Slanje poruka"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e0ef8b9-e6ca-49ad-a011-a0317f4aae29"
+              LastKnownName="Slanje poruka"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c85a61a-72e1-4527-b121-cc3f27808cb5"
+                  name="Korisnik 1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="468222f0-6885-4c8d-8f79-f02bf28f19ec"
+                  name="Slanje poruka"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b28d612-4e43-409a-ac81-b3a65a2cbe71"
+            isDerived="false"
+            sourceEndRoleName="Korisnik 1"
+            targetEndRoleName="Slanje kolekcija podataka"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6e909be8-d98d-4a0d-9281-e7ed75ca1446"
+              LastKnownName="Slanje kolekcija podataka"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfa19246-49ab-4c0a-99ab-fc298d597a6f"
+                  name="Korisnik 1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bae83e69-8e65-4ba1-97cd-678eed28faf0"
+                  name="Slanje kolekcija podataka"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e0ef8b9-e6ca-49ad-a011-a0317f4aae29"
+        name="Slanje poruka"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="82169367-8510-47c2-b37b-c0ea6d0a1778">
+            <useCaseMoniker
+              Id="03bc84f8-8913-4498-a1a2-16fc3e364770"
+              LastKnownName="Serijalizacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="15006c19-a35e-48e0-ab02-0203abf976a5">
+            <useCaseMoniker
+              Id="f3c72ec5-5f6b-4749-8656-481d34be0dca"
+              LastKnownName="Komunikacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ec19b1dc-01f7-460a-8044-651fcf1dabaa"
+        name="Korisnik 2"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a4818c33-d26e-4c7a-a15f-2cadff29ba47"
+            isDerived="false"
+            sourceEndRoleName="Korisnik 2"
+            targetEndRoleName="Slanje poruka"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b650b983-622e-49f2-b253-a073cdccfc8c"
+              LastKnownName="Slanje poruka"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64cb37ab-2027-4c19-8d43-9da2f85fe9c7"
+                  name="Korisnik 2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d47e7fe8-937c-428d-ba1c-a163e9781590"
+                  name="Slanje poruka"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8d4eaf0d-0a22-411e-ab59-1a15a8cc02dc"
+            isDerived="false"
+            sourceEndRoleName="Korisnik 2"
+            targetEndRoleName="Slanje kolekcija podataka"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d487d36d-25d2-4fd5-b1c8-4e005b925b20"
+              LastKnownName="Slanje kolekcija podataka"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="558f1b2c-7a38-40e5-8b55-ffdb6c7d5726"
+                  name="Korisnik 2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c467033e-c2ad-416c-b77a-2aa12d2aaad8"
+                  name="Slanje kolekcija podataka"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6e909be8-d98d-4a0d-9281-e7ed75ca1446"
+        name="Slanje kolekcija podataka"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c937b513-32f4-4015-961b-daf58dcd15ba">
+            <useCaseMoniker
+              Id="03bc84f8-8913-4498-a1a2-16fc3e364770"
+              LastKnownName="Serijalizacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="192b0a30-9f9f-46a4-a4de-9e096d20df6d">
+            <useCaseMoniker
+              Id="f3c72ec5-5f6b-4749-8656-481d34be0dca"
+              LastKnownName="Komunikacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d487d36d-25d2-4fd5-b1c8-4e005b925b20"
+        name="Slanje kolekcija podataka"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f279775f-1aa0-45bf-ac84-8cf9a9e66a27">
+            <useCaseMoniker
+              Id="2f1ec8ce-709e-4551-a928-b1f51edd1495"
+              LastKnownName="Serijalizacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="853db1de-2da8-4364-b1bd-a2f53fde7bac">
+            <useCaseMoniker
+              Id="f3c72ec5-5f6b-4749-8656-481d34be0dca"
+              LastKnownName="Komunikacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b650b983-622e-49f2-b253-a073cdccfc8c"
+        name="Slanje poruka"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ae868ed2-55d6-480d-8fc8-44d73540ba3f">
+            <useCaseMoniker
+              Id="2f1ec8ce-709e-4551-a928-b1f51edd1495"
+              LastKnownName="Serijalizacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="90f674c5-1356-4564-ab95-df6abe89c7d6">
+            <useCaseMoniker
+              Id="f3c72ec5-5f6b-4749-8656-481d34be0dca"
+              LastKnownName="Komunikacija"
+              LastKnownLocation="ModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="46a82b19-d4ff-46a8-af23-f34a5e32a8d3"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="a8f8537b-9b50-4f7a-b0a0-de1e060fe891"
+        name="Sustav za komunikaciju"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="d1060309-02fa-467e-b761-62aebb389fa4"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03bc84f8-8913-4498-a1a2-16fc3e364770"
+        name="Serijalizacija"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="80506f6d-0063-4e43-b742-0707662454bf">
+            <subsystemMoniker
+              Id="b70f7aa3-64f0-4676-8167-f2de0f93ccb4"
+              LastKnownName="Networking"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="655d6da4-47a1-43f3-a3ad-d776b8248bfa">
+            <subsystemMoniker
+              Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca"
+              LastKnownName="Networking.cs"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2f1ec8ce-709e-4551-a928-b1f51edd1495"
+        name="Serijalizacija"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="eac954d7-c1cf-433c-8986-3205f00f8a10">
+            <subsystemMoniker
+              Id="b70f7aa3-64f0-4676-8167-f2de0f93ccb4"
+              LastKnownName="Networking"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="cc651950-6761-4451-b760-3e75e587d994">
+            <subsystemMoniker
+              Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca"
+              LastKnownName="Networking.cs"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="145f8832-481e-411a-80a7-332539f8a680"
+        name="Artifact2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="887560a7-819d-4456-9b89-8f9392b9ea60"
+        name="NLog platform"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f9ba3cbd-e40c-41ed-949f-fccae3c829ca">
+            <useCaseMoniker
+              Id="c28538e1-f5b4-4f4b-b9bd-04eee35b0ede"
+              LastKnownName="Prikupljanje logova"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="d9eadabe-c236-48bc-9334-6fedf0c75f5e">
+            <useCaseMoniker
+              Id="5b4f9977-1c1c-4041-a6e8-2added9943bd"
+              LastKnownName="Event Viewer"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="45d27d54-6ffc-4029-94c1-6858076743f3">
+            <useCaseMoniker
+              Id="b5c8b3a4-8eb5-4274-b6f2-b1a5f237ceea"
+              LastKnownName="konzola"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="9d4b40df-84ee-4128-a4ce-6fbf1a1bd61e">
+            <useCaseMoniker
+              Id="70d83c52-f6c7-465d-a8fd-cda6e20c82d5"
+              LastKnownName="Sentinel"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+          <dependency
+            Id="a3c6e8dd-89ac-4e76-9af2-ac54769e05bd">
+            <useCaseMoniker
+              Id="305bb283-9f09-4aa8-916e-e9e0d9eb9b72"
+              LastKnownName="BareTail"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c28538e1-f5b4-4f4b-b9bd-04eee35b0ede"
+        name="Prikupljanje logova"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b4f9977-1c1c-4041-a6e8-2added9943bd"
+        name="Event Viewer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b5c8b3a4-8eb5-4274-b6f2-b1a5f237ceea"
+        name="konzola"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70d83c52-f6c7-465d-a8fd-cda6e20c82d5"
+        name="Sentinel"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="305bb283-9f09-4aa8-916e-e9e0d9eb9b72"
+        name="BareTail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b70f7aa3-64f0-4676-8167-f2de0f93ccb4"
+        name="Networking"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9ed9fc35-3a16-4c11-8c50-7ffea0a25449">
+            <actorMoniker
+              Id="887560a7-819d-4456-9b89-8f9392b9ea60"
+              LastKnownName="NLog platform"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="25816a4c-81d0-421f-a9a8-a8d1e0232e86"
+        name="Logging.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="64f4f14e-c3d2-4f0a-9f67-fc899599ebb6"
+            isDerived="false"
+            sourceEndRoleName="Logging"
+            targetEndRoleName="NLog platform"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="887560a7-819d-4456-9b89-8f9392b9ea60"
+              LastKnownName="NLog platform"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b4bb2b6-e1da-4ec5-9600-9b81998ff217"
+                  name="Logging"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e074cf67-eac1-4008-b079-3cc5fe7aaa1a"
+                  name="NLog platform"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca"
+        name="Networking.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1abe056a-148f-46dc-bb4a-e33d8ef8ac90"
+            isDerived="false"
+            sourceEndRoleName="Networking"
+            targetEndRoleName="Logging"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="25816a4c-81d0-421f-a9a8-a8d1e0232e86"
+              LastKnownName="Logging.cs"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06e24ec4-8151-49c1-bed9-e083a43957f9"
+                  name="Networking"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f3b0b47-aca1-4f48-aa69-6298a7e51c24"
+                  name="Logging"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="4e3b6859-50bf-4a6a-a875-70000c0e8557"
+        name="Serialization.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b056c369-9ab2-4beb-9b26-c5cac45d0d32"
+            isDerived="false"
+            sourceEndRoleName="Serialization"
+            targetEndRoleName="Networking"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca"
+              LastKnownName="Networking.cs"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="333c7291-e69b-4f7e-9713-af08f056f9ca"
+                  name="Serialization"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7ae4c57-6c28-42db-8a1f-411031bd7cb9"
+                  name="Networking"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="23dda768-c3fe-4cff-bb32-4579ebf2d503"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f3c72ec5-5f6b-4749-8656-481d34be0dca"
+        name="Komunikacija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="99ec96aa-db1f-4a10-8b8a-a1c5e3fb53ca"
+            LastKnownName="Networking.cs"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c9c2086-3aa5-482d-978d-959ceaa2dedc"
+        name="Logiranje"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a6d5ed56-7961-49cd-9e14-40f172abdef6"
+        name="Serijalizacija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4e3b6859-50bf-4a6a-a875-70000c0e8557"
+            LastKnownName="Serialization.cs"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b56052a-74aa-4278-93c8-92ecc0843825"
+        name="Deserijalizacija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="4e3b6859-50bf-4a6a-a875-70000c0e8557"
+            LastKnownName="Serialization.cs"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="324fc233-7524-4e1a-8ad2-eb6a9b3b50f3"
+        name="Event Viewer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6c3f2b4f-d3ae-4e9f-973c-f65c58b2a917"
+            isDerived="false"
+            sourceEndRoleName="Event Viewer"
+            targetEndRoleName="Detekcija sigurnosnih incidenata"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c4ff87dd-9992-42d6-9945-7b75de091086"
+              LastKnownName="Detekcija sigurnosnih incidenata"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02769ca8-5261-462d-a91f-27d5212c105b"
+                  name="Event Viewer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="772f6c24-5f93-49ae-bcb3-15da00b2523e"
+                  name="Detekcija sigurnosnih incidenata"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="598a84e1-5342-4017-90e1-233ebdf8e946"
+        name="Konzola"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8e40e3bb-e4cc-46a6-b05d-fd214e8f8ab4"
+            isDerived="false"
+            sourceEndRoleName="Konzola"
+            targetEndRoleName="Nadgledanje i uzbunjivanje"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="805208d8-751b-4ac4-b5e2-34875f25acd4"
+              LastKnownName="Nadgledanje i uzbunjivanje"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4616aa61-06d3-4c7a-aabb-6cedb8e66b98"
+                  name="Konzola"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="702edabd-02d8-48a6-aca8-c13c893b02d2"
+                  name="Nadgledanje i uzbunjivanje"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="904c70d1-19fb-4904-8bbd-9ef9a874bd59"
+        name="Sentinel"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8daa87af-5be4-4086-8e6c-db637ec18191"
+            isDerived="false"
+            sourceEndRoleName="Sentinel"
+            targetEndRoleName="Nadgledanje i uzbunjivanje"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="805208d8-751b-4ac4-b5e2-34875f25acd4"
+              LastKnownName="Nadgledanje i uzbunjivanje"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ceef866f-8135-4a32-8de5-61248244a8c3"
+                  name="Sentinel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5eaff7a-10ee-4bc9-a73e-dc848a952efd"
+                  name="Nadgledanje i uzbunjivanje"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f223f479-df24-49d9-8cfa-97dab6ec7591"
+            isDerived="false"
+            sourceEndRoleName="Sentinel"
+            targetEndRoleName="Prioritizacija događaja"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ad54a172-c0ca-41b7-ad2f-6fcbb3566fb3"
+              LastKnownName="Prioritizacija događaja"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="020a6f61-6b65-4ba9-ab12-7650cd8053c0"
+                  name="Sentinel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0048541-046c-462e-bec9-f9001e486c48"
+                  name="Prioritizacija događaja"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c1c96075-ad86-421f-b041-840a44aecba9"
+        name="BareTail"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="86769d38-c567-43cf-acad-549082bf0028"
+            isDerived="false"
+            sourceEndRoleName="BareTail"
+            targetEndRoleName="Arhiviranje logova"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="809c57f1-ecd3-498c-9e20-9eac0852875e"
+              LastKnownName="Arhiviranje logova"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dabbaeed-99b9-4179-976c-0d188d62aa13"
+                  name="BareTail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab886f32-4412-40ad-89f4-a1c3f0de0d5c"
+                  name="Arhiviranje logova"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4db9c11d-bda3-43fd-83f9-9eb187cc8e68"
+            isDerived="false"
+            sourceEndRoleName="BareTail"
+            targetEndRoleName="Kreiranje izvještaja"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="90fdef24-88c9-4c0f-a639-1c6699495100"
+              LastKnownName="Kreiranje izvještaja"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ea99312-c543-4f73-b5ee-a9bccb5c9547"
+                  name="BareTail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c017ecf9-0118-4f21-803a-5fcdbda5a96c"
+                  name="Kreiranje izvještaja"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1577c6fd-12cf-468f-8986-4aab6cd91acc"
+        name="Analiza logova"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="d24943bc-19f0-4cf4-b040-41f076dcda3f">
+            <subsystemMoniker
+              Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+              LastKnownName="Log Analisis"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="14d37c07-3133-401c-9eaa-01e2b70d1833"
+        name="Prikupljanje logova"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="5bf18133-1b04-496a-973e-6466f41a0294"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="933a7884-3c69-4779-a93e-155c23abfdf9"
+              LastKnownName="Upravljanje logovima"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+          <generalization
+            Id="3eef9be1-ae2b-41c5-9402-cca1335f9716"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="1577c6fd-12cf-468f-8986-4aab6cd91acc"
+              LastKnownName="Analiza logova"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="25816a4c-81d0-421f-a9a8-a8d1e0232e86"
+            LastKnownName="Logging.cs"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4ff87dd-9992-42d6-9945-7b75de091086"
+        name="Detekcija sigurnosnih incidenata"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ad54a172-c0ca-41b7-ad2f-6fcbb3566fb3"
+        name="Prioritizacija događaja"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90fdef24-88c9-4c0f-a639-1c6699495100"
+        name="Kreiranje izvještaja"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="805208d8-751b-4ac4-b5e2-34875f25acd4"
+        name="Nadgledanje i uzbunjivanje"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="809c57f1-ecd3-498c-9e20-9eac0852875e"
+        name="Arhiviranje logova"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="933a7884-3c69-4779-a93e-155c23abfdf9"
+        name="Upravljanje logovima"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7917a4d5-1a0c-4662-9e68-b428e18f3e6a">
+            <subsystemMoniker
+              Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+              LastKnownName="Log Management"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="04d65981-6d82-4f43-a5c1-285c05159841"
+        name="Raščlanjivanje zapisa"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f721c1e2-2366-42db-8388-028b4c941f24"
+        name="Filtriranje događaja"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9a9b8412-7c1d-44ba-81c8-fa62bfed3b92"
+        name="Spajanje događaja"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="012cd297-e40b-475f-a685-434c162f3fe0"
+        name="Rotacija logova"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71a23d20-e5bd-4f79-9f46-3a79e5692740"
+        name="Arhiviranje logova"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0579e5fd-76b9-408e-ac0c-de9bb7354f39"
+        name="Prioritizacija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0622867-f6c6-4faa-82d5-506cf5e81f00"
+        name="Klasifikacija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ef990107-5036-4390-9c6d-7aab49865607"
+        name="Označavanje"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80c8f69d-789a-426f-82f1-704947fbff70"
+        name="Korelacijska analiza"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="04018358-116d-41ed-8149-28041f3e27cc"
+        name="Analiza u stvarnom vremenu"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b5049c40-f48b-4ff5-a84b-977fc041077d"
+        name="Umjetno neznanje"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+            LastKnownName="Log Analisis"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="80471517-a188-4bdd-a62d-6a2809c89ac2"
+        name="Splunk Light"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="af3b96be-a3ff-4ab7-a635-067d96b31af9"
+        name="Graylog"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ea0dea66-8094-455b-ab5a-b7f9738ef957"
+        name="Event Viewer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="bcc095fc-0f8d-4a06-a28d-280d5842e5fd"
+        name="Task Scheduler"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+        name="Log Management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e0196b0a-8192-4218-8dcf-ce8d52832bc4"
+            isDerived="false"
+            sourceEndRoleName="Log Management"
+            targetEndRoleName="Windows Firewall"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="bee361f9-a1af-4e7c-aaf3-64bdf2eb3300"
+              LastKnownName="Windows Firewall"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bfde120-0062-46de-a26b-5767177efde7"
+                  name="Log Management"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70f51818-db05-4bcd-9273-9aa16f2530ed"
+                  name="Windows Firewall"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="96e86ba3-d65d-4156-afed-b1a22f268529"
+            isDerived="false"
+            sourceEndRoleName="Log Management"
+            targetEndRoleName="Event Viewer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="324fc233-7524-4e1a-8ad2-eb6a9b3b50f3"
+              LastKnownName="Event Viewer"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="614e0f23-50a9-4f2d-8d2f-dd42aee14c1b"
+                  name="Log Management"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="190d2648-3b13-4f1e-94a3-20202100874b"
+                  name="Event Viewer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d3c74eb3-848f-4df7-a4a4-0bda1edb8658"
+            isDerived="false"
+            sourceEndRoleName="Log Management"
+            targetEndRoleName="Konzola"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="598a84e1-5342-4017-90e1-233ebdf8e946"
+              LastKnownName="Konzola"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faf15352-74aa-4c0e-94cd-57c7ced197e1"
+                  name="Log Management"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5998d2a4-1c2e-4ab4-91a7-0aef2d200a1a"
+                  name="Konzola"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e9830ccd-249b-4323-981b-3e78da12920c"
+            isDerived="false"
+            sourceEndRoleName="Log Management"
+            targetEndRoleName="BareTail"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="c1c96075-ad86-421f-b041-840a44aecba9"
+              LastKnownName="BareTail"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4166aba6-13cc-45ac-88c6-ea5c5414ee54"
+                  name="Log Management"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="92601221-e9c2-41b8-93e7-90b9b5a35858"
+                  name="BareTail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec89e5c3-815b-4d48-a7ff-18ea74edf1cb"
+        name="Kompresija"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9b12dc0e-e814-4b11-afd9-1355be9abc4e"
+            LastKnownName="Log Management"
+            LastKnownLocation="ModelingProject1.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c04f1179-77d0-46c1-8b48-96ba7e39e305"
+        name="Log Analisis"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d210ca1d-408f-48c2-9937-0c08996bf898"
+            isDerived="false"
+            sourceEndRoleName="Log Analisis"
+            targetEndRoleName="Sentinel"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="904c70d1-19fb-4904-8bbd-9ef9a874bd59"
+              LastKnownName="Sentinel"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ce128db-a833-4193-b808-d2dc7dd78246"
+                  name="Log Analisis"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b279ac2-8225-468f-9dbf-edbd9f10ea86"
+                  name="Sentinel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="31192c3c-4804-49e9-bd59-575ebd0fef6f"
+            isDerived="false"
+            sourceEndRoleName="Log Analisis"
+            targetEndRoleName="Splunk Light"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="80471517-a188-4bdd-a62d-6a2809c89ac2"
+              LastKnownName="Splunk Light"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="746abc6b-93a1-4440-b71e-3b07658de928"
+                  name="Log Analisis"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dfba6fb-1e88-4bd1-8e97-2a11f0942dc6"
+                  name="Splunk Light"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9fbd68ca-d07c-4e49-80c3-a516df16db9d"
+            isDerived="false"
+            sourceEndRoleName="Log Analisis"
+            targetEndRoleName="Task Scheduler"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="bcc095fc-0f8d-4a06-a28d-280d5842e5fd"
+              LastKnownName="Task Scheduler"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83ba5419-8bf2-4801-9696-09823e124567"
+                  name="Log Analisis"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="886ccf04-ce81-4beb-af18-703f1072b6b8"
+                  name="Task Scheduler"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c30b0b11-6009-483a-b986-e5224e1719ae"
+            isDerived="false"
+            sourceEndRoleName="Log Analisis"
+            targetEndRoleName="Event Viewer"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="ea0dea66-8094-455b-ab5a-b7f9738ef957"
+              LastKnownName="Event Viewer"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0bd3bb8-29e3-43ac-a3eb-50994945d1b7"
+                  name="Log Analisis"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a32c4760-3275-4e3c-9d2a-5ba65316370b"
+                  name="Event Viewer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="bee361f9-a1af-4e7c-aaf3-64bdf2eb3300"
+        name="Windows Firewall"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

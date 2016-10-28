@@ -1,0 +1,9 @@
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.exe.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.dll
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLog.xml
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.csprojResolveAssemblyReference.cache

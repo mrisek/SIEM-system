@@ -1,0 +1,2 @@
+2016-08-16 21:14:11.6433 NLogPOC.Program Server message sent to - 127.0.0.1:14620
+2016-08-16 21:14:16.6904 NLogPOC.Program Client disconnected - 127.0.0.1:8080

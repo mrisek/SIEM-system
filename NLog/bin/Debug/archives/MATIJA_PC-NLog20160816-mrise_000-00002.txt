@@ -1,0 +1,1 @@
+2016-08-16 21:49:19.9370 NLogPOC.Program Client disconnected - 127.0.0.1:8080

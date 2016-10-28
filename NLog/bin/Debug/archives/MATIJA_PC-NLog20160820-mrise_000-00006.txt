@@ -1,0 +1,2 @@
+2016-08-20 13:58:04.9167 NLog.Logging Client connected - 127.0.0.1:10558
+2016-08-20 13:58:04.9167 NLog.Logging Connected  - 127.0.0.1:8080

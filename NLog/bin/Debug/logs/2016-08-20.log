@@ -1,0 +1,268 @@
+2016-08-20 13:57:27.7586 INFO Sample informational message
+2016-08-20 13:57:27.7586 INFO Sample informational message
+2016-08-20 13:57:27.7743 WARN Sample warning message
+2016-08-20 13:57:27.7743 WARN Sample warning message
+2016-08-20 13:57:27.8211 ERROR Sample error message
+2016-08-20 13:57:27.8211 ERROR Sample error message
+2016-08-20 13:57:27.8368 FATAL Sample fatal error message
+2016-08-20 13:57:27.8368 FATAL Sample fatal error message
+2016-08-20 13:57:27.8368 INFO Sample informational message
+2016-08-20 13:57:27.8368 INFO Sample informational message
+2016-08-20 13:57:27.8524 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:27.8524 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:27.8680 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:27.8680 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:51.0098 INFO Sample informational message
+2016-08-20 13:57:51.0098 INFO Sample informational message
+2016-08-20 13:57:51.0254 WARN Sample warning message
+2016-08-20 13:57:51.0254 WARN Sample warning message
+2016-08-20 13:57:51.0254 ERROR Sample error message
+2016-08-20 13:57:51.0254 ERROR Sample error message
+2016-08-20 13:57:51.0410 FATAL Sample fatal error message
+2016-08-20 13:57:51.0410 FATAL Sample fatal error message
+2016-08-20 13:57:51.0566 INFO Sample informational message
+2016-08-20 13:57:51.0566 INFO Sample informational message
+2016-08-20 13:57:51.1191 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:51.1191 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:51.1191 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:51.1191 INFO Sample informational message, a=23, b=54
+2016-08-20 13:57:56.8851 INFO Server is running
+2016-08-20 13:57:56.8851 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:57:56.8851 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:57:56.8851 INFO Server is running
+2016-08-20 13:57:56.9007 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:57:56.9007 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:57:56.9163 INFO Client connected - 127.0.0.1:10555
+2016-08-20 13:57:56.9163 INFO Client connected - 127.0.0.1:10555
+2016-08-20 13:57:56.9319 INFO Server message sent to - 127.0.0.1:10555
+2016-08-20 13:57:56.9319 INFO Server message sent to - 127.0.0.1:10555
+2016-08-20 13:57:56.9319 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 13:57:56.9319 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 13:57:56.9475 INFO Client connected - 127.0.0.1:10556
+2016-08-20 13:57:56.9475 INFO Client connected - 127.0.0.1:10556
+2016-08-20 13:57:56.9475 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 13:57:56.9475 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 13:57:56.9632 INFO Server message sent to - 127.0.0.1:10556
+2016-08-20 13:57:56.9632 INFO Server message sent to - 127.0.0.1:10556
+2016-08-20 13:58:01.9947 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 13:58:01.9947 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 13:58:01.9947 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:01.9947 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:02.0103 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:02.0103 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:04.9167 INFO Client connected - 127.0.0.1:10558
+2016-08-20 13:58:04.9167 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:58:04.9167 ERROR Unable to read server message - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.StartClient() in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 387
+2016-08-20 13:58:04.9167 INFO Client connected - 127.0.0.1:10558
+2016-08-20 13:58:04.9167 INFO Connected  - 127.0.0.1:8080
+2016-08-20 13:58:04.9167 ERROR Unable to read server message - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.StartClient() in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 387
+2016-08-20 13:58:04.9323 INFO Server message sent to - 127.0.0.1:10558
+2016-08-20 13:58:04.9323 INFO Server message sent to - 127.0.0.1:10558
+2016-08-20 13:58:04.9479 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 13:58:04.9479 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 13:58:04.9792 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 13:58:04.9792 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 13:58:09.9951 ERROR Unable to handle delay and disconnect - System.InvalidOperationException: The operation is not allowed on non-connected sockets.
+   at System.Net.Sockets.TcpClient.GetStream()
+   at NLog.Networking.StartClient() in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 451
+2016-08-20 13:58:09.9951 ERROR Unable to handle delay and disconnect - System.InvalidOperationException: The operation is not allowed on non-connected sockets.
+   at System.Net.Sockets.TcpClient.GetStream()
+   at NLog.Networking.StartClient() in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 451
+2016-08-20 13:58:09.9951 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 13:58:10.0107 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:10.0107 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 13:58:09.9951 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 13:58:10.0107 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 320
+2016-08-20 13:58:10.0107 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:13:36.4445 INFO Sample informational message
+2016-08-20 14:13:36.4445 INFO Sample informational message
+2016-08-20 14:13:36.4602 WARN Sample warning message
+2016-08-20 14:13:36.4602 WARN Sample warning message
+2016-08-20 14:13:36.4758 ERROR Sample error message
+2016-08-20 14:13:36.4758 ERROR Sample error message
+2016-08-20 14:13:36.4914 FATAL Sample fatal error message
+2016-08-20 14:13:36.4914 FATAL Sample fatal error message
+2016-08-20 14:13:36.5070 INFO Sample informational message
+2016-08-20 14:13:36.5070 INFO Sample informational message
+2016-08-20 14:13:36.5227 INFO Sample informational message, a=23, b=54
+2016-08-20 14:13:36.5227 INFO Sample informational message, a=23, b=54
+2016-08-20 14:13:36.5383 INFO Sample informational message, a=23, b=54
+2016-08-20 14:13:36.5383 INFO Sample informational message, a=23, b=54
+2016-08-20 14:15:04.0933 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:04.0933 INFO Server is running
+2016-08-20 14:15:04.0933 INFO Server is running
+2016-08-20 14:15:04.0933 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:04.1402 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:04.1558 INFO Client connected - 127.0.0.1:10591
+2016-08-20 14:15:04.1402 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:04.1558 INFO Client connected - 127.0.0.1:10591
+2016-08-20 14:15:04.1871 INFO Server message sent to - 127.0.0.1:10591
+2016-08-20 14:15:04.1871 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:04.1871 INFO Server message sent to - 127.0.0.1:10591
+2016-08-20 14:15:04.1871 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:04.2183 INFO Client connected - 127.0.0.1:10592
+2016-08-20 14:15:04.2183 INFO Client connected - 127.0.0.1:10592
+2016-08-20 14:15:04.2183 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:04.2183 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:04.2340 INFO Server message sent to - 127.0.0.1:10592
+2016-08-20 14:15:04.2340 INFO Server message sent to - 127.0.0.1:10592
+2016-08-20 14:15:10.7187 INFO Server is running
+2016-08-20 14:15:10.7187 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:10.8124 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:10.7187 INFO Server is running
+2016-08-20 14:15:10.7187 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:10.8124 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:15:10.8280 INFO Client connected - 127.0.0.1:10594
+2016-08-20 14:15:10.8280 INFO Client connected - 127.0.0.1:10594
+2016-08-20 14:15:10.8593 INFO Server message sent to - 127.0.0.1:10594
+2016-08-20 14:15:10.8593 INFO Server message sent to - 127.0.0.1:10594
+2016-08-20 14:15:10.8593 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:10.8593 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:10.8749 INFO Client connected - 127.0.0.1:10595
+2016-08-20 14:15:10.8749 INFO Client connected - 127.0.0.1:10595
+2016-08-20 14:15:10.8749 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:10.8749 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:15:10.9062 INFO Server message sent to - 127.0.0.1:10595
+2016-08-20 14:15:10.9062 INFO Server message sent to - 127.0.0.1:10595
+2016-08-20 14:16:31.9116 INFO Server is running
+2016-08-20 14:16:31.9116 INFO Server is running
+2016-08-20 14:16:49.1469 INFO Client connected - 127.0.0.1:10596
+2016-08-20 14:16:49.1469 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:16:49.1469 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:16:49.1469 INFO Client connected - 127.0.0.1:10596
+2016-08-20 14:16:49.2406 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2406 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2562 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2562 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2406 INFO Server message sent to - 127.0.0.1:10596
+2016-08-20 14:16:49.2406 INFO Server message sent to - 127.0.0.1:10596
+2016-08-20 14:16:54.2864 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:16:54.2864 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:16:54.3020 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 318
+2016-08-20 14:16:54.3020 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 318
+2016-08-20 14:17:05.7870 INFO Client connected - 127.0.0.1:10597
+2016-08-20 14:17:05.7870 INFO Client connected - 127.0.0.1:10597
+2016-08-20 14:17:05.7870 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:17:05.7870 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:17:05.8026 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:17:05.8026 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:17:05.8182 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:17:05.8182 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:17:05.8026 INFO Server message sent to - 127.0.0.1:10597
+2016-08-20 14:17:05.8026 INFO Server message sent to - 127.0.0.1:10597
+2016-08-20 14:17:10.8497 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:17:10.8497 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:17:10.8653 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 318
+2016-08-20 14:17:10.8653 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 318
+2016-08-20 14:28:06.9912 INFO Server is running
+2016-08-20 14:28:06.9912 INFO Server is running
+2016-08-20 14:28:11.1480 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:28:11.1480 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:28:11.1470 INFO Client connected - 127.0.0.1:10644
+2016-08-20 14:28:11.1470 INFO Client connected - 127.0.0.1:10644
+2016-08-20 14:28:11.2030 INFO Server message sent to - 127.0.0.1:10644
+2016-08-20 14:28:11.2040 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:28:11.2040 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:28:11.2250 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:28:11.2250 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:28:11.2030 INFO Server message sent to - 127.0.0.1:10644
+2016-08-20 14:28:16.2404 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:28:16.2404 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:28:16.2614 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 317
+2016-08-20 14:28:16.2614 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 317
+2016-08-20 14:30:29.1037 INFO Server is running
+2016-08-20 14:30:29.1037 INFO Server is running
+2016-08-20 14:30:45.4295 INFO Client connected - 127.0.0.1:10652
+2016-08-20 14:30:45.4295 INFO Client connected - 127.0.0.1:10652
+2016-08-20 14:30:45.4305 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:30:45.4305 INFO Connected  - 127.0.0.1:8080
+2016-08-20 14:30:45.4455 INFO Server message sent to - 127.0.0.1:10652
+2016-08-20 14:30:45.4455 INFO Server message sent to - 127.0.0.1:10652
+2016-08-20 14:30:45.4535 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:30:45.4535 INFO Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:30:45.4735 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:30:45.4735 INFO Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:30:50.5009 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:30:50.5009 INFO Client disconnected - 127.0.0.1:8080
+2016-08-20 14:30:50.5229 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 317
+2016-08-20 14:30:50.5229 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 317

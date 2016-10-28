@@ -1,0 +1,5 @@
+2016-08-20 14:16:49.1469 NLog.Logging Client connected - 127.0.0.1:10596
+2016-08-20 14:16:49.2406 NLog.Logging Response was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2562 NLog.Logging Collection was sent by client - 127.0.0.1:8080
+2016-08-20 14:16:49.2406 NLog.Logging Server message sent to - 127.0.0.1:10596
+2016-08-20 14:16:54.2864 NLog.Logging Client disconnected - 127.0.0.1:8080

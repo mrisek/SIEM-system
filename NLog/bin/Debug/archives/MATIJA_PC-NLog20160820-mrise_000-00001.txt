@@ -1,0 +1,7 @@
+2016-08-20 13:57:51.0566 NLog.Logging Sample informational message
+2016-08-20 13:57:51.1191 NLog.Logging Sample debug message, a=23, b=54
+2016-08-20 13:57:51.1191 NLog.Logging Sample informational message, a=23, b=54
+2016-08-20 13:57:51.1191 NLog.Logging Sample informational message, a=23, b=54
+2016-08-20 13:57:56.8851 NLog.Logging Server is already running
+2016-08-20 13:57:56.8851 NLog.Logging Connected  - 127.0.0.1:8080
+2016-08-20 13:57:56.8851 NLog.Logging Server is running

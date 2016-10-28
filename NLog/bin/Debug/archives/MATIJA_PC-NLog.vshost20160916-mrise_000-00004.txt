@@ -1,0 +1,2 @@
+2016-09-16 23:04:27.0916 NLog.Logging Server message sent to - 127.0.0.1:54477
+2016-09-16 23:04:32.1224 NLog.Logging Client disconnected - 127.0.0.1:8080

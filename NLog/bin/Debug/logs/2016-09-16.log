@@ -1,0 +1,58 @@
+2016-09-16 22:12:28.6887 INFO Server is running
+2016-09-16 22:12:28.6887 INFO Server is running
+2016-09-16 22:12:39.4704 INFO Connected  - 127.0.0.1:8080
+2016-09-16 22:12:39.4704 INFO Client connected - 127.0.0.1:54332
+2016-09-16 22:12:39.4704 INFO Connected  - 127.0.0.1:8080
+2016-09-16 22:12:39.4704 INFO Client connected - 127.0.0.1:54332
+2016-09-16 22:12:39.4861 INFO Server message sent to - 127.0.0.1:54332
+2016-09-16 22:12:39.4861 INFO Server message sent to - 127.0.0.1:54332
+2016-09-16 22:12:39.5017 INFO Response was sent by client - 127.0.0.1:8080
+2016-09-16 22:12:39.5017 INFO Response was sent by client - 127.0.0.1:8080
+2016-09-16 22:12:39.5173 INFO Collection was sent by client - 127.0.0.1:8080
+2016-09-16 22:12:39.5173 INFO Collection was sent by client - 127.0.0.1:8080
+2016-09-16 22:12:44.5644 INFO Client disconnected - 127.0.0.1:8080
+2016-09-16 22:12:44.5644 INFO Client disconnected - 127.0.0.1:8080
+2016-09-16 22:12:44.6738 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 114
+2016-09-16 22:12:44.6738 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 114
+2016-09-16 22:56:13.4915 INFO Server is running
+2016-09-16 22:56:13.4915 INFO Server is running
+2016-09-16 23:04:11.4922 INFO Server is running
+2016-09-16 23:04:11.4922 INFO Server is running
+2016-09-16 23:04:26.8474 INFO Client connected - 127.0.0.1:54477
+2016-09-16 23:04:26.8474 INFO Connected  - 127.0.0.1:8080
+2016-09-16 23:04:26.8474 INFO Connected  - 127.0.0.1:8080
+2016-09-16 23:04:26.8474 INFO Client connected - 127.0.0.1:54477
+2016-09-16 23:04:27.0916 INFO Response was sent by client - 127.0.0.1:8080
+2016-09-16 23:04:27.0916 INFO Response was sent by client - 127.0.0.1:8080
+2016-09-16 23:04:27.1076 INFO Collection was sent by client - 127.0.0.1:8080
+2016-09-16 23:04:27.1076 INFO Collection was sent by client - 127.0.0.1:8080
+2016-09-16 23:04:27.0916 INFO Server message sent to - 127.0.0.1:54477
+2016-09-16 23:04:27.0916 INFO Server message sent to - 127.0.0.1:54477
+2016-09-16 23:04:32.1224 INFO Client disconnected - 127.0.0.1:8080
+2016-09-16 23:04:32.1224 INFO Client disconnected - 127.0.0.1:8080
+2016-09-16 23:04:32.1434 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.readNewTcpMessage(NetworkStream netstream, Byte[] buffer) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 156
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 113
+2016-09-16 23:04:32.1434 ERROR IOException:  - System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at NLog.Networking.readNewTcpMessage(NetworkStream netstream, Byte[] buffer) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 156
+   at NLog.Networking.listenClient(Object data) in c:\Users\mrise_000\Documents\Visual Studio 2013\Projects\NLog\NLog\Networking.cs:line 113
+2016-09-16 23:26:02.2047 INFO Server is running
+2016-09-16 23:26:02.2047 INFO Server is running
