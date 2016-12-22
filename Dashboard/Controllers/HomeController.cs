@@ -20,17 +20,17 @@ namespace Dashboard.Controllers
             ViewBag.Message = "Your application description page.";
 
 
-            SqlConnection con = new SqlConnection(WebConfigurationManager.AppSettings["SqlDatabaseConnectionString"]);
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = "insert Logs values(12, 'neki_tip', 'neki_source')";
-            con.Open();
-            cmd.ExecuteNonQuery();
+            //SqlConnection con = new SqlConnection(WebConfigurationManager.AppSettings["SqlDatabaseConnectionString"]);
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.Connection = con;
+            //cmd.CommandText = "insert Logs values(12, 'neki_tip', 'neki_source')";
+            //con.Open();
+            //cmd.ExecuteNonQuery();
 
-            cmd.CommandText = "select * from Logs";
-            string text = cmd.ExecuteNonQuery().ToString();
+            //cmd.CommandText = "select * from Logs";
+            //string text = cmd.ExecuteNonQuery().ToString();
 
-            con.Close();
+            //con.Close();
 
             
 

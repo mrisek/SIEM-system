@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="05c40c28-1f3c-481e-b6a0-07db3727976a" name="UMLUseCaseDiagram1" linkedPackageId="a7287966-80c5-4d10-83d0-e0ab2418b42d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="05c40c28-1f3c-481e-b6a0-07db3727976a" name="UMLUseCaseDiagram1" linkedPackageId="a7287966-80c5-4d10-83d0-e0ab2418b42d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="559f064c-1425-4cfb-821a-2221123a927c" name="Korisnik 1" isAbstract="false" isLeaf="false">
@@ -514,6 +514,45 @@
     <useCaseModelRootHasTypes>
       <actor Id="7b74a4bb-b372-4ad0-87eb-a124f1df432c" name="Windows Firewall" isAbstract="false" isLeaf="false">
         <elementDefinition Id="bee361f9-a1af-4e7c-aaf3-64bdf2eb3300" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="459cd218-c5d8-4b44-8fb4-579db374d372" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b412d7d8-826a-4385-aa34-57e8703bef6c" />
+        <targetEnds>
+          <association Id="e727a213-dd1a-41b1-a261-829a1aae7f12" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Log Analisis" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="de15d813-edcb-4ce5-ba46-b2d4d6e0f1c5" LastKnownName="Log Analisis" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69d91425-2bbd-492e-8507-f80c165df5d1" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0dceec6f-85ff-4727-a86a-3f9bb1206371" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8ac478a-2f8f-4425-92c5-d802d7626281" name="Log Analisis" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4db8f819-92ff-4f0a-a86f-b97ef481d548" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ccd86ee-6403-40c5-8606-63aa0eb2848f" />
+          </association>
+          <association Id="b36567d9-e7a4-4457-807a-3c2e8fc89134" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Log Management" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="1fc6ec95-9416-472f-800f-3a67774cbf3f" LastKnownName="Log Management" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6160ef8-b58c-48b0-9085-eda954783b78" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c59504f-23ba-4f80-b01e-2eba6df83453" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a92dd96-f84c-4cb1-a490-4f64f7c313a3" name="Log Management" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27a4bc3f-8d63-4a48-8ebf-a8de3c1244f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="49efb1f0-bbb2-4139-a967-4f7546dec628" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
   </packagedElements>

@@ -7,3 +7,4 @@ C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\NLo
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.exe
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.pdb
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Debug\NLog.csprojResolveAssemblyReference.cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Debug\MySql.Data.dll

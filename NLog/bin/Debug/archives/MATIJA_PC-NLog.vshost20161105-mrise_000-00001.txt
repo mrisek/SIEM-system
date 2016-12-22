@@ -1,0 +1,1 @@
+2016-11-05 16:59:44.6297 NLog.Logging Client disconnected - 127.0.0.1:8080

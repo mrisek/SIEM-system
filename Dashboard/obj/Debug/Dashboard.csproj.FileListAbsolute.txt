@@ -53,3 +53,4 @@ C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Dashboard\bin\Micr
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Dashboard\obj\Debug\Dashboard.dll
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Dashboard\obj\Debug\Dashboard.pdb
 C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Dashboard\obj\Debug\Dashboard.csprojResolveAssemblyReference.cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Dashboard\bin\MySql.Data.dll

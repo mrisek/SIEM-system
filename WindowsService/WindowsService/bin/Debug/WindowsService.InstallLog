@@ -1,0 +1,107 @@
+﻿Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing service SIEM_WindowsService...
+Creating EventLog source SIEM_WindowsService in log Application...
+Rolling back assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Restoring event log to previous state for source SIEM_WindowsService.
+Uninstalling assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Removing EventLog source SIEM_WindowsService.
+Service SIEM_WindowsService is being removed from the system...
+Service SIEM_WindowsService was successfully removed from the system.
+Attempt to stop service SIEM_WindowsService.
+Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing service SIEM_WindowsService...
+Service SIEM_WindowsService has been successfully installed.
+Creating EventLog source SIEM_WindowsService in log Application...
+An exception occurred in the OnAfterInstall event handler of WindowsService.ProjectInstaller.
+System.InvalidOperationException: Cannot start service SIEM_WindowsService on computer '.'.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: The service did not start due to a logon failure.
+Rolling back assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Restoring event log to previous state for source SIEM_WindowsService.
+Service SIEM_WindowsService is being removed from the system...
+Service SIEM_WindowsService was successfully removed from the system.
+Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing service SIEM_WindowsService...
+Service SIEM_WindowsService has been successfully installed.
+Creating EventLog source SIEM_WindowsService in log Application...
+An exception occurred in the OnAfterInstall event handler of WindowsService.ProjectInstaller.
+System.InvalidOperationException: Cannot start service SIEM_WindowsService on computer '.'.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: The service did not start due to a logon failure.
+Rolling back assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Restoring event log to previous state for source SIEM_WindowsService.
+Service SIEM_WindowsService is being removed from the system...
+Service SIEM_WindowsService was successfully removed from the system.
+Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing service SIEM_WindowsService...
+Service SIEM_WindowsService has been successfully installed.
+Creating EventLog source SIEM_WindowsService in log Application...
+Committing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Uninstalling assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Removing EventLog source SIEM_WindowsService.
+Warning: The source SIEM_WindowsService is not registered on the local machine.
+Service SIEM_WindowsService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing service SIEM_WindowsService...
+Service SIEM_WindowsService has been successfully installed.
+Creating EventLog source SIEM_WindowsService in log Application...
+Committing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Installing assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe
+Rolling back assembly 'C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.InstallLog
+   assemblypath = C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Debug\WindowsService.exe

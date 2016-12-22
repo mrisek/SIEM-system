@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Dashboard.Models.Configuration
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -10,6 +11,10 @@
 
 <div class="row">
     <div class="col-md-4">
+
+
+
+
         <h2>Getting started</h2>
         <p>
             ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
@@ -28,4 +33,185 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
+</div>
+
+
+
+<div>
+    <h1>Konfiguracija postavki logiranja</h1>
+    <p>
+        Ovdje ćemo postaviti neke vrijednosti koje služe kao postavke logging sustava.
+    </p>
+
+    <section id="loginForm">
+        @using (Html.BeginForm("UnosPodataka", "Configuration", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <hr />
+            @Html.ValidationSummary()
+
+            <h3>Rules</h3>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.RuleName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.RuleName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.MinLevel, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.MinLevel, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.WriteTo, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.WriteTo, new { @class = "form-control" })
+                </div>
+            </div>
+
+
+            <h3>Targets</h3>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Type, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Type, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.FileName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.FileName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Layout, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Layout, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.TargetName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.TargetName, new { @class = "form-control" })
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Unesi podatke" class="btn btn-default" id="btnSubmit" />
+                </div>
+            </div>
+
+
+        }
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <fieldset>
+        <legend>Postavke</legend>
+        
+        <h4>Rules</h4>
+        Name:<br>
+        <input type="text" name="name" value="*"><br>
+        MinLevel:<br>
+        <input type="text" name="minLevel" value="Info"><br>
+        WriteTo:<br>
+        <input type="text" name="writeTo" value="logfile"><br><br>
+
+        <h4>Targets</h4>
+        Type:<br>
+        <input type="text" name="name" value="File"><br>
+        Name:<br>
+        <input type="text" name="name" value="*"><br>
+        Address:<br>
+        <input type="text" name="name" value="x"><br>
+        FileName:<br>
+        <input type="text" name="name" value="{basedir}/mojaLogDatoteka.txt"><br>
+        Layout:<br>
+        <input type="text" name="name" value="${message}"><br>
+        TargetName:<br>
+        <input type="text" name="name" value="file"><br>
+
+        <input type="submit" value="Pohrani postavke">
+        
+    </fieldset>
+
+</div>
+
+<div class="chart">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ["Element", "Density", { role: "style" }],
+              ["Copper", 8.94, "#b87333"],
+              ["Silver", 10.49, "silver"],
+              ["Gold", 19.30, "gold"],
+              ["Platinum", 21.45, "color: #e5e4e2"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                             {
+                                 calc: "stringify",
+                                 sourceColumn: 1,
+                                 type: "string",
+                                 role: "annotation"
+                             },
+                             2]);
+
+            var options = {
+                title: "Density of Precious Metals, in g/cm^3",
+                width: 600,
+                height: 400,
+                bar: { groupWidth: "95%" },
+                legend: { position: "none" },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+    </script>
+    <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+
 </div>

@@ -1,0 +1,8 @@
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Release\WindowsService.exe.config
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Release\WindowsService.exe
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\bin\Release\WindowsService.pdb
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\obj\Release\WindowsService.ProjectInstaller.resources
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\obj\Release\WindowsService.csproj.GenerateResource.Cache
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\obj\Release\WindowsService.exe
+c:\users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\obj\Release\WindowsService.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\WindowsService\WindowsService\obj\Release\WindowsService.csprojResolveAssemblyReference.cache

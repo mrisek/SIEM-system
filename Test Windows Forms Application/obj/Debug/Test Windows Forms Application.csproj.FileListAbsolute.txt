@@ -1,0 +1,8 @@
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Debug\Test Windows Forms Application.exe.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Debug\Test Windows Forms Application.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Debug\Test Windows Forms Application.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Debug\Test Windows Forms Application.csprojResolveAssemblyReference.cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Debug\Test_Windows_Forms_Application.Properties.Resources.resources
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Debug\Test Windows Forms Application.csproj.GenerateResource.Cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Debug\Test Windows Forms Application.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Debug\Test Windows Forms Application.pdb

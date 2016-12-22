@@ -1,0 +1,8 @@
+2016-11-05 17:03:38.3299 NLog.Logging Server is running
+2016-11-20 01:15:06.6052 NLog.Logging Server is running
+2016-11-20 01:26:24.0117 NLog.Logging Server is running
+2016-11-20 01:29:28.9799 NLog.Logging Server is running
+2016-11-20 01:53:52.8689 NLog.Logging Server is running
+2016-11-20 01:56:49.4186 NLog.Logging Server is running
+2016-11-20 01:57:38.5712 NLog.Logging Server is running
+2016-11-20 02:03:45.8339 NLog.Logging Server is running

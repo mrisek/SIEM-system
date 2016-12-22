@@ -1,2 +1,1 @@
-2016-10-22 14:37:21.4293 NLog.Logging Server is running
-2016-10-22 15:17:58.7531 NLog.Logging Server is running
+2016-11-20 02:03:58.3733 NLog.Logging Server is running
