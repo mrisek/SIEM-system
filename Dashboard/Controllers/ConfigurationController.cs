@@ -49,6 +49,25 @@ namespace Dashboard.Controllers
             // izvrši drugu naredbu
             cmd.ExecuteNonQuery();
 
+            // konfiguracija uređaja
+            cmd.CommandText = "INSERT INTO machines VALUES('', '"
+                + model.MachineName + "', '"
+                + model.EventSettings + "', '"
+                + model.RuleSettings + "', '"
+                + model.ServiceSettings + "')";
+
+            // izvrši treću naredbu
+            cmd.ExecuteNonQuery();
+
+            // konfiguracija servisa
+            cmd.CommandText = "INSERT INTO services VALUES('"
+                + model.IntervalMinutes + "', '"
+                + model.ScheduledTime + "', '"
+                + model.ServiceName + "', '')";
+
+            // izvrši četvrtu naredbu
+            cmd.ExecuteNonQuery();
+
             // zatvori konekciju na bazu
             con.Close();
 

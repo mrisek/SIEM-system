@@ -49,6 +49,7 @@
             <hr />
             @Html.ValidationSummary()
 
+            
             <h3>Rules</h3>
 
             <div class="form-group">
@@ -115,7 +116,61 @@
                     @Html.TextBoxFor(m => m.TargetName, new { @class = "form-control" })
                 </div>
             </div>
+            
+            
+            <h3>Machines</h3>
 
+            <div class="form-group">
+                @Html.LabelFor(m => m.MachineName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.MachineName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.EventSettings, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.EventSettings, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.RuleSettings, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.RuleSettings, new { @class = "form-control" })
+                </div>
+            </div>
+            
+            <div class="form-group">
+                @Html.LabelFor(m => m.ServiceSettings, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.ServiceSettings, new { @class = "form-control" })
+                </div>
+            </div>
+
+            
+            <h3>Services</h3>
+            
+            <div class="form-group">
+                @Html.LabelFor(m => m.IntervalMinutes, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.IntervalMinutes, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.ScheduledTime, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.ScheduledTime, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.ServiceName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.ServiceName, new { @class = "form-control" })
+                </div>
+            </div>
 
 
             <div class="form-group">
