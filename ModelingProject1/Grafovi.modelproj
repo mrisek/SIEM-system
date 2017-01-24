@@ -22,6 +22,40 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package1_0558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0559.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0643.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0559.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0600.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0643.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NLog komponenta.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NLog komponenta.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>NLog komponenta.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_1109.uml">
       <SubType>Content</SubType>
     </Content>
@@ -49,35 +83,90 @@
     <Content Include="ModelDefinition\Package18_1109.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0544.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_1109.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0544.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package2_1109.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package3_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0544.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package3_1109.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0544.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package4_1109.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package5_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_0544.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package5_1109.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_0544.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package6_1109.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package7_0544.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package7_1109.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_0544.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package8_1109.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package9_0544.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package9_1109.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0543.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0544.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1109.uml">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sekvencijalni dijagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sekvencijalni dijagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sekvencijalni dijagram.sequencediagram</DependentUpon>
     </Content>
     <Content Include="UMLClassDiagram1.classdiagram">
       <SubType>Content</SubType>

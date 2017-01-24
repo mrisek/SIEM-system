@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="642ba28f-5220-4975-8d0e-d6e7b4fc1bad"
+  name="Threading"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="dec60cb0-8c7c-4550-b192-9258616adbd7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Threading"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5ffd6e80-f278-4f43-953e-601e3fb089a1"
+        LastKnownName="Tasks"
+        LastKnownLocation="Package7_0544.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cd2f8d1c-c3d9-40ca-bfbe-cd150b4289be"
+        name="Timer"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f53f6357-4575-497e-b017-40030c7a31aa"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DTimer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bc876031-fd47-4b0d-850b-f0aa2c046b9c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dea72184-855e-4b79-bf11-50c587e86ccf">
+                <propertyInstance
+                  Id="d910f7c5-d775-4d25-a552-0be40acd28bd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e35e9ba-5847-4624-b8c7-e3044127876f">
+                <propertyInstance
+                  Id="63ceac5b-5e32-487e-be3c-e9014cb91c6d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="376d7d09-cef8-400a-996b-94c58ec5f574">
+                <propertyInstance
+                  Id="77cac0d5-97c2-477a-b245-78079a42ef32"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="96a09e97-b065-4dfc-a092-0f7a7b1eebde">
+                <propertyInstance
+                  Id="453e3aab-c6f7-4edc-999c-0805b9ba8718"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8c43bcc-3c11-4b7f-a136-cb413348dbf6">
+                <propertyInstance
+                  Id="dbfe36c7-f69d-4bde-bf5c-14db507f44ae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7f3e7cab-42ee-418a-aa6e-0f501a371d05">
+            <interfaceMoniker
+              Id="70f49700-5b54-4821-ae6d-7fe368b4e4bf"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package1_1109.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

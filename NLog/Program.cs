@@ -7,6 +7,11 @@ using System.Data;
 using NLog;
 using NLog.Targets;
 using NLog.Config;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using Microsoft.Win32;
+using System.IO;
 
 namespace NLog
 {
@@ -125,8 +130,8 @@ namespace NLog
             logger.Warn("warn log message");
             logger.Error("error log message");
             logger.Fatal("fatal log message");
-
         }
+
 
     }
 }

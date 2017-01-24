@@ -1,0 +1,9 @@
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.exe.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\MySql.Data.dll
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.dll
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\bin\Release\NLog.xml
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Release\NLog.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\NLog\obj\Release\NLog.pdb

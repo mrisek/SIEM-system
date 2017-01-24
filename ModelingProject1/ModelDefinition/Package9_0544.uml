@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="0bd5c8fc-d4a1-44ea-aabe-f2ab6511e8ac"
+  name="Security"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="79cb8524-010c-4e5c-8b4f-c9db4ffa06a0"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Owin.Security"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="ebc38722-0418-4369-86f2-97d84f9dd709"
+        name="IAuthenticationManager"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ae484282-f789-463c-bb81-79d278be9aa8"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll&quot; Namespace%3DMicrosoft.Owin.Security Type%3DIAuthenticationManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="64f91b78-269e-43a2-ad51-5306c18e6dff"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="59683a76-60ee-44c4-b019-51d3bf550263">
+                <propertyInstance
+                  Id="f1efdd53-d819-48b7-9e5a-0ade02a65da7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0cc4a1f7-75b0-48e3-a9e3-5877b21e7b62">
+                <propertyInstance
+                  Id="0a31c919-a32a-4103-9f0a-add07eed4b65"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b58ad8c-6261-472c-833b-390a5ace49fc">
+                <propertyInstance
+                  Id="57602168-50fa-4717-bb6f-7e6c338baa18"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b19a2cad-bf98-4baa-8a95-11d10c74a4ea">
+                <propertyInstance
+                  Id="fe919710-b9c7-4a6e-a7f6-7d3e3922f488"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

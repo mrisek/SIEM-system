@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="38102c89-387a-4fe6-aa98-dcc204a0f78f"
+  name="Optimization"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b9baa318-eaf6-4b56-836e-affa25489a8b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Web.Optimization"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="34583bd4-7b91-44f7-bdfe-2613ae825e33"
+        name="BundleCollection"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5db1a7cb-985f-43e8-a6f4-d88f504f2561"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.AspNet.Web.Optimization.1.1.1%2Flib%2Fnet40%2FSystem.Web.Optimization.dll&quot; Namespace%3DSystem.Web.Optimization Type%3DBundleCollection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="482d2423-c333-4ead-92ee-7c4b16fc17f5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ed4815b-db9c-4cf5-8aac-96bbae54cb1a">
+                <propertyInstance
+                  Id="54bdad01-e755-4d8e-abb1-8836779820c5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f08c958-47dd-489a-aa25-78708806b6b5">
+                <propertyInstance
+                  Id="bc70d4c2-99de-472e-8e4d-67de23a0625c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a84fe5db-8b51-4206-a1f1-1b2e72aae156">
+                <propertyInstance
+                  Id="3cdb0be4-26bf-43b8-bc93-b165ce80ac23"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f7e1c883-b4d0-427f-affd-fb66df40e646">
+                <propertyInstance
+                  Id="aa0ace30-3319-459a-8c94-879b84349371"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a801b82-8ac0-41fb-b630-531bef172697">
+                <propertyInstance
+                  Id="f4ee5332-8333-4a64-a1f1-3bbda7ee73f0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

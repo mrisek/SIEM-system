@@ -1,61 +1,96 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Logovi i događaji";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    google.charts.load('current', { 'packages': ['gauge'] });
-    google.charts.setOnLoadCallback(drawGauge);
-    var gaugeOptions = {
-        min: 0, max: 280, yellowFrom: 200, yellowTo: 250,
-        redFrom: 250, redTo: 280, minorTicks: 5
-    };
-    var gauge;
-
-    function drawGauge() {
-        gaugeData = new google.visualization.DataTable();
-        gaugeData.addColumn('number', 'Engine');
-        gaugeData.addColumn('number', 'Torpedo');
-        gaugeData.addRows(2);
-        gaugeData.setCell(0, 0, 120);
-        gaugeData.setCell(0, 1, 80);
-
-        gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
-        gauge.draw(gaugeData, gaugeOptions);
+<style>
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
     }
 
-    function changeTemp(dir) {
-        gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + dir * 25);
-        gaugeData.setValue(0, 1, gaugeData.getValue(0, 1) + dir * 20);
-        gauge.draw(gaugeData, gaugeOptions);
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+</div>
+
+@functions{
+    int LogIndex = 0;
+    string MachineName = "";
+    string Source = "";
+    string TimeGenerated = "";
+    string Message = "";
+    string EntryType = "";
+
+    string logs = "";
+
+    public string PrikazPodataka()
+    {
+        
+        try
+        {
+            MySql.Data.MySqlClient.MySqlDataReader reader = null;
+            string selectCmd = "SELECT * FROM Logs";
+
+            MySql.Data.MySqlClient.MySqlConnection msc = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=siem_sql_database");
+            msc.Open();
+            
+            
+            MySql.Data.MySqlClient.MySqlCommand command = new MySql.Data.MySqlClient.MySqlCommand(selectCmd, msc);
+            reader = command.ExecuteReader();
+
+            logs += "<table id=\"customers\"><tr><th>Log Index</th><th>Machine Name</th><th>Source</th><th>Time Generated</th><th>Message</th><th>Entry Type</th></tr>";
+            
+            while (reader.Read())
+            {
+                LogIndex = (int)reader["LogIndex"];
+                MachineName = (string)reader["MachineName"];
+                Source = (string)reader["Source"];
+                TimeGenerated = (string)reader["TimeGenerated"];
+                Message = (string)reader["Message"];
+                EntryType = (string)reader["EntryType"];
+
+                string temp = "<tr><td>" + LogIndex + "</td><td>" + MachineName + "</td><td>" + Source + "</td><td>" + TimeGenerated + "</td><td>" + Message + "</td><td>" + EntryType + "</td></tr>";
+                logs += temp;
+            }
+        }
+        catch (Exception ex)
+        {
+            Message = ex.Message;
+        }
+
+        logs += "</table>";
+        
+        return logs;
     }
+}
 
-
-
-
-
-
-</script>
-
-<div id="gauge_div" style="width:280px; height: 140px;"></div>
-<input type="button" value="Go Faster" onclick="changeTemp(1)" />
-<input type="button" value="Slow down" onclick="changeTemp(-1)" />
-
-
-
+<div class="form-group">
+    <div class="col-md-12">
+        <p>@Html.Raw(PrikazPodataka())</p>
+    </div>
+</div>
 
 

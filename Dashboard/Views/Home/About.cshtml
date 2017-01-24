@@ -1,10 +1,13 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Analiza logova";
+    ViewBag.Message = "Sigurnosni, aplikacijski, sistemski i operacijski događaji iz EventLoga";
 }
-<h2>@ViewBag.Title.</h2>
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+</div>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
@@ -13,19 +16,18 @@
 
     function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Galaxy', 'Distance', 'Brightness'],
-          ['Canis Major Dwarf', 8000, 23.3],
-          ['Sagittarius Dwarf', 24000, 4.5],
-          ['Ursa Major II Dwarf', 30000, 14.3],
-          ['Lg. Magellanic Cloud', 50000, 0.9],
-          ['Bootes I', 60000, 13.1]
+          ['EventLogs', 'kilobytes (KB)', 'number of entries'],
+          ['Application events', @System.Configuration.ConfigurationManager.AppSettings["AppSize"], @System.Configuration.ConfigurationManager.AppSettings["AppNum"]],
+          ['Security events', @System.Configuration.ConfigurationManager.AppSettings["SecSize"], @System.Configuration.ConfigurationManager.AppSettings["SecNum"]],
+          ['System events', @System.Configuration.ConfigurationManager.AppSettings["SysSize"], @System.Configuration.ConfigurationManager.AppSettings["SysNum"]],
+          ['Operation events', @System.Configuration.ConfigurationManager.AppSettings["OperSize"], @System.Configuration.ConfigurationManager.AppSettings["OpeNum"]]
         ]);
 
         var options = {
             width: 900,
             chart: {
-                title: 'Nearby galaxies',
-                subtitle: 'distance on the left, brightness on the right'
+                title: 'EventLog događaji',
+                subtitle: 'Odnos veličine i broja logova različitih tipova događaja'
             },
             series: {
                 0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
@@ -33,8 +35,8 @@
             },
             axes: {
                 y: {
-                    distance: { label: 'parsecs' }, // Left y-axis.
-                    brightness: { side: 'right', label: 'apparent magnitude' } // Right y-axis.
+                    distance: { label: 'maximum size' }, // Left y-axis.
+                    brightness: { side: 'right', label: 'number of event log entries' } // Right y-axis.
                 }
             }
         };

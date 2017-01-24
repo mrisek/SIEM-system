@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="4adaccd3-801c-4e9e-b90d-65de7d582585"
   name="System"
@@ -1311,6 +1311,248 @@
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8401f036-8194-4053-9feb-2e7cbedc2280"
+        LastKnownName="Web"
+        LastKnownLocation="Package_0544.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="642ba28f-5220-4975-8d0e-d6e7b4fc1bad"
+        LastKnownName="Threading"
+        LastKnownLocation="Package6_0544.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6389d244-668e-4dd6-9766-150bd4f7cce6"
+        name="Nullable&lt;AccountController‎‎.ManageMessageId‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bfb57fef-c923-4ad3-ad8c-c3124a7b500b"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68530283-6a22-43c5-9bbd-9c98fbebe90b">
+                <propertyInstance
+                  Id="dfedb5d2-447a-49d8-bdd2-03f5531e175d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95ca3abe-91be-4a98-b8ce-52187691653a">
+                <propertyInstance
+                  Id="67380a7b-a46b-47ee-a823-6c59d4bdf6e1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="191baaf4-61b7-40a8-83e2-46bec5cadac6">
+                <propertyInstance
+                  Id="df4be7ea-75ec-49ca-bfba-9bc7a243d651"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c99457e-88b4-4920-a9d2-9c964babb0cf">
+                <propertyInstance
+                  Id="7ba81964-4fc1-4626-8c1a-6973ec62fa8c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="4af4cb85-6b78-4f61-b6c4-dae451e7cb81">
+            <redefinableTemplateSignatureMoniker
+              Id="b4edde54-8724-41c6-b19a-6f3080010dac"
+              LastKnownLocation="Package1_1109.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="1dfb7239-c4b3-42f9-9745-57bdc1593fc5">
+                  <actuals>
+                    <enumerationMoniker
+                      Id="62a407d1-9055-407f-b577-f02989fd056b"
+                      LastKnownName="ManageMessageId"
+                      LastKnownLocation="Package5_0544.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="971970a1-4b38-4f55-bf0b-2cb3e6a88522"
+                      LastKnownLocation="Package1_1109.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fef7544d-ac3f-4f55-81f1-7e28bc8479b7"
+        name="EventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a4714930-c520-4e3b-ad8b-2398b7242054"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ba25c77e-d29c-46df-8761-12c102952055"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5f05ba8-18c9-46fd-b195-dcbbfb9ccd42">
+                <propertyInstance
+                  Id="d371a8e1-f282-407a-a0fd-4fe2470ed6d6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="015c05da-c44e-4a98-9f5f-f359dd52a054">
+                <propertyInstance
+                  Id="dcbe6d10-6102-43c1-b9a0-563c4ced180a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f69d6fa-a027-4c83-a35b-d8eafad9afe3">
+                <propertyInstance
+                  Id="4c88ea6c-31ae-458e-8943-54af0b4c0074"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="484f6706-848b-442d-a028-91dfc0ecb3f9">
+                <propertyInstance
+                  Id="3ebd6a91-f9bd-4ee1-afb7-6d6c2db78ea1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55f1e37f-0284-4110-9828-36a2de8e1600">
+                <propertyInstance
+                  Id="a08f3b8f-67da-4a30-9c30-6a27c4fa823f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f0c678ff-a8dc-42ab-8ca7-05381ef56bb8"
+        LastKnownName="ComponentModel"
+        LastKnownLocation="Package1_0558.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ca6987c6-3668-43ce-9260-7a7cd8f64c0d"
+        LastKnownName="Windows"
+        LastKnownLocation="Package2_0558.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bcd67e33-4231-44b7-bfb4-ae0a2342fdfb"
+        LastKnownName="Resources"
+        LastKnownLocation="Package1_0559.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="998aa656-ac12-4e7a-bad3-4e1d822914cf"
+        LastKnownName="Configuration"
+        LastKnownLocation="Package_0600.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="737623e2-74a3-4bce-b760-9d5a1a52bab6"
+        name="Nullable&lt;AccountController‎‎.ManageMessageId‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c9f9fea4-d950-4aa9-917d-b7886e4c539b"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="954b8afc-90a3-4a30-bcb3-8ea30ca7c62a">
+                <propertyInstance
+                  Id="97ca61f0-ecfd-4b16-be08-fdfb20b62d5e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88fc351e-dfb8-4965-84ad-948971d7d6a3">
+                <propertyInstance
+                  Id="70090e57-490c-4086-b032-418071d6fe0b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5559ac13-eecd-4cf6-abaf-7edbfefde52f">
+                <propertyInstance
+                  Id="d9d59981-5f2d-42f1-ad77-1bdc2145513b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f995b611-3134-4a83-ad4c-b0db8ca24693">
+                <propertyInstance
+                  Id="bbdefb9d-0cc5-4539-a265-512b500c2749"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="5f131379-8e78-496a-8b10-1263de3b3a9a">
+            <redefinableTemplateSignatureMoniker
+              Id="b4edde54-8724-41c6-b19a-6f3080010dac"
+              LastKnownLocation="Package1_1109.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="6f0e566c-b902-46a3-9032-58590be33263">
+                  <actuals>
+                    <enumerationMoniker
+                      Id="62a407d1-9055-407f-b577-f02989fd056b"
+                      LastKnownName="ManageMessageId"
+                      LastKnownLocation="Package5_0544.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="971970a1-4b38-4f55-bf0b-2cb3e6a88522"
+                      LastKnownLocation="Package1_1109.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="125d2316-d55e-4579-b54b-c9af067c4502"
+        LastKnownName="ServiceProcess"
+        LastKnownLocation="Package1_0643.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

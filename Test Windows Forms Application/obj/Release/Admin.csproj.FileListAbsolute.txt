@@ -1,0 +1,10 @@
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Release\Test Windows Forms Application.exe.config
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Release\Test Windows Forms Application.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Release\Test Windows Forms Application.pdb
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\bin\Release\MySql.Data.dll
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Admin.csprojResolveAssemblyReference.cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Test_Windows_Forms_Application.Form1.resources
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Test_Windows_Forms_Application.Properties.Resources.resources
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Admin.csproj.GenerateResource.Cache
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Test Windows Forms Application.exe
+C:\Users\mrise_000\documents\visual studio 2013\Projects\NLog\Test Windows Forms Application\obj\Release\Test Windows Forms Application.pdb

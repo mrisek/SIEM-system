@@ -1,272 +1,184 @@
 ﻿@model Dashboard.Models.Configuration
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Konfiguracija postavki";
 }
 
+
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-
-
-
-
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
-
-
-
-<div>
-    <h1>Konfiguracija postavki logiranja</h1>
-    <p>
-        Ovdje ćemo postaviti neke vrijednosti koje služe kao postavke logging sustava.
-    </p>
 
     <section id="loginForm">
         @using (Html.BeginForm("UnosPodataka", "Configuration", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
         {
-            <hr />
             @Html.ValidationSummary()
 
-            
-            <h3>Rules</h3>
+    <div class="col-md-4">
+
+        <div class="col-md-12">
+            <h2>Machines</h2>
+            <p>
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
 
             <div class="form-group">
-                @Html.LabelFor(m => m.RuleName, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.RuleName, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.MinLevel, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.MinLevel, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.WriteTo, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.WriteTo, new { @class = "form-control" })
-                </div>
-            </div>
-
-
-            <h3>Targets</h3>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Type, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Type, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
-                </div>
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.FileName, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.FileName, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Layout, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.Layout, new { @class = "form-control" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.TargetName, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
-                    @Html.TextBoxFor(m => m.TargetName, new { @class = "form-control" })
-                </div>
-            </div>
-            
-            
-            <h3>Machines</h3>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.MachineName, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.MachineName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.MachineName, new { @class = "form-control" })
                 </div>
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(m => m.EventSettings, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.EventSettings, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.EventSettings, new { @class = "form-control" })
                 </div>
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(m => m.RuleSettings, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.RuleSettings, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.RuleSettings, new { @class = "form-control" })
                 </div>
             </div>
-            
+
             <div class="form-group">
-                @Html.LabelFor(m => m.ServiceSettings, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.ServiceSettings, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.ServiceSettings, new { @class = "form-control" })
                 </div>
             </div>
 
-            
-            <h3>Services</h3>
-            
+            <h2>Services</h2>
+
             <div class="form-group">
-                @Html.LabelFor(m => m.IntervalMinutes, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.IntervalMinutes, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.IntervalMinutes, new { @class = "form-control" })
                 </div>
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(m => m.ScheduledTime, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.ScheduledTime, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.ScheduledTime, new { @class = "form-control" })
                 </div>
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(m => m.ServiceName, new { @class = "col-md-2 control-label" })
-                <div class="col-md-10">
+                @Html.LabelFor(m => m.ServiceName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
                     @Html.TextBoxFor(m => m.ServiceName, new { @class = "form-control" })
                 </div>
             </div>
 
-
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Unesi podatke" class="btn btn-default" id="btnSubmit" />
+                    <input type="submit" value="Unesi podatke" class="btn btn-primary btn-large" id="btnSubmit" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="col-md-12">
+            <h2>Targets</h2>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Type, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.Type, new { @class = "form-control" })
                 </div>
             </div>
 
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Address, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.FileName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.FileName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Layout, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.Layout, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.TargetName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.TargetName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Unesi podatke" class="btn btn-primary btn-large" id="btnSubmit" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="col-md-12">
+
+            <h2>Rules</h2>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            </p>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.RuleName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.RuleName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.MinLevel, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.MinLevel, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.WriteTo, new { @class = "col-md-5 control-label" })
+                <div class="col-md-5">
+                    @Html.TextBoxFor(m => m.WriteTo, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Unesi podatke" class="btn btn-primary btn-large" id="btnSubmit" />
+                </div>
+            </div>
+        </div>
+    </div>
 
         }
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <fieldset>
-        <legend>Postavke</legend>
-        
-        <h4>Rules</h4>
-        Name:<br>
-        <input type="text" name="name" value="*"><br>
-        MinLevel:<br>
-        <input type="text" name="minLevel" value="Info"><br>
-        WriteTo:<br>
-        <input type="text" name="writeTo" value="logfile"><br><br>
-
-        <h4>Targets</h4>
-        Type:<br>
-        <input type="text" name="name" value="File"><br>
-        Name:<br>
-        <input type="text" name="name" value="*"><br>
-        Address:<br>
-        <input type="text" name="name" value="x"><br>
-        FileName:<br>
-        <input type="text" name="name" value="{basedir}/mojaLogDatoteka.txt"><br>
-        Layout:<br>
-        <input type="text" name="name" value="${message}"><br>
-        TargetName:<br>
-        <input type="text" name="name" value="file"><br>
-
-        <input type="submit" value="Pohrani postavke">
-        
-    </fieldset>
-
-</div>
-
-<div class="chart">
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load("current", { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-              ["Element", "Density", { role: "style" }],
-              ["Copper", 8.94, "#b87333"],
-              ["Silver", 10.49, "silver"],
-              ["Gold", 19.30, "gold"],
-              ["Platinum", 21.45, "color: #e5e4e2"]
-            ]);
-
-            var view = new google.visualization.DataView(data);
-            view.setColumns([0, 1,
-                             {
-                                 calc: "stringify",
-                                 sourceColumn: 1,
-                                 type: "string",
-                                 role: "annotation"
-                             },
-                             2]);
-
-            var options = {
-                title: "Density of Precious Metals, in g/cm^3",
-                width: 600,
-                height: 400,
-                bar: { groupWidth: "95%" },
-                legend: { position: "none" },
-            };
-            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-            chart.draw(view, options);
-        }
-    </script>
-    <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+</section>
 
 </div>

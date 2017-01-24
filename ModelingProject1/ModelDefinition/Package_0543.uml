@@ -1,0 +1,1158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="b81b6467-bac5-4e77-b306-5e7581ad07b1"
+  name="Dashboard"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="07de37df-ea6d-482f-a22e-b6b874ce070a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDashboard"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f4bd974f-0f9d-447b-ad17-7bb7b9d462fe"
+        LastKnownName="Models"
+        LastKnownLocation="Package1_0543.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9d6d2818-2ace-4ffa-b02c-0094390d4a06"
+        name="BundleConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ea387d0f-fa76-4fff-9a30-753068aaa691"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DBundleConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f5e1f65d-5eea-4f86-8bca-63d368d4319e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbce5a5d-183d-44f8-9bb1-a53b69b6548c">
+                <propertyInstance
+                  Id="91f3a5be-9cda-4b6c-87ef-9c647abb2a31"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="204748a6-f0b1-4995-8457-06a30d0ee31e">
+                <propertyInstance
+                  Id="0777f496-e9cd-455f-95d4-36f9f1fc0f23"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fdac29d-6363-4b9a-9140-4c2e73e3b786">
+                <propertyInstance
+                  Id="67d5e67b-da9a-40dd-b506-9042e5e9a0db"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6bbc522a-8d18-40cb-bc3f-13d7a4e1c06d">
+                <propertyInstance
+                  Id="9efcc4aa-46e4-42e8-99e7-75c3904cc0ba"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eeca546d-0a20-4d15-a04e-2cd81350329e">
+                <propertyInstance
+                  Id="938a48f1-b0cf-47b2-8980-8def5ee353d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5cb91d50-b5a9-48ee-9cd3-0f1377aec295"
+            name="RegisterBundles"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7903d29b-a2db-41da-825c-786801e3197c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DBundleConfig Member%3D(Name%3DRegisterBundles OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.AspNet.Web.Optimization.1.1.1%2Flib%2Fnet40%2FSystem.Web.Optimization.dll&quot; Namespace%3DSystem.Web.Optimization Type%3DBundleCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="44405973-51e1-49f6-9b8b-3a46f932745b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c02002a4-77fe-4301-b4af-7ae07281506d">
+                    <propertyInstance
+                      Id="b7ab340f-6f65-4cc5-ab1e-be02d79066db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa231965-7fdc-4ea3-83c8-a11ff873c594">
+                    <propertyInstance
+                      Id="7385eaa2-b49f-4289-8e41-01ce0cc4a958"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3dc0061c-5290-4f17-b1d2-7fbd29f858ef">
+                    <propertyInstance
+                      Id="b2daca22-3c49-4247-8f47-759d6e962f73"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c531184-bfbd-4b5d-b6cb-1fa69298d2f7">
+                    <propertyInstance
+                      Id="340139de-8c05-4306-a54c-695f29558b78"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf1aabc0-a1b1-41cd-859c-1228a657453f">
+                    <propertyInstance
+                      Id="d14bed48-9e9f-44d6-9e5b-75b3fffa5c02"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cf4214d-23c8-46aa-9dee-2941bdda5fba">
+                    <propertyInstance
+                      Id="8c4bac87-5ab3-45f6-9ca7-bc2f20349524"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63c633bd-4b97-4695-8897-dbe7109f0307"
+                  name="bundles"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a0c23881-c279-4b11-9fd0-079bde8656ed"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DBundleConfig Member%3D(Name%3DRegisterBundles OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.AspNet.Web.Optimization.1.1.1%2Flib%2Fnet40%2FSystem.Web.Optimization.dll&quot; Namespace%3DSystem.Web.Optimization Type%3DBundleCollection)]) ParameterIdentifier%3Dbundles"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="34583bd4-7b91-44f7-bdfe-2613ae825e33"
+                      LastKnownName="BundleCollection"
+                      LastKnownLocation="Package1_0544.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c6047ada-828e-4c5a-a329-b893a18b98be"
+            name="BundleConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="aaf16b83-2631-477b-a6f0-0501f2a996d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DBundleConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf343e91-81be-4181-8ad7-c6279389d4d7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c494caf-18c7-4890-a8fb-b7756fcba0bf">
+                    <propertyInstance
+                      Id="95936b56-5f3e-4ede-aaa1-ba53db443f46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff203f6d-6704-4a5d-babe-c7884b8ad07a">
+                    <propertyInstance
+                      Id="e90cfd81-42e6-4fcf-ab5c-9cefb9d3c682"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5480100c-4567-4249-bc33-642b5d3230b7">
+                    <propertyInstance
+                      Id="620b4e6f-4a1a-4d33-ba87-27121d0d392f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c072c6bf-82fd-4289-949c-ce457adfc6d8">
+                    <propertyInstance
+                      Id="e95ebeea-7309-42a0-b670-678fa2e2eccc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0758749f-229b-4faa-9495-a17d86079e76">
+                    <propertyInstance
+                      Id="9228536e-cef5-4a54-aecc-8572de326e36"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04811600-c4d6-43a4-85a3-468df07c5466">
+                    <propertyInstance
+                      Id="39a2f359-3549-4a2f-88cb-dcae1691a733"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc9dd1de-0a91-4219-9137-721d1b190881"
+        name="FilterConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5cf20ceb-286e-4c8d-b59f-a7db6de7a2b9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DFilterConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b2a50cb8-cddb-4a08-bc14-a83fcdbb2eef"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35276e0b-6540-40b0-a25e-c7e26a64834d">
+                <propertyInstance
+                  Id="461f2015-cf5d-4193-8ea9-fee49135a3d3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea8aa8aa-79ab-4bfc-a022-efa3e9fb5bed">
+                <propertyInstance
+                  Id="c97d98e7-8f5e-4c4f-a489-c264bd4efb1b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec69631c-34c1-4e4e-887c-e7e5e1362cea">
+                <propertyInstance
+                  Id="0ba6f063-1ff4-49d7-84d2-4bd7a419640b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="393f9e79-bc20-439d-8000-2fa4b8322cdc">
+                <propertyInstance
+                  Id="270513a3-1e30-4cd5-85bb-3452c2f63ef5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14e26176-1c9e-466a-9eb4-5741e08a1c18">
+                <propertyInstance
+                  Id="142c0ce6-123a-4737-89ba-6b1297d22b0a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="df495d87-d390-44fd-942a-1701074687ae"
+            name="RegisterGlobalFilters"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="742b0a75-c9c6-4b0a-9078-fdaa54da1c78"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DFilterConfig Member%3D(Name%3DRegisterGlobalFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.AspNet.Mvc.5.0.0%2Flib%2Fnet45%2FSystem.Web.Mvc.dll&quot; Namespace%3DSystem.Web.Mvc Type%3DGlobalFilterCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e4d5148-0edb-4a45-b5ff-2171064b7fba"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af30fae1-bbe3-43a4-af7f-aa19ab0e25a9">
+                    <propertyInstance
+                      Id="8af667a9-58d4-45f8-93d2-08898aa5b189"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d3e992c-46a2-47ef-ac0b-f2e045912a15">
+                    <propertyInstance
+                      Id="9c814646-a11e-4c70-846a-7e57e24c623b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="507f5abb-a0cd-424b-ad19-52d972a6131e">
+                    <propertyInstance
+                      Id="f49e75af-79be-415c-a227-3d9190354896"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="871aaf58-cae0-4ac5-b2fa-728fcb66a451">
+                    <propertyInstance
+                      Id="12728ecd-80c2-4962-a28a-26db2e50ecc3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c86687b-1749-4201-abb5-f77817ec1cc8">
+                    <propertyInstance
+                      Id="0b047f0e-c375-44fa-89b1-f1dd208a43e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c205320-f3c5-455c-8b83-6b899568147d">
+                    <propertyInstance
+                      Id="bcb55bde-ad90-4869-a6bd-eb42f26073c1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="051ffba0-a295-490a-ba1b-80dfedd22caa"
+                  name="filters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7ed8d96d-e28a-4e83-afa0-acdad7a55631"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DFilterConfig Member%3D(Name%3DRegisterGlobalFilters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FMicrosoft.AspNet.Mvc.5.0.0%2Flib%2Fnet45%2FSystem.Web.Mvc.dll&quot; Namespace%3DSystem.Web.Mvc Type%3DGlobalFilterCollection)]) ParameterIdentifier%3Dfilters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3399907e-1019-4bbb-bc4a-ebae4190c057"
+                      LastKnownName="GlobalFilterCollection"
+                      LastKnownLocation="Package2_0544.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="71228501-f6cc-4299-b754-e209bc7770c5"
+            name="FilterConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a96dca44-b3c8-4f6b-a3bf-576ced459b3a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DFilterConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="756891c5-03e2-45d5-b9c9-e59306b5b764"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="642ea2f4-95c2-4233-bd83-df30290db0ed">
+                    <propertyInstance
+                      Id="f1c9e6e7-22d0-43b9-a33e-b244acd3ecb1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b707bed-8d70-4911-8a40-253f6d80ffa9">
+                    <propertyInstance
+                      Id="36fa400f-375a-4feb-ba26-79d60d2215a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f2fae6a-c135-4199-9226-85278d9768dd">
+                    <propertyInstance
+                      Id="2d7b9fd6-3833-4c49-ac19-75f1fa82f765"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d9cb002-bf11-4a31-a099-33bdfb187219">
+                    <propertyInstance
+                      Id="6753e78a-c39d-4042-bc91-ca41f0ea7584"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19a0314f-1a6a-4bb0-ada1-b86872aa5995">
+                    <propertyInstance
+                      Id="b1c396b2-5df6-4490-8cf2-4af074cc94c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9777e89-8dd6-462d-b0c9-82df9c038e6f">
+                    <propertyInstance
+                      Id="beffb1f0-891b-41ef-9835-072feaada7f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c6211b86-7ee9-4536-8608-b5f1d869716b"
+        name="MvcApplication"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4ad20366-efa1-42c9-9bce-2be9b2098164"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DMvcApplication"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1b754979-6e56-4069-8197-5246d157ea52"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72189a40-3d45-40f9-9a44-875cb897c40b">
+                <propertyInstance
+                  Id="d73567d7-540a-4055-9b3b-a55dca571a58"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e9954af-f481-4462-90d7-6e553aa9468d">
+                <propertyInstance
+                  Id="cf1ed818-5bae-4fb3-abbc-a7b9dedb9991"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df065130-66b5-4d88-9623-04493f13cb5a">
+                <propertyInstance
+                  Id="65da799e-417b-47ff-bafc-f7f4cdc70ff3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df08e85b-16ce-4282-8a76-1048b3dea778">
+                <propertyInstance
+                  Id="36ab65ec-4ba2-49d7-ad7b-b4f8a7d85865"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a67bdc2-20a6-40a1-8ee0-4f5017dc4794">
+                <propertyInstance
+                  Id="56aaa30c-7e1c-485e-b09b-196ff90c55ce"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="2c986193-a3cd-408a-bdf2-edef922b14df"
+            isSubstitutable="false">
+            <classMoniker
+              Id="63a9c6c7-de7e-47ee-ad93-be4a465109de"
+              LastKnownName="HttpApplication"
+              LastKnownLocation="Package_0544.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ad0cff68-fbff-4599-91e8-0c09d841ae75"
+            name="Application_Start"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5bf3a905-2b10-46a7-94cf-849f7f90ae3f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DMvcApplication Member%3DApplication_Start"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="353dcbdb-e171-4c12-b367-1f929e7148c1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d07aaac-faf9-45c4-9460-2998689de761">
+                    <propertyInstance
+                      Id="6d6a635f-6ff0-484d-b1fe-2b5771761662"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72249d04-f154-4305-a325-c465a291644b">
+                    <propertyInstance
+                      Id="a1ae946d-777f-45a5-b69f-436b0bdd7925"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04272647-6ab3-478d-9365-1b27860306aa">
+                    <propertyInstance
+                      Id="1a2a25fa-cf23-4f47-8f5e-9ec493d41624"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b68d17f-08a2-4648-a530-0461aa8f8150">
+                    <propertyInstance
+                      Id="ae8d595e-bf0d-437d-a2f2-fd9f9231eaa5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99fc427e-10ed-4b38-bba6-3e61312dcb10">
+                    <propertyInstance
+                      Id="fb56e7a2-973f-43ae-b92b-2738d3fc3811"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b6cc13a-a2c4-40c4-bd73-da83266c135c">
+                    <propertyInstance
+                      Id="cdbabcf2-1d39-4729-92b3-ba0ce0ae5399"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="97a82fb5-711a-49cb-aec8-a097306e7bec"
+            name="MvcApplication"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f4a66dcc-6fbc-4f0c-944d-2ecc2602d310"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DMvcApplication Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b5b53dc-20e8-4c27-9e6e-d1428adc85ee"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99a5659e-9c2e-41bf-aeaf-103ff5fff3ea">
+                    <propertyInstance
+                      Id="85dddab0-0925-428a-be03-6b6cd6e8a981"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adbd8150-3b9a-4b49-b142-f16d354c45cb">
+                    <propertyInstance
+                      Id="6b15e4e5-587f-4584-8964-b93853781df6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da504c75-6794-4de5-a6bd-c4d7e2b30cf6">
+                    <propertyInstance
+                      Id="f4f48f32-ef00-429b-a741-49cf5f7b998c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67baf6dc-aecd-4221-996d-c01f2b900786">
+                    <propertyInstance
+                      Id="3f4c348a-5d31-411a-b11f-83a3ae9635f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8d5c382-d47b-4ab8-b185-4d79701daf8b">
+                    <propertyInstance
+                      Id="3abab464-5eee-4991-ab2e-fc2cd91189d7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d321a78e-7fef-4632-9378-57bdedf5fa21">
+                    <propertyInstance
+                      Id="3e6713d2-85e9-4b97-b418-53244ada740d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="370c3555-382d-4adb-88c9-d612525d9292"
+        name="RouteConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f6a24b87-408a-4a9c-83aa-1156b4d8f183"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DRouteConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="771f272d-43a5-46fc-9b54-e1413d86537f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35ca9793-eee0-49a1-9c01-58fa7049bf7f">
+                <propertyInstance
+                  Id="0646975f-3ce5-4b90-a4b9-ba59c696eb12"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9eaadb33-a215-46a7-8626-995e4ba432e5">
+                <propertyInstance
+                  Id="3215358d-8e48-487a-a2eb-b2a48805ecbf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ce3129a-6493-45a5-9a7a-76f9ecdd0334">
+                <propertyInstance
+                  Id="59cf5126-a73e-4b23-b6ea-63307fa245c4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a4ce0fe-5251-4569-86df-8d1600833476">
+                <propertyInstance
+                  Id="b5ecfd23-413b-4939-93ae-dd434dc66061"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51823f96-2550-467b-8c2c-2e61a57c2b62">
+                <propertyInstance
+                  Id="b12437ef-7ae2-4e85-af11-fd2d33a19fdd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="67b9b85c-bccb-4535-b16e-61e4bdbe65e4"
+            name="RegisterRoutes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="161d31ca-3981-44ee-b2c6-2dc3c19216b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e555e4c-7e7c-4b35-a350-7b784aafe8ed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81602efb-52df-43ed-b8bd-1eba58ea72cd">
+                    <propertyInstance
+                      Id="112eefdd-4d1f-4256-84d6-4e630c018c20"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ea3474e-5b81-45a4-9960-b691665f2a8c">
+                    <propertyInstance
+                      Id="29429414-0bf4-4689-8762-38494e3bc3be"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c6fc593-2a5e-46d4-88e9-b2b299a2875d">
+                    <propertyInstance
+                      Id="60872a03-5e2c-4aac-9cd3-26ddc12945ee"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81cc3610-f7af-4881-b9f7-11783e1b933a">
+                    <propertyInstance
+                      Id="ab3b05c1-2493-4ecf-8750-ad884bf8578a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eba8b3de-b2f2-4032-bbd0-9a35ad1812b9">
+                    <propertyInstance
+                      Id="b6d2231a-1079-44ab-924d-c0a0b07b64a1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44935495-68d1-4112-9c34-aad702a61cff">
+                    <propertyInstance
+                      Id="6f13d6de-9d6c-4973-ad6a-dd74e60761cc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba2fe1de-6351-443d-bb04-ddc1f3e624b1"
+                  name="routes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3ac2d936-961a-445a-8063-00930dda285b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)]) ParameterIdentifier%3Droutes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="13f4e3f2-7041-4dd4-8ec6-607268023c73"
+                      LastKnownName="RouteCollection"
+                      LastKnownLocation="Package3_0544.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="836151ef-ebfb-4c6b-a052-abbede2d6dd8"
+            name="RouteConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1a29b8c6-6e86-408c-96b5-4a9a7a3b1f30"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DRouteConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="12c8a892-4d50-41d6-aa00-f781d57eec69"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38c04c81-4bca-4ac4-affa-4336112b8e2d">
+                    <propertyInstance
+                      Id="fecf0484-89c5-4f58-bbe4-920bf7e7014a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6efd69d0-721c-4e1f-aec7-f902ec0e4c02">
+                    <propertyInstance
+                      Id="cbe49b22-b5ee-496b-aa82-ea62d02f4095"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b652109c-9cff-4631-9b02-33b3d46bd4f7">
+                    <propertyInstance
+                      Id="2b70ba00-f7ce-4023-a125-cccb7677850e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12062fed-739a-4706-86f9-72c570a96fa3">
+                    <propertyInstance
+                      Id="01a2fc2e-91bf-4c06-8755-d7396c6b419d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc145daf-de36-4855-ab51-ab47ed7ed783">
+                    <propertyInstance
+                      Id="d3ea9e32-fbc6-4ae5-afd2-ee1d4d2c2713"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4010be55-1524-47dd-ac28-2e448b17bcf5">
+                    <propertyInstance
+                      Id="b49260e1-56e3-4c6b-875e-fdb42cdd214c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67b62124-6276-4729-9cc2-cf1748751f5f"
+        name="Startup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="835d5651-93f1-4e9c-8d38-bfbb883b321f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bf411f85-ffb6-4704-a0c0-bd660391c640"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc508da4-d9a7-440e-9c53-85153525cef6">
+                <propertyInstance
+                  Id="468e4945-1a34-4923-8c0a-df63a41a80a5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="411deab4-5085-482d-a872-e5885aa4bbe0">
+                <propertyInstance
+                  Id="af78fc07-734c-4789-bcb3-f10d575e3a0f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38ff9be1-7003-4a7a-aec7-911e8b6d3853">
+                <propertyInstance
+                  Id="ae97aab9-4a63-4ddc-a485-7fea27ed9e9f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c27cb86b-864c-4428-a8d6-b039d57561ff">
+                <propertyInstance
+                  Id="7fbc2e82-f48c-430f-bfdb-a7469936327c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf28440d-92bc-48f6-ba2f-66fb6227b74a">
+                <propertyInstance
+                  Id="433b13d6-053c-42dc-836c-a1d5bb790250"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cff452af-8b35-4d75-bdc0-68423225db46"
+            name="ConfigureAuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1dab6b9-e3ad-43be-ba7c-2acd0ae472d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup Member%3D(Name%3DConfigureAuth OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll&quot; Namespace%3DOwin Type%3DIAppBuilder)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ad165fc-4f88-4550-90b5-a65b38850b3a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58ddefa6-70d0-4183-9b87-dc663a329e39">
+                    <propertyInstance
+                      Id="35599a5f-f035-4e5c-985d-12ef70825087"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33e4f5dc-3d95-4396-944c-4603b5512238">
+                    <propertyInstance
+                      Id="5d5016a2-d77d-4ebb-a413-22a7a7b25c24"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b208cc2-f361-46d4-8d14-6e60d387c6ac">
+                    <propertyInstance
+                      Id="e2699e7f-8d2f-41b6-a07d-83b195a47617"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a742cff9-46cf-444a-984c-749f4e904296">
+                    <propertyInstance
+                      Id="e4575418-1ad6-4ce4-8e17-77417783e3be"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab163c16-e1cd-4f43-b6c8-bbb68230c903">
+                    <propertyInstance
+                      Id="7f49dede-8793-4414-b3c7-cd55a32ae623"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25e66070-d7e3-4851-a04d-3069437c5cea">
+                    <propertyInstance
+                      Id="a06a056e-f850-46ee-9fb2-aef053d535f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8d766ed-3029-4d10-a6dc-e2d9c16045a5"
+                  name="app"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d812a99b-fe42-4b30-b986-18963fcca0e2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup Member%3D(Name%3DConfigureAuth OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll&quot; Namespace%3DOwin Type%3DIAppBuilder)]) ParameterIdentifier%3Dapp"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="2c76bd55-f3e2-4162-a435-96c52eb3b876"
+                      LastKnownName="IAppBuilder"
+                      LastKnownLocation="Package4_0544.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5d254ff9-44f5-4635-9dd7-c3ae7baabd9f"
+            name="Configuration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21d61751-bebe-449a-9792-d5b1cafd060c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup Member%3D(Name%3DConfiguration OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll&quot; Namespace%3DOwin Type%3DIAppBuilder)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2bb0f7ae-d535-48ff-999c-89e1b15dc3b5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f97365e-6d23-4183-8681-056941938ddc">
+                    <propertyInstance
+                      Id="2af50e8c-1110-4eec-a8ce-fc57e04c2b0e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ca41e5c-053a-4d03-a05e-ac2eb155ab78">
+                    <propertyInstance
+                      Id="666c330a-6cc4-4557-8632-c958991c5ea5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0007886f-007e-4b0c-81d1-05122ce0e924">
+                    <propertyInstance
+                      Id="1dacc3c5-88be-4d17-aab4-c249dfec7dd8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="540c07d7-0a2b-4d86-87fe-72120fa5c9ae">
+                    <propertyInstance
+                      Id="5bfe5b99-0897-4a08-b03c-3872c470b381"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a67ffc3-abd1-42f1-836e-e9df4efa8991">
+                    <propertyInstance
+                      Id="ed3e40d7-52f7-4275-bb0f-1789c6ba9031"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74f53603-c36a-4f74-8d93-a9bccbc1db1d">
+                    <propertyInstance
+                      Id="51077356-1ea0-4480-85e9-c3353a8fb917"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3f2d6d2-ad51-4365-82b1-1aabfc41b589"
+                  name="app"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="68dd04a7-dcf5-4b6f-8cbb-b930c270361e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup Member%3D(Name%3DConfiguration OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll&quot; Namespace%3DOwin Type%3DIAppBuilder)]) ParameterIdentifier%3Dapp"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="2c76bd55-f3e2-4162-a435-96c52eb3b876"
+                      LastKnownName="IAppBuilder"
+                      LastKnownLocation="Package4_0544.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="69162155-93b4-499e-8cb7-d9a53f4d44b9"
+            name="Startup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0f2b61c1-db69-4542-a554-284652797f72"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fmrise_000%2Fdocuments%2Fvisual studio 2013%2FProjects%2FNLog%2FDashboard%2Fbin%2FDashboard.dll&quot; Namespace%3DDashboard Type%3DStartup Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ddbf36c1-1941-4e27-ac80-214cd4619f05"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8d69d2b-1d31-4a3a-8ec2-97fe18f1770e">
+                    <propertyInstance
+                      Id="d26e942a-95a0-46d9-8de6-c43fe33a1484"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b159f54f-5741-42f8-8bc5-816dc0695a3d">
+                    <propertyInstance
+                      Id="1910f5af-11d3-4e62-b90c-46bff894b82a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f35f69c5-82ac-45c0-a99c-976e05fa4435">
+                    <propertyInstance
+                      Id="7f500cfc-ed40-4a6b-9c23-5158ea2b933b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8fc41ef-ab18-4a06-8519-13ab70c72721">
+                    <propertyInstance
+                      Id="923f7b62-19c5-4363-bd8b-c0f9630580ef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81bf0bea-aaa8-4cbb-a9cd-af90bc0b6ce2">
+                    <propertyInstance
+                      Id="b6a9bd41-63ef-4239-a5ae-d8487be90a64"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d38b2715-c777-447f-9aec-126d03216f40">
+                    <propertyInstance
+                      Id="d06c93bf-f894-4e2c-9669-ae45d39c428f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d76d5c30-6696-45c2-b461-d4e5f27eccf3"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package5_0544.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

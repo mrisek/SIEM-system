@@ -25,10 +25,10 @@ namespace Dashboard.Controllers
             cmd.Connection = con;
 
             // konfiguracija pravila (rules)
-            cmd.CommandText = "INSERT INTO rules VALUES('" 
+            cmd.CommandText = "INSERT INTO rules VALUES('"
                 + model.Name + "', '"
                 + model.MinLevel + "', '"
-                + model.WriteTo + "', '', '" 
+                + model.WriteTo + "', '', '"
                 + model.RuleName + "', '')";
 
             // otvori konekciju
@@ -37,13 +37,13 @@ namespace Dashboard.Controllers
             cmd.ExecuteNonQuery();
 
             // konfiguracija odredišta (targets)
-            cmd.CommandText = "INSERT INTO targets VALUES('" 
-                + model.Type + "', '" 
-                + model.Name + "', '" 
-                + model.Address + "', '" 
-                + model.FileName + "', '" 
-                + model.Layout 
-                + "', '', '', '', '', '', '', '" 
+            cmd.CommandText = "INSERT INTO targets VALUES('"
+                + model.Type + "', '"
+                + model.Name + "', '"
+                + model.Address + "', '"
+                + model.FileName + "', '"
+                + model.Layout
+                + "', '', '', '', '', '', '', '"
                 + model.TargetName + "', '')";
 
             // izvrši drugu naredbu

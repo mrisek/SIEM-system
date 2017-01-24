@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21.25, 8.5" name="UMLComponentDiagram1">
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21.25, 11.625" name="UMLComponentDiagram1">
   <componentModelMoniker Id="7b340f6c-e78d-4ad1-982d-797f45868efe" />
   <nestedChildShapes>
     <componentShape Id="d774268c-941a-437b-9b8e-853635aead91" absoluteBounds="17.625, 3.5, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
@@ -45,6 +45,34 @@
     </commentShape>
     <commentShape Id="d9cceffe-eff4-47bc-9a21-29b0dc0f7a28" absoluteBounds="13.875, 0.75, 1.375, 1.125" customColor="251, 247, 200">
       <commentMoniker Id="bd99dc08-beff-45d7-ad40-f4215100b076" />
+      <relativeChildShapes />
+    </commentShape>
+    <componentShape Id="fa975cc9-ad94-4a3c-859f-dfbccdf507ec" absoluteBounds="12.75, 9.25, 2.2079503372403035, 2.1060201709367004" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="52b8eee3-eba8-44e6-a20b-a4a3be33329c" LastKnownName="Baza podataka" />
+    </componentShape>
+    <componentShape Id="a7992d82-f9ae-41ee-aa2d-98eda584360d" absoluteBounds="12.75, 7.125, 2.2169117339142321, 1.9626378241538518" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="7763137e-7dd8-4770-a4c8-8fdbe13fdfc4" LastKnownName="Web aplikacija" />
+    </componentShape>
+    <componentShape Id="9a7ad2b1-1d76-42fa-8df0-de2539cce466" absoluteBounds="15.125, 9.25, 2.2551628383575846, 2.1082054639121282" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="d681e40d-db3f-46cd-8861-25555fb81b1c" LastKnownName="Framework za logiranje" />
+    </componentShape>
+    <componentShape Id="ad9377e3-cf06-4433-9f93-fa7a4cdfd013" absoluteBounds="15.125, 7.125, 2.2617187172838733, 1.9626378241538536" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="736b386a-28f6-4f7c-994e-a680b7495440" LastKnownName="Windows Service" />
+    </componentShape>
+    <commentShape Id="f91813fe-632e-4631-ab1a-f2dd497490df" absoluteBounds="15.25, 9.75, 2, 1.5" customColor="251, 247, 200">
+      <commentMoniker Id="dab6d3cb-408a-4e15-9aeb-8a01f1a6a59e" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="abd4f40c-d27e-4994-acfc-ad8e0caa7b12" absoluteBounds="12.875, 7.625, 2, 1.375" customColor="251, 247, 200">
+      <commentMoniker Id="3e1ab410-f8c2-4063-80c1-6b5eadf20f3d" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="b425cb58-f658-4c14-b09f-a6a16f533859" absoluteBounds="15.25, 7.625, 2, 1.375" customColor="251, 247, 200">
+      <commentMoniker Id="facbbb81-c4c2-48ed-bef6-4ca15286a982" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="56a238b5-5251-4384-854e-2c2257d742f8" absoluteBounds="12.875, 9.75, 2, 1.5" customColor="251, 247, 200">
+      <commentMoniker Id="354c3dd7-786d-4759-8607-2937ea87f16a" />
       <relativeChildShapes />
     </commentShape>
   </nestedChildShapes>

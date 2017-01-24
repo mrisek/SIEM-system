@@ -6,20 +6,41 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2016-10-15T11:28:55" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog' -  (Package)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program' -  (Class)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program::Dispose' -  (Operation)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program::Main' -  (Operation)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program::Main::args' -  (Parameter)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program::obj' -  (Property)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::NLog::Program::Program' -  (Operation)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::IDisposable' -  (Interface)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::NLog::Program to ModelingProject1::System::IDisposable (InterfaceRealization)" />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="High" Text="(2) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2016-10-15T11:28:56" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2017-01-13T06:44:54" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ComponentModel' -  (Package)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ComponentModel::IContainer' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ServiceProcess' -  (Package)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ServiceProcess::ServiceBase' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading' -  (Package)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading::Timer' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService' -  (Package)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1' -  (Class)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::components' -  (Property)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::Dispose' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::Dispose::disposing' -  (Parameter)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::FilterEventLogEntries' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::GetConfigurationSettings' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::GetEventLogProperties' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::GetEventLogProperties::logDisplayName' -  (Parameter)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::OnStart' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::OnStart::args' -  (Parameter)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::OnStop' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::Schedular' -  (Property)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::SchedularCallback' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::SchedularCallback::e' -  (Parameter)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::ScheduleService' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::Service1' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::WriteToFile' -  (Operation)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::WindowsService::Service1::WriteToFile::text' -  (Parameter)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::WindowsService::Service1 to ModelingProject1::System::ServiceProcess::ServiceBase (Generalization)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::System::Threading::Timer to ModelingProject1::System::IDisposable (InterfaceRealization)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::System::ComponentModel::IContainer to ModelingProject1::System::IDisposable (Generalization)" />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="High" Text="(4) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2017-01-13T06:44:57" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

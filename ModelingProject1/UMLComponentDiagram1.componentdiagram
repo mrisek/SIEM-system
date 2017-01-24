@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7b340f6c-e78d-4ad1-982d-797f45868efe" name="UMLComponentDiagram1" linkedPackageId="20ef0861-69eb-4d22-a537-6087f4d9bcdc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="7b340f6c-e78d-4ad1-982d-797f45868efe" name="UMLComponentDiagram1" linkedPackageId="20ef0861-69eb-4d22-a537-6087f4d9bcdc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <ownedCommentsInternal>
     <comment Id="69ae5942-4f25-4173-a650-5a3a89ad8b1b">
       <elementDefinition Id="6139ad61-64fd-4650-aade-314a96a3157a" />
@@ -78,6 +78,50 @@ Prototip SIEM sustava
 
 (Security Information and Event Management System Prototype)</body>
     </comment>
+    <comment Id="dab6d3cb-408a-4e15-9aeb-8a01f1a6a59e">
+      <elementDefinition Id="1f6d6a5f-41e1-473a-b1ca-1ae0b06851b1" />
+      <body>NLog Logging Framework
+Konzolna aplikacija
+[Server side]
+
+- ugrađuje se u aplikaciju
+- dinamička konfiguracija
+preko baze podataka
+- stvaraju se logovi i
+pohranjuju u datoteku
+prema pravilima</body>
+    </comment>
+    <comment Id="3e1ab410-f8c2-4063-80c1-6b5eadf20f3d">
+      <elementDefinition Id="56502d73-aeec-4335-85ab-593a9bbb82dd" />
+      <body>MVC Web Application
+(Microsoft Azure Web Application)
+[Client side]
+
+- SIEM Dashboard
+- konfiguracija postavki</body>
+    </comment>
+    <comment Id="facbbb81-c4c2-48ed-bef6-4ca15286a982">
+      <elementDefinition Id="a173d481-71d7-48ed-ba3c-c6c5beb45ba0" />
+      <body>Windows Service
+[Server side]
+
+- instalira se i pokreće na serveru
+- sakupljanje logova sa svih servera
+- spremanje logova u bazu podataka</body>
+    </comment>
+    <comment Id="354c3dd7-786d-4759-8607-2937ea87f16a">
+      <elementDefinition Id="9b0686a0-ccfc-41f6-b77a-cb3b4fc27465" />
+      <body>MySQL Server
+Relacijska baza podataka
+[Server side]
+
+- logovi
+- događaji
+- konfiguracija uređaja
+- konfiguracija pravila
+- konfiguracija izlaza
+- konfiguracija servisa</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <componentModelHasComponents>
@@ -99,6 +143,26 @@ Prototip SIEM sustava
     <componentModelHasComponents>
       <component Id="93907806-1dd8-4ce0-ba04-9912b57d640f" name="Logging.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ea95a30-8bfe-495d-b673-9108b7ed8869" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="52b8eee3-eba8-44e6-a20b-a4a3be33329c" name="Baza podataka" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7bcdc643-15be-4ab8-af45-8febedb6c1cb" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7763137e-7dd8-4770-a4c8-8fdbe13fdfc4" name="Web aplikacija" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71fa9875-24cc-4c3f-a3ef-e9e6786c5731" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d681e40d-db3f-46cd-8861-25555fb81b1c" name="Framework za logiranje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="906dcd83-fb14-4675-979e-da3052bcd6e4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="736b386a-28f6-4f7c-994e-a680b7495440" name="Windows Service" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dba72b32-5772-4d53-8275-64e49d9aa893" />
       </component>
     </componentModelHasComponents>
   </packagedElements>
