@@ -1,12 +1,7 @@
-# SIEM-system
+# Open-source prototipne komponente za razvoj SIM/SIEM sustava
 
-Programski jezik:
-C#
+U ovom projektu razvijene su open-source prototipne komponente koje mogu poslužiti za razvoj SIEM sustava ukoliko se okupi tim entuzijasta sposobnih za razvoj tako kompleksnog projekta zbog čega su one i smještene na GitHub repozitorij. Osim toga, istraženi su razni načini osiguravanja zaštite informacijskog sustava kojima bi se naše komponente mogle nadograditi. U postojećim aplikacijama je naglasak stavljen na besplatne komponente i frameworke za Windows OS koje se potom instaliraju na operacijski sustav što se smatra velikom prednošću jer je rijetko koji software za Windows besplatan.
 
-Razvojna okolina:
-Microsoft Visual Studio Ultimate 2013
+Razlog zašto bi netko želio nabaviti takav sustav je očit zato jer je to zakonska obveza u mnogim zemljama svijeta, naročito u onim aplikacijama koje koriste neki oblik novčanih transakcija, pa se SIEM sustav jednostavno mora nabaviti kao dokaz da serveri koji rade takve transakcije nisu hakirani, da rade ispravno i da zapravo imaju pisani dokaz svih obavljenih novčanih transakcija. Ono po čemu se ovaj projekt razlikuje od konkurentnih je to što je besplatan, jednostavan za instalaciju i upotrebu.
 
-Frameworks:
-.NET 4.5, LINQ, SOAP, NLog 4.3.7
-
-Cilj projekta je napraviti prototip SIEM sustava korištenjem NLog 4.3.7 frameworka za logiranje unutar postojeće "Skype for bussines" aplikacije. Osnovna funkcionalnost sustava za upravljanje informacijama i događajima je prikaz, pohrana i dinamički ispis log poruka. Upotrebom klase Socket i TCP protokola razvijeni su server i klijent koji simuliraju sustav za asinkronu i višedretvenu komunikaciju. Sustav za logiranje mora biti u stanju pratiti sve važne događaje i slati feedback u više sourceva. Najpopularnije značajke sustava za komunikaciju su razmjena poruka i kolekcija podataka, a osim toga, logging sustav mora ispravno raditi i prilikom delay-ja, connect-a, disconnect-a i lock-a. Kolekcije koje se šalju putem Socket-a potrebno je serijalizirati na jednoj i deserijalizirati na drugoj strani prilikom čega je korišten SOAP protokol, te klase MemoryStream i XElement za izradu XML stabala. Sustav podržava značajke poput automatskog generiranja naziva datoteke i automatskog zapisa u drugu datoteku ukoliko on premaši određenu vrijednost, dok se kompletna konfiguracija loggera vrši putem datoteke NLog.config.
+SIEM sustav je zapravo sustav za upravljanje sigurnosnim informacijama i događajima u vidu analize ili upravljanja logovima. Međutim, kao što je ranije spomenuto, izrađena aplikacija sastoji se od četiri projekta tipa research & development koja nisu temeljito testirana, već je riječ o prototipnim komponentama s potencijalom da posluže kao temelj za izgradnju idealnog SIM/SIEM sustava.
